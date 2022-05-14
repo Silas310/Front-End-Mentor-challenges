@@ -11,6 +11,10 @@
     
     @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
+    *{
+      box-sizing: border-box;
+    }
+
     :root{
       --paleblue:   hsl(225, 100%, 94%);
       --brightblue: hsl(245, 75%, 52%);
@@ -29,12 +33,16 @@
       
     }
     header{
-      background-image: url(images/illustration-hero.svg);
+      background-image: url("images/illustration-hero.svg");
       margin: auto;
       height: 220px;
       width: 375px;
-      border-radius: 20px;
+      border-radius: 20px 20px 0px 0px;
       
+    }
+    #central{
+      width: 85%;
+
     }
 
     main{
@@ -53,10 +61,9 @@
   
     p{
       text-align: center;
-      display: block;
-      padding-left: 1px;
-      margin: 0px;
+      margin: auto;
       color: var(--desaturatedblue);
+      
 
     }
     #clara{
@@ -65,14 +72,17 @@
       width: 300px;
       height: 80px;
       margin: auto;
-      margin-top: 60px;
+      margin-top: 7%;
+      position: relative;
 
       
     }
 
     strong{
       color: var(--darkblue);
-      margin: 1px 1px 1px 1px;
+    /*  top: 15%;
+      right: 35%;
+      position: absolute;*/
     }
     img{
       border: 1 solid black;
@@ -83,19 +93,35 @@
     }
     a{
       color: var(--brightblue);
-      margin: 1px 1px 1px 1px;  
+      margin: auto;
+      font-weight: bold; 
+      display: block;
+      position: absolute;
+      left: 75%;
+      bottom: 40%;
       
     }
-    
-
-    #roxa > p{
-      color: white;
-      padding: 15px;
+    #posicao{
+      position: absolute;
+      top: 20%;
+      left: 25%;
+    }
+    button{
+      border: 1px solid black;
+      width: 80%;
+      height: 8%
       
+      
+
+    }
+    #roxo{
+      color: white;
+      background-color: var(--brightblue);
+      font-weight: bolder;
+
     }
 
    
-    
   </style>
 
 </head>
@@ -104,21 +130,23 @@
   <main>
     <header></header>
     <h1>Order Summary</h1>
-    <p>
+    <p id="central">
       You can now listen to millions of songs, audiobooks, and podcasts on any
       device anywhere you like!
     </p>
     <div id="clara">
       <img src="images/icon-music.svg" alt="Ícone de música">
-      <strong>Annual Plan</strong>
-      <p>$59.99/year</p>
+      <div id="posicao">
+        <strong>Annual Plan</strong>
+        <p >$59.99/year</p>
+      </div>
       <a href="#">Change</a>
     </div>
-    <button id="roxa">
-      <p>Proceed to Payment</p>
+    <button id="roxo">
+      Proceed to Payment
     </button>
     <button>
-      <p id="cancel">Cancel Order</p>
+      Cancel Order
     </button>
   </main>
   
