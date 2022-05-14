@@ -46,11 +46,13 @@
     }
 
     main{
-      height: 600px;
+      height: 640px;
       width: 375px;
       margin: auto;
       background-color: white;
       border-radius: 20px;
+      position: static;
+      box-shadow: 0px 10px 10px hsla(224, 23%, 55%, 0.185);;
     }
 
     h1{
@@ -74,7 +76,6 @@
       margin: auto;
       margin-top: 7%;
       position: relative;
-
       
     }
 
@@ -91,7 +92,7 @@
       padding: 15px 1px 1px 15px;
       
     }
-    a{
+     #change{
       color: var(--brightblue);
       margin: auto;
       font-weight: bold; 
@@ -101,27 +102,58 @@
       bottom: 40%;
       
     }
+
+     #change:active{
+       color: var(--desaturatedblue);
+     }      
+
     #posicao{
       position: absolute;
       top: 20%;
       left: 25%;
     }
-    button{
-      border: 1px solid black;
-      width: 80%;
-      height: 8%
-      
-      
+    
+    #botoes{
+       box-sizing: border-box;
+       width: 80%;
+       height: 25%;
+       margin-top: 5%;
+       left: 10%;
+       position: relative;
 
     }
-    #roxo{
-      color: white;
-      background-color: var(--brightblue);
-      font-weight: bolder;
-
-    }
-
    
+    #roxo{
+      text-align: center;
+      font-weight: 900;
+      background-color: var(--brightblue);
+      color: white;
+      text-decoration: none;
+      padding: 5.5% 10% 5.5% 10%;
+      border-radius: 10px;
+      display: block;
+      margin-bottom: 7%;
+      box-shadow: 0px 15px 10px hsla(224, 23%, 55%, 0.685);
+    }
+    
+    #roxo:active{
+      background-color: hsl(245, 100%, 67%);
+    }
+
+    
+    #branco{
+      text-align: center;
+      font-weight: 700;
+      padding: 5.5% 27% 5.5% 27%;
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--desaturatedblue);
+      display: block;
+    }
+    #branco:active{
+      color: var(--darkblue);       
+    }
+
   </style>
 
 </head>
@@ -134,21 +166,24 @@
       You can now listen to millions of songs, audiobooks, and podcasts on any
       device anywhere you like!
     </p>
+
     <div id="clara">
       <img src="images/icon-music.svg" alt="Ícone de música">
       <div id="posicao">
         <strong>Annual Plan</strong>
         <p >$59.99/year</p>
       </div>
-      <a href="#">Change</a>
+      <a href="#" id="change">Change</a>
     </div>
-    <button id="roxo">
-      Proceed to Payment
-    </button>
-    <button>
-      Cancel Order
-    </button>
+
+    
+      <div id="botoes">
+        <a href="#" id="roxo">Proceed to Payment</a>
+        <a href="#" id="branco">Cancel Order</a>
+      </div>
+    
   </main>
+
   
   
   
