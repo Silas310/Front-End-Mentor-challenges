@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -8,6 +8,9 @@
   <title>Frontend Mentor | Order summary card</title>
 
   <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
     :root{
       --paleblue:   hsl(225, 100%, 94%);
       --brightblue: hsl(245, 75%, 52%);
@@ -20,39 +23,106 @@
     body{
       background-image: url("images/pattern-background-desktop.svg");
       background-repeat: no-repeat;
-      background-color: var(--brightblue);
+      background-color: hsla(224, 23%, 55%, 0.425);
+      font-family: 'Red Hat Display', sans-serif;
       
       
     }
     header{
       background-image: url(images/illustration-hero.svg);
+      margin: auto;
+      height: 220px;
+      width: 375px;
+      border-radius: 20px;
       
     }
+
+    main{
+      height: 600px;
+      width: 375px;
+      margin: auto;
+      background-color: white;
+      border-radius: 20px;
+    }
+
+    h1{
+      color: var(--darkblue);
+      text-align: center;
+      font-size: 1.5em;
+    }
+  
+    p{
+      text-align: center;
+      display: block;
+      padding-left: 1px;
+      margin: 0px;
+      color: var(--desaturatedblue);
+
+    }
+    #clara{
+      background-color: var(--verypaleblue);
+      text-align: center;
+      width: 300px;
+      height: 80px;
+      margin: auto;
+      margin-top: 60px;
+
+      
+    }
+
+    strong{
+      color: var(--darkblue);
+      margin: 1px 1px 1px 1px;
+    }
+    img{
+      border: 1 solid black;
+      display: block;
+      position: fixed;
+      padding: 15px 1px 1px 15px;
+      
+    }
+    a{
+      color: var(--brightblue);
+      margin: 1px 1px 1px 1px;  
+      
+    }
+    
+
+    #roxa > p{
+      color: white;
+      padding: 15px;
+      
+    }
+
+   
     
   </style>
 
 </head>
 <body>
-  <header>
-
-  </header>
 
   <main>
+    <header></header>
     <h1>Order Summary</h1>
     <p>
       You can now listen to millions of songs, audiobooks, and podcasts on any
       device anywhere you like!
     </p>
-    <h2>Annual Plan</h2>
-    $59.99/year
-    <p>Change</p>
-    <p>Proceed to Payment</p>
-    <p>Cancel Order</p>
+    <div id="clara">
+      <img src="images/icon-music.svg" alt="Ícone de música">
+      <strong>Annual Plan</strong>
+      <p>$59.99/year</p>
+      <a href="#">Change</a>
+    </div>
+    <button id="roxa">
+      <p>Proceed to Payment</p>
+    </button>
+    <button>
+      <p id="cancel">Cancel Order</p>
+    </button>
   </main>
   
   
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   
 </body>
 </html>
