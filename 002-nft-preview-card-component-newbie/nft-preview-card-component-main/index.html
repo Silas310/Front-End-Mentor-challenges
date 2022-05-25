@@ -1,33 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+    *{
+      margin: auto;
+      padding: 0%;
+    }
+
+    :root{
+      --softblue:      hsl(215, 51%, 70%);
+      --cyan:          hsl(178, 100%, 50%);   
+      --verydarkblue:  hsl(217, 54%, 11%);   /*(main BG)*/
+      --verydarkblue2: hsl(216, 50%, 16%);   /*(card BG)*/
+      --verydarkblue3: hsl(215, 32%, 27%);   /*(line)*/
+    }
+
+    body{
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      background-color: var(--verydarkblue);  
+      color: white;  
+    }
+
+    main{
+      background-color: var(--verydarkblue2);
+      width: 350px;
+      margin-top: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.5);
+      padding-bottom: 1%;
+
+    }
+
+    header{
+      background-color: var(--verydarkblue2);
+      height: 400px;
+      width: 300px;
+      padding-top: 30px;
+      margin-bottom:-9%;
+      
+    }
+
+    h1{
+      margin-top: 30px;
+      font-size: 1.4em;
+      font-weight: 600;
+      color: white;
+    }
+
+    p{
+      color: var(--softblue);
+      text-align: center;
+    }
+
+    div{
+      height: 300px;
+      width: 300px;
+      border-radius: 10px;
+      background-image: url("images/image-equilibrium.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      
+    }
+
+    div > img{
+     height: 100%;
+     width: 100%;
+     border-radius: 15px;
+    }
+
+    section{
+      margin: -15px 15px 0px 27px;
+      padding: 10px;
+      
+    }
+    
+    section > p{
+      text-align: left;
+      margin-left: -4%;
+      margin-bottom: 7%;
+
+    }
+
+    #esquerda{
+      text-align: left;
+      display: inline;
+      font-weight: 600;
+      color: var(--cyan);
+    }
+
+    #direita{
+      text-align: right;
+      display: inline;
+      margin: 0% 0% 0% 38%;
+    }
+
+    footer{
+      position: relative;
+      width: 300px;
+      height: 50px;
+      margin-bottom: 1%;
+      border-top: 1px solid hsl(215, 32%, 27%);
+      padding-top: 5%;
+    }
+
+    footer > img{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      border: 1px solid white;
+      border-radius: 26px;
+    }
+
+    footer > p {
+      position: absolute;
+      top: 45%;
+      left: 20%;
+    }
+
+    a{
+      color: white;
+    }
+
+
   </style>
 </head>
+
 <body>
 
-  Equilibrium #3429
+  <main>
 
-  Our Equilibrium collection promotes balance and calm.
+    <header>
+      <div> </div>
 
-  0.041 ETH
-  3 days left
+      <h1>Equilibrium #3429</h1>
+    </header>
+
+    <section>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <p id="esquerda">0.041 ETH</p>
+      <p id="direita">3 days left</p>
+    </section>
+    
+    <footer>
+      <img src="images/image-avatar.png" alt="">
+      <p>Creation of <a>Jules Wyvern</a></p>
+    </footer>
+
+  </main>
+
   
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
 </body>
 </html>
