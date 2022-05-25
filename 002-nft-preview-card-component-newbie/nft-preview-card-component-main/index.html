@@ -55,12 +55,28 @@
       color: white;
     }
 
+
+    header a{
+      color: white;
+      text-decoration: none;
+    }
+
+    header a:active{
+      
+    }
+
     p{
       color: var(--softblue);
       text-align: center;
     }
 
-    div{
+    header img{
+      width: 100%;
+      border-radius: 10px;
+
+
+    } 
+    header div{
       height: 300px;
       width: 300px;
       border-radius: 10px;
@@ -68,12 +84,6 @@
       background-repeat: no-repeat;
       background-size: 100%;
       
-    }
-
-    div > img{
-     height: 100%;
-     width: 100%;
-     border-radius: 15px;
     }
 
     section{
@@ -125,8 +135,14 @@
       left: 20%;
     }
 
-    a{
+    footer > p > a{
       color: white;
+      font-weight: 400;
+      text-decoration: none;
+    }
+    footer > p > a:active{
+      color: var(--cyan);
+      cursor: pointer;
     }
 
 
@@ -138,9 +154,11 @@
   <main>
 
     <header>
-      <div> </div>
+        <a href="#">
+          <img src="images/image-equilibrium.jpg"></img>
+        </a>
 
-      <h1>Equilibrium #3429</h1>
+      <h1><a href="#">Equilibrium #3429</a></h1>
     </header>
 
     <section>
@@ -151,7 +169,7 @@
     
     <footer>
       <img src="images/image-avatar.png" alt="">
-      <p>Creation of <a>Jules Wyvern</a></p>
+      <p>Creation of <a href="#">Jules Wyvern</a></p>
     </footer>
 
   </main>
