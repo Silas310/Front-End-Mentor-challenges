@@ -5,8 +5,103 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NFT Card</title>
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+    :root{
+      --softblue:       hsl(215, 51%, 70%);
+      --cyan:           hsl(178, 100%, 50%);
+      --verydarkblue:   hsl(217, 54%, 11%);   /*(main BG)*/
+      --verydarkblue2:  hsl(216, 50%, 16%);   /*(card BG)*/
+      --verydarkblue3:  hsl(215, 32%, 27%);   /*(line)*/
+    }
+    *{
+      font-size: 18px;
+      color: white;
+    }
+    body{
+      background-color: var(--verydarkblue);
+      font-family: 'Outfit', 'sans-serif';
+    }
+    main{
+      background-color: var(--verydarkblue2);
+      margin: auto;
+      width: 375px;
+      position: relative;
+      border-radius: 13px;
+    }
+ 
+    img{
+      width: 320px;
+      position: relative;
+      left: 7.3%;
+      margin-top: 7.3%;
+      border-radius: 10px;
+      
+    }
+    h1{
+      position: relative;
+      left: 7.3%;
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+    .textoprincipal{
+    display: block;
+    margin-left: 7.3%;
+    font-size: 300;
+    color: var(--softblue);
+    
+    }
+    .cripto{
+      color: var(--cyan);
+      font-size: 600;
+      margin-left: 7.3%;
+      display: inline;
+    }
+   
+    .dias{
+      display: inline;
+      margin-left: 27%;
+      color: var(--softblue);
+      font-weight: 300;
+      
+    }
+    .imgpq{
+      width: 3%;
+      display: inline-block;
+    }
+    #clock{
+      position: absolute;
+      left: 40%;
+      top: 85%;
+      width: 5%;
+    }
+
+  </style>
+
+
 </head>
 <body>
+  
+  <main>
+    
+    <img src="images/image-equilibrium.jpg" alt="">
+    <h1>Equilibrium #3429</h1>
+    
+    <p class="textoprincipal">Our Equilibrium collection promotes balance and calm</p>
+
+    <img src="images/icon-ethereum.svg" alt="" class="imgpq">
+    <strong>
+      <p class="cripto"> 0.0041 ETH</p>
+    </strong>
+
+    <img src="images/icon-clock.svg" alt="" class="imgpq" id="clock">
+    <p class="dias">3 days left</p>
+
+    <p>Creation of Jules Wyvern</p>
+  </main>
   
 </body>
 </html>
