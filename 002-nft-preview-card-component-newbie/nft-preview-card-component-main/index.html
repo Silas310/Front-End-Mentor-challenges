@@ -31,6 +31,7 @@
       width: 375px;
       position: relative;
       border-radius: 13px;
+      padding-bottom: 3%;
     }
  
     img{
@@ -47,11 +48,18 @@
       font-weight: 600;
       font-size: 1.5em;
     }
+
+    p{
+      display: block;
+      font-size: 300;
+      color: var(--softblue);
+    }
     .textoprincipal{
-    display: block;
-    margin-left: 7.3%;
-    font-size: 300;
-    color: var(--softblue);
+      display: block;
+      margin-left: 7.3%;
+      font-size: 300;
+      color: var(--softblue);
+      margin-bottom: -1%;
     
     }
     .cripto{
@@ -59,6 +67,7 @@
       font-size: 600;
       margin-left: 7.3%;
       display: inline;
+      margin-bottom: 1%;
     }
    
     .dias{
@@ -66,6 +75,7 @@
       margin-left: 27%;
       color: var(--softblue);
       font-weight: 300;
+      margin-bottom: 1%;
       
     }
     .imgpq{
@@ -74,33 +84,85 @@
     }
     #clock{
       position: absolute;
-      left: 40%;
-      top: 85%;
+      left: 60%;
+      top: 76%;
       width: 5%;
+      display: inline;
     }
 
-  </style>
+    hr{
+      width: 85%;
+    }
 
+    footer{
+      margin-bottom: 1%;
+      height: 5%;
+      width: 90%;
+      margin: auto;
+      margin-top: 4%;
+      position: relative;
+      padding: 4%;
+      
+    }
+
+    #avatar{
+      width: 14%;
+      margin: auto;
+      padding: 0%;
+      position: absolute;
+      display: inline-block;
+      left: 4%;
+      margin-bottom: 3%;
+      bottom: -19%;
+      top: -0%;
+      border: 1px solid white;
+      border-radius: 50%;
+      
+    }
+
+    footer > p {
+      margin: auto;
+      margin-left: 20%;
+      display: block;
+      margin-top: 0%;
+    }
+    a{
+      text-decoration: none;
+    }
+    h1 > a{
+      font-size: 1.0em;
+
+    }
+    a:active{
+      color: var(--cyan);
+    }
+   
+  </style>
 
 </head>
 <body>
-  
   <main>
     
-    <img src="images/image-equilibrium.jpg" alt="">
-    <h1>Equilibrium #3429</h1>
+    <img src="images/image-equilibrium.jpg" alt="Equilibrium">
+    <h1><a href="#">Equilibrium #3429</a></h1>
+    
     
     <p class="textoprincipal">Our Equilibrium collection promotes balance and calm</p>
 
-    <img src="images/icon-ethereum.svg" alt="" class="imgpq">
+    <img src="images/icon-ethereum.svg" alt="Ethereum icon" class="imgpq">
     <strong>
       <p class="cripto"> 0.0041 ETH</p>
     </strong>
 
-    <img src="images/icon-clock.svg" alt="" class="imgpq" id="clock">
+    <img src="images/icon-clock.svg" alt="Clock icon" class="imgpq" id="clock">
     <p class="dias">3 days left</p>
 
-    <p>Creation of Jules Wyvern</p>
+    <hr>
+
+    <footer>
+      <img src="images/image-avatar.png" alt="" id="avatar">
+      <p>Creation of <a href="#">Jules Wyvern</a></p>
+    </footer>
   </main>
   
 </body>
