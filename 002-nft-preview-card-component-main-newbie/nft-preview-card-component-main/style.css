@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+:root{
+    /* PRIMARIA */
+    --softblue:  hsl(215, 51%, 70%);
+    --cyan:      hsl(178, 100%, 50%);
+    /*NEUTRAL*/
+    --mainblue: hsl(217, 54%, 11%); /*MAIN BG*/
+    --cardblue: hsl(216, 50%, 16%); /*CARD BG*/
+    --lineblue: hsl(215, 32%, 27%); /*LINE*/
+}
+body{
+    background-color: var(--mainblue);
+    color: white;
+}
+main{
+    margin: auto;
+    width: 360px;
+    height: 570px;
+    background-color: var(--cardblue);
+    position: relative;
+    top: 20px;
+    border-radius: 4%;
+}
+.imgprincipal{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 3%;
+}
