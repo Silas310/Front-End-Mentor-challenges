@@ -30,6 +30,7 @@ main{
     position: relative;
     top: 20px;
     border-radius: 4%;
+    padding-top: 15px;
 }
 div, footer{
     margin-left: 20px;
@@ -37,18 +38,29 @@ div, footer{
 p{
     display: inline;
 }
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+a:active{
+    color: var(--cyan);
+}
+
 .imgprincipal{
     width: 300px;
     height: 300px;
     margin: auto;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 3%;
 }
+footer a{
+    font-size: 1em;
+}
 .titulo{
     font-weight: 600;
-    font-size: larger;
     margin-bottom: 20px;
 }
 .descricao{
