@@ -57,4 +57,10 @@ main > p{
     color: var(--grayishBlue);
 }
 
+@media screen and (min-width: 768px){
+    main{
+        margin-top: 4%;
+    }
+}
+
 
