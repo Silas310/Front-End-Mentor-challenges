@@ -14,7 +14,7 @@
     --veryDarkCyan: rgb(0, 66, 65);
 
     /*Neutras*/
-    --TransparentWhite: rgba(255, 255, 255, 0.75); /*parágrafos*/
+    --transparentWhite: rgba(255, 255, 255, 0.75); /*parágrafos*/
     --veryLightGray: rgb(242, 242, 242); /*(background, headings, buttons)*/
 }
 
@@ -32,9 +32,45 @@ body{
 main.flex-container{
     display: flex;
     flex-direction: column;
-    margin: auto;
-    width: 340px;
+    justify-content: center;
 
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 340px;
+    height: 1200px;
 
     text-align: center;
+}
+
+section.flex-item{
+    width: 100%;
+    height: 33.3%;
+}
+
+section.flex-item > h1{
+    color: var(--veryLightGray);
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+section.flex-item > p{
+    color: var(--transparentWhite);
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+}
+
+section#item-1{
+    background-color: var(--brightOrange);
+    border-radius: 10px 10px 0px 0px;
+}
+
+section#item-2{
+    background-color: var(--darkCyan);
+}
+
+section#item-3{
+    background-color: var(--veryDarkCyan);
+    border-radius: 0px 0px 10px 10px;
 }
