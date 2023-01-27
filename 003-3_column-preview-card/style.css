@@ -48,18 +48,38 @@ section.flex-item{
     height: 33.3%;
 }
 
-section.flex-item > h1{
+section.flex-item > header{
+    width: 75%;
+    text-align: left;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+section.flex-item img {
+    margin-bottom: 10%;
+}
+
+section.flex-item  h1{
     color: var(--veryLightGray);
     font-family: 'Big Shoulders Display';
     font-weight: 700;
     font-size: 2.5em;
 }
 
-section.flex-item > p{
+section.flex-item > article{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+section.flex-item  p{
     color: var(--transparentWhite);
     font-family: 'Lexend Deca';
     font-weight: 400;
+    text-align: left;
 }
+
 
 section#item-1{
     background-color: var(--brightOrange);
