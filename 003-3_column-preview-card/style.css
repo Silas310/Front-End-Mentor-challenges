@@ -70,7 +70,6 @@ section.flex-item  h1{
 section.flex-item > article{
     width: 75%;
     margin: auto;
-    margin-bottom: 10%;
 }
 
 section.flex-item  p{
@@ -80,6 +79,59 @@ section.flex-item  p{
     text-align: left;
 }
 
+
+section.flex-item > aside{
+    float: left;
+    margin-left: 42.5px;
+    margin-top: 15%;
+
+}
+
+section.flex-item > aside.aside-2{
+    margin-top: 13%;
+}
+
+section.flex-item a{
+    
+    padding: 15px 25px 15px 25px;
+    border-radius: 30px;
+
+    width: 100px;
+    font-family: 'Lexend Deca';
+    background-color: var(--veryLightGray);
+    text-decoration: none;
+}
+
+
+section.flex-item a#btn-1{
+    color: var(--brightOrange);
+}
+
+section.flex-item a#btn-1:active{
+    background-color: var(--brightOrange);
+    color: var(--transparentWhite);
+    border: 1px solid var(--transparentWhite);
+}
+
+section.flex-item a#btn-2{
+    color: var(--darkCyan);
+}
+
+section.flex-item a#btn-2:active{
+    background-color: var(--darkCyan);
+    color: var(--transparentWhite);
+    border: 1px solid var(--transparentWhite);
+}
+
+section.flex-item a#btn-3{
+    color: var(--veryDarkCyan);
+}
+
+section.flex-item a#btn-3:active{
+    background-color: var(--veryDarkCyan);
+    color: var(--transparentWhite);
+    border: 1px solid var(--transparentWhite);
+}
 
 section#item-1{
     background-color: var(--brightOrange);
