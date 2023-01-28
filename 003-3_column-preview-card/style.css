@@ -28,7 +28,6 @@ body{
     background-color: var(--veryLightGray);
 }
 
-
 main.flex-container{
     display: flex;
     flex-direction: column;
@@ -79,7 +78,6 @@ section.flex-item  p{
     text-align: left;
 }
 
-
 section.flex-item > aside{
     float: left;
     margin-left: 42.5px;
@@ -101,7 +99,6 @@ section.flex-item a{
     background-color: var(--veryLightGray);
     text-decoration: none;
 }
-
 
 section.flex-item a#btn-1{
     color: var(--brightOrange);
