@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+:root{
+    /*PRIMÁRIAS*/
+    --cyan: rgb(42, 178, 175);
+    --brightYellow: rgb(192, 223, 52);
+    /*NEUTRAS*/
+    --lightGray: rgb(229, 239, 245);
+    --grayishBlue: rgb(152, 166, 189);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Karla';
+}
+
+/*MOBILE FIRST*/
+
+body{
+    background-color: var(--lightGray);
+}
+
+main{
+    margin: auto;
+    width: 340px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+main > section, aside{
+    height: 200px;  
+}
+
+.descricao{
+    background-color: white;
+}
+
+.preco{
+    background-color: var(--cyan);
+}
+
+aside{
+    background-color: rgb(53, 207, 205);
+}
+
+
