@@ -42,6 +42,12 @@ main > section, aside{
     background-color: white;
 }
 
+.descricao > h1{
+    color: var(--cyan);
+    font-size: 1.5em;
+    
+}
+
 .preco{
     background-color: var(--cyan);
 }

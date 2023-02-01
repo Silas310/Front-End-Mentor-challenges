@@ -6,3 +6,5 @@
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/002-qr-code-newbie/qr-code-component-main/index.html">Qr code 002</a>
 
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/003-3_column-preview-card/index.html">Column preview 003</a>
+
+ <a href="https://silas310.github.io/Front-End-Mentor-challenges/004-single-price-grid-component/index.html"> Single price grid component</a>
