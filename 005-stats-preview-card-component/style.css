@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'); /*Inter*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap'); /*'Lexend Deca'*/
+
+
+:root{
+    /*PRIMÁRIA*/
+    --veryDarkBlue: rgb(9, 11, 26); /*main background*/
+    --darkDesaturatedBlue: rgb(27, 25, 56); /*card background*/
+    --softViolet: rgb(170, 92, 219); /*accent*/
+
+    /*NEUTRA*/
+    --White: rgb(255, 255, 255); /*(main heading, stats)*/
+    --mainTransparentWhite: rgba(255, 255, 255, 0.75); /* (main paragraph)*/
+    --slightlyTransparentWhite: hsla(0, 0%, 100%, 0.6); /* (stat headings)*/
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+}
