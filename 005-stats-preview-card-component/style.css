@@ -9,9 +9,9 @@
 
 :root{
     /*PRIMÁRIA*/
-    --veryDarkBlue: rgb(9, 11, 26); /*main background*/
-    --darkDesaturatedBlue: rgb(27, 25, 56); /*card background*/
-    --softViolet: rgb(170, 92, 219); /*accent*/
+    --veryDarkBlue: rgb(9, 11, 26); /*body background*/
+    --darkDesaturatedBlue: rgb(27, 25, 56); /*main background*/
+    --softViolet: rgb(107, 51, 143); /*accent*/
 
     /*NEUTRA*/
     --White: rgb(255, 255, 255); /*(main heading, stats)*/
@@ -24,4 +24,37 @@
     margin: 0px;
     padding: 0px;
     font-size: 15px;
+}
+
+body{
+    background-color: var(--veryDarkBlue);
+    padding: 80px 0px 80px 0px;
+}
+
+main{
+    border-radius: 7px;
+    background-color: var(--darkDesaturatedBlue);
+    width: 330px;
+    height: 690px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+main > div.img{
+    border-radius: 7px 7px 0px 0px;
+    background-color: var(--softViolet);
+    height: 248px;
+}
+
+img{
+    border-radius: 7px 7px 0px 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+main > div.descricao{
+    grid-row: 2 / 2;
 }
