@@ -1,4 +1,4 @@
-# projetos
+# Projetos
  Primeiros projetos
 
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/001-order-summary-newbie/order-summary-component-main/index.html">Order summary component 001</a>
@@ -9,4 +9,4 @@
 
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/004-single-price-grid-component/index.html"> Single price grid component 004</a>
 
- <a href="https://silas310.github.io/Front-End-Mentor-challenges/005-stats-preview-card-component/index.html">Stats preview card</a>
+ <a href="https://silas310.github.io/Front-End-Mentor-challenges/005-stats-preview-card-component/index.html">Stats preview card 005</a>
