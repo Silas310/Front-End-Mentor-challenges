@@ -49,11 +49,15 @@ main > div.img{
     height: 248px;
 }
 
-img{
+img.mobile_header{
     border-radius: 7px 7px 0px 0px;
     width: 100%;
     height: 100%;
     opacity: 0.4;
+}
+
+img.desktop_header{
+    display: none;
 }
 
 main > div.descricao{
