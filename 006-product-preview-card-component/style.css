@@ -19,6 +19,7 @@
 :root{
     /*PRIMARY*/
     --darkCyan: rgb(60, 128, 103);
+    --veryDarkCyan: rgb(30, 66, 53);
     --cream: rgb(242, 235, 227);
     
     /*NEUTRAL*/
@@ -31,6 +32,7 @@
 body{
     background-color: var(--cream);
     padding: 20px 10px;
+    height: 100vh;
 }
 
 main.flex-container{ /*CONTAINER*/
@@ -48,8 +50,10 @@ div.img{ /*Filho 1*/
 
 div.descricao{ /*Filho 2 (Descrição)*/
     background-color: var(--white);
+    border-radius: 0px 0px 7px 7px;
     margin-top: 0px;
     padding: 20px;
+    height: 60%;
 }
 
 img{
@@ -66,7 +70,60 @@ img{
     font-weight: 500;
 }
 
-main > h1{
-    
+main.flex-container  h1{
+    font-weight: 700;
+    font-family: 'Fraunces';
+    font-size: 2em;
+    text-align: left;
+
+    color: var(--veryDarkBlue);
+    margin-bottom: 4%;
+    margin-top: -4%;
 }
 
+main p{ /*Paragrafo descrição*/
+    color: var(--darkGrayishBlue);
+    margin-bottom: 7%;
+}
+
+/*PRECOS*/
+
+div.precos{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6%;
+}
+
+.preco-final{ /*$149.99*/
+    color: var(--darkCyan);
+    font-size: 2em;
+    font-family: 'Fraunces';
+}
+
+.sem-desconto{ /*$169.99*/
+    color: var(--darkGrayishBlue);
+    margin-top: 5%;
+    text-decoration-line: line-through;
+}
+
+/*Botão*/
+
+.icon-cart{
+    width: 15px;
+    height: 15px;
+}
+
+a{
+    background-color: var(--darkCyan);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 7px;
+    padding: 10px 97px;
+    color: var(--white);
+    font-family: 'Montserrat';
+}
+
+a:active{
+    background-color: var(--veryDarkCyan);
+}
