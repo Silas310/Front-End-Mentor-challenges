@@ -10,3 +10,5 @@
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/004-single-price-grid-component/index.html"> Single price grid component 004</a>
 
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/005-stats-preview-card-component/index.html">Stats preview card 005</a>
+
+ <a href="https://silas310.github.io/Front-End-Mentor-challenges/006-product-preview-card-component/index.html">Product preview card 006</a>
