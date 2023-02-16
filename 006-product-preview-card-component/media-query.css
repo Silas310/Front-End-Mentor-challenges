@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+body{
+    padding: 20vh;
+}
+
+main.flex-container{ /*CONTAINER*/
+    flex-direction: row;
+    width: 600px;
+}
+
+div.descricao{ /*Filho 2 (descricao)*/
+    height: 450px;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.topico{
+    margin-top: 6%;
+}
+
+main.flex-container h1{
+    margin-bottom: 10%;
+    width: 70%;
+    margin-top: 8%;
+}
+
+main.flex-container p {
+    width: 90%;
+}
+
+div.precos{
+    width: 75%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+a{/*Botão*/
+    padding: 15px 70px 15px 70px;
+}
+
+img{
+    width: 300px;
+    height: 450px;
+    border-radius: 7px 0px 0px 7px;
+}

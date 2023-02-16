@@ -15,7 +15,6 @@
     margin: 0px;
     font-size: 14px;
 }
-
 :root{
     /*PRIMARY*/
     --darkCyan: rgb(60, 128, 103);
@@ -34,7 +33,6 @@ body{
     padding: 20px 10px;
     height: 100vh;
 }
-
 main.flex-container{ /*CONTAINER*/
     width: 340px;
     height: 520px;
@@ -43,11 +41,9 @@ main.flex-container{ /*CONTAINER*/
     flex-direction: column;
     font-family: 'Montserrat';
 }
-
 div.img{ /*Filho 1*/
     border-radius: 7px 7px 0px 0px;
 }
-
 div.descricao{ /*Filho 2 (Descrição)*/
     background-color: var(--white);
     border-radius: 0px 0px 7px 7px;
@@ -95,13 +91,11 @@ div.precos{
     justify-content: space-between;
     margin-bottom: 6%;
 }
-
 .preco-final{ /*$149.99*/
     color: var(--darkCyan);
     font-size: 2em;
     font-family: 'Fraunces';
 }
-
 .sem-desconto{ /*$169.99*/
     color: var(--darkGrayishBlue);
     margin-top: 5%;
@@ -109,12 +103,10 @@ div.precos{
 }
 
 /*Botão*/
-
 .icon-cart{
     width: 15px;
     height: 15px;
 }
-
 a{
     background-color: var(--darkCyan);
     text-decoration: none;
@@ -124,7 +116,6 @@ a{
     color: var(--white);
     font-family: 'Montserrat';
 }
-
 a:active{
     background-color: var(--veryDarkCyan);
 }
