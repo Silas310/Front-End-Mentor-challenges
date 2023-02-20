@@ -35,7 +35,7 @@ body{
 /*MOBILE FIRST*/
 main.grid-container{ /*CONTAINER*/
     display: grid;
-    width: 340px;
+    width: 320px;
     height: 100vh;
     background-color: var(--veryLightGray);
     margin: auto;
@@ -46,7 +46,7 @@ header{
 }
 header > h1{ /*Titulo do header*/
     font-weight: 200;
-    font-size: 1.8em;
+    font-size: 1.7em;
     text-align: center;
     color: var(--veryDarkBlue);
     margin-bottom: 4%;
