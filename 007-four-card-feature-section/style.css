@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+/*Poppins 200 400 600*/
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+
+:root{
+    /*PRIMARY*/
+    --red: rgb(234, 83, 83);
+    --cyan: rgb(69, 211, 211);
+    --orange: hsl(34, 97%, 64%);
+    --blue: rgb(84, 158, 242);
+
+    /*NEUTRAL*/
+    --veryDarkblue: rgb(76, 78, 97);
+    --grayishblue: rgb(163, 165, 174);
+    --veryLightGray: rgb(250, 250, 250);
+}
