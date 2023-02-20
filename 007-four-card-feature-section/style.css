@@ -28,7 +28,7 @@
 
 body{
     background-color: var(--veryLightGray);
-    padding: 20% 5%;
+    padding: 15% 5% ;
 }
 
 /*MOBILE FIRST*/
@@ -37,6 +37,7 @@ main.grid-container{ /*CONTAINER*/
     width: 340px;
     height: 100vh;
     background-color: var(--veryLightGray);
+    margin: auto;
 }
 header{
     margin-bottom: 25%;
@@ -84,4 +85,9 @@ p{ /* paragrafos em geral*/
 }
 #item-4{ /*blue*/
     border-top: 4px solid var(--blue);
+}
+
+img{
+    margin-top: 10%;
+    float: right;
 }
