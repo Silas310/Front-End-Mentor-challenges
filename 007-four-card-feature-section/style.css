@@ -28,7 +28,8 @@
 
 body{
     background-color: var(--veryLightGray);
-    padding: 15% 5% ;
+    padding: 15% 5%;
+
 }
 
 /*MOBILE FIRST*/
@@ -38,6 +39,7 @@ main.grid-container{ /*CONTAINER*/
     height: 100vh;
     background-color: var(--veryLightGray);
     margin: auto;
+    margin-bottom: 20%;
 }
 header{
     margin-bottom: 25%;

@@ -12,3 +12,5 @@
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/005-stats-preview-card-component/index.html">Stats preview card 005</a>
 
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/006-product-preview-card-component/index.html">Product preview card 006</a>
+
+ <a href="https://silas310.github.io/Front-End-Mentor-challenges/007-four-card-feature-section/index.html">Four card feature section 007</a>
