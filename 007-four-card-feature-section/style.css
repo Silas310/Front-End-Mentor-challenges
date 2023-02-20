@@ -28,7 +28,7 @@
 
 body{
     background-color: var(--veryLightGray);
-    padding: 15% 5%;
+    padding: 70px 0%;
 
 }
 
@@ -41,7 +41,7 @@ main.grid-container{ /*CONTAINER*/
     margin: auto;
     margin-bottom: 20%;
 }
-header{
+header{ /*Filho 1*/
     margin-bottom: 25%;
 }
 header > h1{ /*Titulo do header*/
@@ -63,33 +63,34 @@ p{ /* paragrafos em geral*/
     color: var(--grayishBlue);
 }
 
-
-.grid-item{ /*GRID ITEMS*/
+ /*Filho 2*/
+.container-2 > .grid-item{ /*GRID ITEMS*/
     background-color: rgb(255, 255, 255);
     padding: 25px;
     margin-bottom: 5%;
     box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.267);
     border-radius: 5px;
+    height: 200px;
 }
-.grid-item > h1{
+.container-2  h1{
     color: var(--veryDarkBlue);
     font-weight: 600;
     font-size: 1.3em;
 }
-#item-1{ /*cyan*/
+#item-1{
     border-top: 4px solid var(--cyan);
 }
-#item-2{ /*red*/
+#item-2{
     border-top: 4px solid var(--red);
 }
-#item-3{ /*orange*/
+#item-3{
     border-top: 4px solid var(--orange);
 }
-#item-4{ /*blue*/
+#item-4{
     border-top: 4px solid var(--blue);
 }
 
-img{
-    margin-top: 10%;
+.grid-item > img{
     float: right;
+    margin-top: 10%;
 }
