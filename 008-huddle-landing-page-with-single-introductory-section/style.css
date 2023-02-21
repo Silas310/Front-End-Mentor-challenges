@@ -11,10 +11,97 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    color: white;
 }
 
 :root{
     /*PRIMARY*/
     --violet: rgb(103, 75, 175);
     --softmagenta: rgb(232, 130, 232);
+}
+
+body{
+    min-width: 375px;
+    background-color: var(--violet);
+}
+
+/*MOBILE FIRST*/
+.flex-container{ /*CONTAINER*/
+    width: 375px;
+    height: 100vh;
+    margin: auto;
+}
+
+.filho-1{ /*FILHO 1*/
+    width: 375px;
+    height: 373px;
+    background-image: url(images/bg-mobile.svg); /*375x373*/
+}
+
+.filho-1 > div{
+    padding: 30px;
+}
+
+.logo{ /*264 x 65.33 (IMG 1)*/
+   width: 132px;
+   margin-bottom: 10%;
+}
+
+.mock{  /*709 x 506 (IMG 2)*/
+    width: 319.05px;
+    height: 227.7px;
+}
+strong, h1{
+    display: block;
+    font-family: 'Poppins';
+    font-size: 1.7em;
+}
+
+.filho-2{ /*FILHO 2*/
+    padding: 0px 20px;
+}
+
+.filho-2 > h1, p{
+    text-align: center;
+}
+
+.filho-2 > p{
+    font-family: 'Open Sans';
+    margin-top: 4%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    width: 92%;
+}
+
+.btn{
+    text-decoration: none;
+    font-family: 'Open Sans';
+    color: var(--violet);
+    background-color: white;
+    padding: 10px 60px;
+    margin-left: 20%;
+    border-radius: 30px;
+}
+
+.btn:active{
+    background-color: var(--softmagenta);
+    color: white;
+}
+
+.icons{
+    margin-top: 10%;
+    margin-left: 33%;
+}
+
+.icon{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 1%;
+}
+
+.icon:active{
+    border: 1px solid var(--softmagenta);
+    color: var(--softmagenta);
+    
 }
