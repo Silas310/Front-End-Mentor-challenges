@@ -23,6 +23,7 @@
 body{
     min-width: 375px;
     background-color: var(--violet);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 /*MOBILE FIRST*/
@@ -103,5 +104,4 @@ strong, h1{
 .icon:active{
     border: 1px solid var(--softmagenta);
     color: var(--softmagenta);
-    
 }
