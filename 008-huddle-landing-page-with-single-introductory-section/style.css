@@ -28,6 +28,8 @@ body{
 
 /*MOBILE FIRST*/
 .flex-container{ /*CONTAINER*/
+    display: flex;
+    flex-direction: column;
     width: 375px;
     height: 100vh;
     margin: auto;
@@ -52,7 +54,7 @@ body{
     width: 319.05px;
     height: 227.7px;
 }
-strong, h1{
+h1{
     display: block;
     font-family: 'Poppins';
     font-size: 1.7em;
@@ -104,4 +106,10 @@ strong, h1{
 .icon:active{
     border: 1px solid var(--softmagenta);
     color: var(--softmagenta);
+}
+
+@media screen and (min-width: 376px) and (max-width: 1440px){
+    .filho-1{ /*FILHO 1*/
+        background-image: none; /*375x373*/
+    }
 }
