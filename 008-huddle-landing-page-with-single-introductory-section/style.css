@@ -1,28 +1,5 @@
-@charset "UTF-8";
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /*Poppins 400 600 (Headings)*/
-
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');/*Open Sans 400 (Body)*/
-
-
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    color: white;
-}
-
-:root{
-    /*PRIMARY*/
-    --violet: rgb(103, 75, 175);
-    --softmagenta: rgb(232, 130, 232);
-}
-
 body{
     min-width: 375px;
-    background-color: var(--violet);
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
@@ -77,19 +54,10 @@ h1{
 }
 
 .btn{
-    text-decoration: none;
-    font-family: 'Open Sans';
-    color: var(--violet);
-    background-color: white;
     padding: 10px 60px;
     margin-left: 20%;
-    border-radius: 30px;
 }
 
-.btn:active{
-    background-color: var(--softmagenta);
-    color: white;
-}
 
 .icons{
     margin-top: 10%;
@@ -97,15 +65,8 @@ h1{
 }
 
 .icon{
-    border: 1px solid white;
-    border-radius: 50%;
     padding: 5px;
     margin: 1%;
-}
-
-.icon:active{
-    border: 1px solid var(--softmagenta);
-    color: var(--softmagenta);
 }
 
 @media screen and (min-width: 376px) and (max-width: 1440px){

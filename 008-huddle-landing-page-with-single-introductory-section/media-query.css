@@ -1,1 +1,64 @@
 @charset "UTF-8";
+
+
+body{
+    padding: 3% 0% 0% 5%;
+    background-image: url(images/bg-desktop.svg);
+
+}
+
+.flex-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.filho-2{
+    margin: auto;
+}
+
+h1{
+    font-size: 2.6em;
+    margin-top: -6%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-family: 'Poppins';
+    width: 80%;
+}
+
+p{
+    font-family: 'Open Sans';
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+
+.logo{/*264 x 65.33 (IMG 1)*/
+    margin-bottom: 8%;
+    width: 211.2px;
+}
+
+/*.mock{ 709 x 506 (IMG 2)*/
+
+img{
+    display: block;
+}
+
+.btn{
+    padding: 15px 70px;
+    margin-left: 5%;
+    font-size: 1.1em;
+}
+
+.icons{
+    grid-column: 2/3;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    margin-right: 2%;
+}

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /*Poppins 400 600 (Headings)*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');/*Open Sans 400 (Body)*/
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+:root{
+    /*PRIMARY*/
+    --violet: rgb(103, 75, 175);
+    --softmagenta: rgb(232, 130, 232);
+}
+
+body{
+    background-color: var(--violet);
+}
+
+.btn{
+    text-decoration: none;
+    font-family: 'Open Sans';
+    color: var(--violet);
+    background-color: white;
+    border-radius: 30px;
+}
+
+.btn:active{
+    background-color: var(--softmagenta);
+    color: white;
+}
+
+.icon{
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.icon:active{
+    border: 1px solid var(--softmagenta);
+    color: var(--softmagenta);
+}
