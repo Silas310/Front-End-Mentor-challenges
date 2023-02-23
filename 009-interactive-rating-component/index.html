@@ -19,17 +19,17 @@
     </p>
 
     <form action="" method="get" target="_self" id="rating-form">
-      <button type="button" value="1" onclick="trocarCorDeFundo(this.value)">1</button>
-      <button type="button" value="2">2</button>
-      <button type="button" value="3">3</button>
-      <button type="button" value="4">4</button>
-      <button type="button" value="5">5</button>
+      <button type="button" value="1" onclick="selecionar(this.id, this.value)" id="btn-1">1</button>
+      <button type="button" value="2" onclick="selecionar(this.id, this.value)" id="btn-2">2</button>
+      <button type="button" value="3" onclick="selecionar(this.id, this.value)" id="btn-3">3</button>
+      <button type="button" value="4" onclick="selecionar(this.id, this.value)" id="btn-4">4</button>
+      <button type="button" value="5" onclick="selecionar(this.id, this.value)" id="btn-5">5</button>
     </form>
     <input type="submit" value="SUBMIT" form="rating-form">
   </main>
   <script>
-    function trocarCorDeFundo(valor){
-
+    function selecionar(id, valor){
+      
     }
   </script>
 </body>

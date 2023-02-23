@@ -21,8 +21,8 @@
     --white: hsl(0, 0%, 100%);
     --lightGrey: hsl(217, 12%, 63%);
     --mediumGrey: hsl(216, 12%, 54%);
-    --insideBg: hsla(216, 10%, 28%, 0.815);
-    --darkBlue: #252d37;
+    --insideBg: #40464fd0;
+    --darkBlue: hsl(213, 20%, 18%);
     --veryDarkBlue: hsl(216, 12%, 8%);
 }
 
