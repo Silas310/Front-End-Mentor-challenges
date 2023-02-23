@@ -21,11 +21,45 @@
     --white: hsl(0, 0%, 100%);
     --lightGrey: hsl(217, 12%, 63%);
     --mediumGrey: hsl(216, 12%, 54%);
-    --darkBlue: hsl(213, 19%, 18%);
+    --insideBg: hsla(216, 10%, 28%, 0.815);
+    --darkBlue: #252d37;
     --veryDarkBlue: hsl(216, 12%, 8%);
 }
 
 body{
     background-color: var(--veryDarkBlue);
     color: var(--white);
+}
+
+main{
+    background-color: var(--darkBlue);
+    margin: auto;
+}
+.icon{
+    background-color: var(--insideBg);
+}
+h1{
+    font-weight: 700;
+}
+p{
+    font-weight: 400;
+    color: var(--lightGrey);
+}
+form{
+    display: grid;
+    grid-template-areas: 'button button button button button';
+}
+button{
+    border: none;
+    color: var(--white);
+    font-weight: 700;
+    background-color: var(--insideBg);
+    opacity: 0.6;
+    grid-area: 'button';
+}
+input{
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
 }
