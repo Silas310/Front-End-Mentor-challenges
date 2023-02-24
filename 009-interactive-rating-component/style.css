@@ -19,7 +19,7 @@
 
     /*NEUTRAL*/
     --white: hsl(0, 0%, 100%);
-    --lightGrey: hsl(217, 12%, 63%);
+    --lightGrey: #959eac;
     --mediumGrey: hsl(216, 12%, 54%);
     --insideBg: #40464fd0;
     --darkBlue: hsl(213, 20%, 18%);

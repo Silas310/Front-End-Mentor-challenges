@@ -28,10 +28,23 @@
     <input type="submit" value="SUBMIT" form="rating-form">
   </main>
   <script>
+    var botoesSel = []
+    var lightGray = '#959eac'
+    var insideBg = '#40464fd0'
     function selecionar(id, valor){
-      var botoesNaoSel = ['btn-1', 'btn-2', 'btn-3', 'btn-4', 'btn-5']
-      if(botoesNaoSel.indexOf(id) == )
-    }
+      if(botoesSel.length == 0){
+        botoesSel.push(id)
+        document.getElementById(id).style.backgroundColor = lightGray
+        console.log(botoesSel)
+      } else if(botoesSel.length > 0){
+        var popped = botoesSel.pop()
+        console.log(popped)
+        document.getElementById(popped).style.backgroundColor = insideBg
+        botoesSel.push(id)
+        document.getElementById(id).style.backgroundColor = lightGray
+      }
+      }
+    
   </script>
 </body>
 </html>
