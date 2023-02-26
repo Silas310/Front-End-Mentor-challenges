@@ -34,7 +34,7 @@ button{
     width: 50px;
 }
 button:active{
-    background-color: var(--orange);   
+    background-color: var(--orange);
 }
 
 input{
