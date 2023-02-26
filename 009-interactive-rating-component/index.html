@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media-query.css" media="screen and (min-width: 375px)">
+  <link rel="stylesheet" href="media-query.css" media="screen">
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
       to help us improve our offering!    
     </p>
 
-    <form action="" method="get" target="_self" id="rating-form">
+    <form action="thank-you.html" method="get" target="_self" id="rating-form">
       <button type="button" value="1" onclick="selecionar(this.id, this.value)" id="btn-1">1</button>
       <button type="button" value="2" onclick="selecionar(this.id, this.value)" id="btn-2">2</button>
       <button type="button" value="3" onclick="selecionar(this.id, this.value)" id="btn-3">3</button>
@@ -32,16 +32,12 @@
     var lightGray = '#959eac'
     var insideBg = '#40464fd0'
     function selecionar(id, valor){
+      if(botoesSel.length > 0){
+        var popped = botoesSel.pop()
+        document.getElementById(popped).style.backgroundColor = insideBg
+      }
       if(botoesSel.length == 0){
         botoesSel.push(id)
-        document.getElementById(id).style.backgroundColor = lightGray
-        console.log(botoesSel)
-      } else if(botoesSel.length > 0){
-        var popped = botoesSel.pop()
-        console.log(popped)
-        document.getElementById(popped).style.backgroundColor = insideBg
-        botoesSel.push(id)
-        console.log(botoesSel)
         document.getElementById(id).style.backgroundColor = lightGray
       }
       }

@@ -1,51 +1,63 @@
 @charset "UTF-8";
 
 
-body{
-    overflow-y: hidden;
-    height: 100vh;
+@media screen and (min-width: 375px){
+    body{
+        overflow-y: hidden;
+        height: 100vh;
+    }
+    
+    main{
+        width: 320px;
+        height: 390px;
+        margin: auto;
+        margin-top: 25vh;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    .icon{
+        border: 15px solid transparent;
+        border-radius: 50%;
+    }
+    
+    h1{
+        font-size: 1.7em;
+        margin: 5% 0% 5% 0%;
+    }
+    p{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    button{
+        border-radius: 50%;
+        border: 15px solid transparent;
+        width: 50px;
+    }
+    button:active{
+        background-color: var(--orange);
+    }
+    
+    input{
+        margin-top: 10%;
+        padding: 15px 110px 15px 110px;
+        border-radius: 50px;
+    }
+    input:active{
+        background-color: var(--white);
+        color: var(--orange);
+    }
+    button,input:hover{
+        cursor: pointer;
+    }
 }
 
-main{
-    width: 320px;
-    height: 390px;
-    margin: auto;
-    margin-top: 25vh;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-.icon{
-    border: 15px solid transparent;
-    border-radius: 50%;
-}
-
-h1{
-    font-size: 1.7em;
-    margin: 5% 0% 5% 0%;
-}
-p{
-    width: 100%;
-    margin-bottom: 10%;
-}
-button{
-    border-radius: 50%;
-    border: 15px solid transparent;
-    width: 50px;
-}
-button:active{
-    background-color: var(--orange);
-}
-
-input{
-    margin-top: 10%;
-    padding: 15px 110px 15px 110px;
-    border-radius: 50px;
-}
-input:active{
-    background-color: var(--white);
-    color: var(--orange);
-}
-button,input:hover{
-    cursor: pointer;
+@media screen and (min-width: 1440px){
+    main{
+        width: 400px;
+        padding: 30px;
+    }
+   input{
+    padding: 15px 140px 15px 140px;
+   }
 }
