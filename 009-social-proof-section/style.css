@@ -22,8 +22,8 @@
     --white: hsl(0, 0%, 100%);
 }
 
+/*CONTAINER*/
 .container{
-    border: 1px solid black;
     background-color: white;
     margin: auto;
 }
@@ -32,9 +32,44 @@
     font-size: 2em;
     font-weight: 700;
     color: var(--veryDarkMagenta);
+    text-align: center;
 }
 
-.container > div > p{
+/*FILHO 1*/
+.container > #filho-1 > p{
     color: var(--darkGrayishMagenta);
     font-weight: 500;
+    text-align: center;
+}
+
+.ratings{
+    background-color: var(--lightGrayishMagenta);
+    text-align: center;
+}
+
+.ratings > p{
+    color: var(--veryDarkMagenta);
+    font-weight: 700;
+}
+
+/*FILHO 2*/
+.cx-comentarios{
+    background-color: var(--veryDarkMagenta);
+    color: var(--white);
+}
+
+.profile{ /*Container para imagem nome e status*/
+}
+
+.profile > img{
+    height: 100%;
+    border-radius: 50%;
+}
+
+.cx-comentarios  .name{
+    font-weight: 700;
+}
+
+.status{
+    color: var(--softPink);
 }

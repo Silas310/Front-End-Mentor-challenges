@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+
+/*CONTAINER*/
+.container{
+    width: 340px;
+}
+
+.container h1{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+/*FILHO 1*/
+.container > #filho-1{ 
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+.container > #filho-1 > p{
+    margin: auto;
+    margin-bottom: 5%;
+    line-height: 120%;
+    width: 83%;
+}
+
+#filho-1 > .ratings{
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.ratings > .stars{
+    margin: auto;
+}
+
+.ratings > p{
+    margin-top: 3%;
+}
+
+/*FILHO 2*/
+.cx-comentarios{
+    margin-bottom: 5%;
+    padding: 30px;
+}
