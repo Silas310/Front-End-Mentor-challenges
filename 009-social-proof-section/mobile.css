@@ -47,4 +47,11 @@
 .cx-comentarios{
     margin-bottom: 5%;
     padding: 30px;
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: 35px 80px;
+}
+
+.cx-comentarios  .name{
+    margin-bottom: 2%;
 }

@@ -54,16 +54,23 @@
 
 /*FILHO 2*/
 .cx-comentarios{
+    border-radius: 7px;
     background-color: var(--veryDarkMagenta);
     color: var(--white);
 }
 
-.profile{ /*Container para imagem nome e status*/
-}
 
-.profile > img{
+.cx-comentarios > img{
     height: 100%;
     border-radius: 50%;
+}
+
+.comentario{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    line-height: 130%;
+    margin-top: 5%;
+    text-align: left;
 }
 
 .cx-comentarios  .name{
