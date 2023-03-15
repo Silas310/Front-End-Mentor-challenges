@@ -16,3 +16,5 @@
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/007-four-card-feature-section/index.html">Four card feature section 007</a>
 
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/008-huddle-landing-page-with-single-introductory-section/index.html">Huddle landing page 008</a>
+
+ <a href="https://silas310.github.io/Front-End-Mentor-challenges/009-social-proof-section/index.html">Social proof section 009</a>

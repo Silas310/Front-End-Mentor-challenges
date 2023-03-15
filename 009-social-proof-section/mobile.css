@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 
+
 /*CONTAINER*/
 .container{
     width: 340px;
@@ -17,16 +18,17 @@
     display: flex;
     flex-direction: column;
     margin-top: 20%;
+    margin-bottom: 8%;
 }
 
-.container > #filho-1 > p{
+.title-desc > p{
     margin: auto;
     margin-bottom: 5%;
     line-height: 120%;
     width: 83%;
 }
 
-#filho-1 > .ratings{
+#filho-1  .ratings{
     margin-bottom: 4%;
     display: flex;
     flex-direction: column;
