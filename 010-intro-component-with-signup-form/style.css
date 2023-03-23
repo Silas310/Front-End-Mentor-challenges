@@ -22,3 +22,23 @@
     --darkBlue: hsl(249, 10%, 26%);
     --grayishBlue: hsl(246, 25%, 77%);
 }
+
+body{
+    background-color: var(--red);
+}
+
+main{
+    color: white;
+}
+
+h1{
+    font-weight: 700;
+}
+
+.price-box{
+    background-color: var(--blue);
+}
+
+input{
+    display: block;
+}
