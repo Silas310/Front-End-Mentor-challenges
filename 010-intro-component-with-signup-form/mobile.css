@@ -8,7 +8,7 @@ body{
 main{
     margin: auto;
     text-align: center;
-    margin: 15% 5% 0% 5%;
+    margin: 15% 3% 0% 3%;
 }
 
 h1{
@@ -19,14 +19,61 @@ h1{
 
 section p{
     margin: auto;
-    width: 81%;
-    margin-top: 5%;
-    margin-bottom: 12%;
+    width: 89%;
+    margin-top: 4%;
+    margin-bottom: 7%;
 }
 
-.price-box{
+
+.price-box{ /*Caixa roxa*/
     margin: auto;
-    padding: 10px;
+    margin-bottom: 5%;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.199);
     width: 81%;
+}
+
+.price-box > p{
+    width: 70%;
+    margin: auto;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+form{
+    border-radius: 10px;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    width: 81%;
+}
+
+input{
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 4%;
+    padding: 5px;
+    width: 95%;
+}
+input[type = "submit"]{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px hsl(154, 56%, 47%);
+    padding: 13px;
+    background-color: var(--green);
+    color: white;
+    font-weight: 600;
+}
+
+.terms-services{ /*msg final*/
+    color: var(--grayishBlue);
+    font-size: 0.6em;
     text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 3%;
+}
+.terms-services> span{color: var(--red);font-size: 1em; font-weight: 600;
 }
