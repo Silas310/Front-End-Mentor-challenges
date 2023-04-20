@@ -40,5 +40,8 @@ h1{
     font-size: 1em;
 }
 main{
-    display: grid;
+    margin: auto;
+}
+::placeholder{
+    color: var(--desaturatedRed);
 }

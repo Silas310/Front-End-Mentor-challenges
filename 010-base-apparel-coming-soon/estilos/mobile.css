@@ -1,12 +1,19 @@
 @charset "UTF-8";
 
 
+main{
+    display: grid;
+    width: 375px;
+    max-width: 375px;
+}
+
 #logo{
     height: 13vh;
 }
 #logo > img{
     width: 30%;
     margin: 6%;
+    display: block;
 }  
 
 h1{
@@ -20,4 +27,7 @@ p{
     margin-top: 5%;
     text-align: center;
     width: 90%;
+}
+input[type="email"]{
+    border: 1px solid var(--desaturatedRed);
 }
