@@ -42,6 +42,17 @@ h1{
 main{
     margin: auto;
 }
+input[type="email"]{
+    border: 1px solid var(--desaturatedRed);
+    border-radius:  70px;
+}
+input[type="submit"]{
+    background-image: url(../images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    padding: 20px; /*Teste*/
+}
 input[type="submit"]:hover{
     cursor: pointer;
 }
