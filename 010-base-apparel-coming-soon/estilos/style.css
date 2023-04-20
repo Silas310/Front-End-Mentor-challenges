@@ -42,6 +42,10 @@ h1{
 main{
     margin: auto;
 }
+input[type="submit"]:hover{
+    cursor: pointer;
+}
 ::placeholder{
     color: var(--desaturatedRed);
+    opacity: 0.6;
 }
