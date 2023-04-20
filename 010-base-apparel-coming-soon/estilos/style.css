@@ -23,3 +23,23 @@
     /*Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)*/
     /*Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)*/
 }
+
+body{
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%));
+    color: var(--desaturatedRed);
+}
+h1{
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: 7px;
+}
+#cor-titulo{
+    color: rgb(59, 59, 59);
+    font-weight: 600;
+    font-size: 1em;
+}
+main{
+    display: grid;
+}
+ 

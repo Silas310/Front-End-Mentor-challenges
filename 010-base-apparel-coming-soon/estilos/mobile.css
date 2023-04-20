@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+#logo{
+    height: 13vh;
+}
+#logo > img{
+    width: 30%;
+    margin: 6%;
+}  
+
+h1{
+    margin: 0 auto;
+    margin-top: 7%;
+    text-align: center;
+    width: 70%;
+}
+p{
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+    width: 90%;
+}
