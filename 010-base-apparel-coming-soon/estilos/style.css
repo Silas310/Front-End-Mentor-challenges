@@ -47,6 +47,11 @@ input[type="email"]{
     border: 1px solid var(--desaturatedRed);
     border-radius:  70px;
 }
+input[type="email"]:focus{
+    outline: 2px solid var(--softRed);
+    border: none;
+}
+
 input[type="submit"]{
     background-image: url(../images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     background-repeat: no-repeat;
@@ -57,6 +62,11 @@ input[type="submit"]{
 input[type="submit"]:hover{
     cursor: pointer;
 }
+input[type="submit"]:active{
+    background-image: url(../images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 52%, 94%), hsl(0, 78%, 85%));
+    -webkit-tap-highlight-color: transparent;
+}
+
 ::placeholder{
     color: var(--desaturatedRed);
     opacity: 0.6;
