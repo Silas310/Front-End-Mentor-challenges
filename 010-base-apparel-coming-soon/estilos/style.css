@@ -43,6 +43,7 @@ main{
     margin: auto;
 }
 input[type="email"]{
+    display: block;
     border: 1px solid var(--desaturatedRed);
     border-radius:  70px;
 }
@@ -59,4 +60,7 @@ input[type="submit"]:hover{
 ::placeholder{
     color: var(--desaturatedRed);
     opacity: 0.6;
+}
+#errorMSG{
+    color: var(--softRed);
 }

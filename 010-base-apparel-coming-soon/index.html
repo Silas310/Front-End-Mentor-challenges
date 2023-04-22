@@ -20,11 +20,22 @@
       Hello fellow shoppers! We're currently building our new fashion store.
       Add your email below to stay up-to-date with announcements and our launch deals.
     </p>
-    <form>
-      <input type="email" placeholder="Email Address">
+    <form onsubmit="return formValidation()" method="get">
+      <input type="email" placeholder="Email Address" id="iemail">
       <input type="submit" value="">
-      <p id="error"></p>
+      <p id="errorMSG"></p>
     </form>
   </main>
+  <script>
+    function formValidation(){
+      var email = document.getElementById("iemail"),
+          errorMSG = document.getElementById("errorMSG"),
+          errorSymb = document.getElementById ("errorSymb");
+      if(email.value == ""){
+        errorMSG.innerHTML = "Please provide a valid email";
+        return false
+      }
+    }
+  </script>
 </body>
 </html>
