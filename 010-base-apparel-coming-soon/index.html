@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="estilos/style.css">
   <link rel="stylesheet" href="estilos/mobile.css" media="screen and (min-width: 320px) and (max-width: 425px)">
+  <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width: 426px) and (max-width:1440px)">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 <body>
@@ -13,10 +14,11 @@
   <main>
     <div id="logo"><img src="images/logo.svg" alt="Logo"></div>
     <picture>
+      <source media="(min-width: 1024px)" srcset="images/hero-desktop.jpg">
       <img src="images/hero-mobile.jpg" alt="">
     </picture>
     <h1>WE'RE <span id="cor-titulo">COMING SOON</span></h1>
-    <p>
+    <p id="para">
       Hello fellow shoppers! We're currently building our new fashion store.
       Add your email below to stay up-to-date with announcements and our launch deals.
     </p>
@@ -34,13 +36,15 @@
           errorIcon = document.getElementById("errorIcon"),
           submit = document.getElementById("isubmit"),
           width = window.innerWidth;
-      if (width >= 320 && width <= 425){
-        if(email.value == ""){
-        errorMSG.innerText = "Please provide a valid email";
-        errorIcon.setAttribute("class", "displayInline");
-        submit.style.bottom = "43%"
-        return false
+      if(email.value == ""){
+      errorMSG.innerText = "Please provide a valid email";
+      errorIcon.setAttribute("class", "displayInline");
+      if (width == 1440){
+        submit.style.right = "15%"
+        submit.style.top = "14%"
       }
+      return false
+     
       }
     }
   </script>

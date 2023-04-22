@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+
+main{
+    width: 100vw;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+#logo, h1, #para, form{
+    padding: 7% 0% 0% 15%;
+}
+
+h1{
+    width: 50%;
+    font-size: 4rem;
+    word-spacing: 100%;
+}
+#para{
+    font-size: 1.2rem;
+    margin-top: -10%;
+    width: 75%;
+    line-height: 200%;
+}
+
+form{
+    display: block;
+    margin-top: -10%;
+}
+
+input[type="email"]{
+    display: inline;
+    padding: 20px 300px 20px 20px;
+}
+input[type="submit"]{
+    padding: 20px 50px;
+    border-radius: 62px;
+    position: relative;
+    top: 15%;
+    right: 10%;
+}
+
+#errorMSG{
+    position: relative;
+    top: 10%;
+    left: 3%;
+}
+
+#errorIcon{
+    position: relative;
+    right: 18%;
+    top: 7%;
+}
+
+picture{
+    grid-row: 1/5;
+    grid-column: 2/3;
+}

@@ -29,6 +29,10 @@ body{
     hsl(0, 100%, 98%));
     color: var(--desaturatedRed);
 }
+main{
+    display: grid;
+}
+
 h1{
     font-weight: 300;
     font-size: 2rem;
@@ -64,7 +68,6 @@ input[type="submit"]{
     background-repeat: no-repeat;
     background-position: center center;
     border: none;
-    padding: 20px; /*Teste*/
 }
 input[type="submit"]:hover{
     cursor: pointer;

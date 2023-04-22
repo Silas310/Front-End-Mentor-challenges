@@ -2,7 +2,6 @@
 
 
 main{
-    display: grid;
     width: 375px;
     max-width: 375px;
 }
@@ -22,7 +21,7 @@ h1{
     text-align: center;
     width: 70%;
 }
-p{
+#para{
     margin: 0 auto;
     margin-top: 5%;
     text-align: center;
@@ -41,7 +40,7 @@ input[type="email"]{
 
 #errorIcon{
     position: relative;
-    bottom: 35%;
+    bottom: 38%;
     left: 32%;
 }
 
@@ -52,5 +51,4 @@ input[type="submit"]{
     float: right;
     padding: 16px 35px;
     border-radius: 62px;
-    border: none;
 }
