@@ -22,7 +22,8 @@
     </p>
     <form onsubmit="return formValidation()" method="get">
       <input type="email" placeholder="Email Address" id="iemail">
-      <input type="submit" value="">
+      <img src="images/icon-error.svg" alt="" id="errorIcon" class="displayNone">
+      <input type="submit" value="" id="isubmit" class="">
       <p id="errorMSG"></p>
     </form>
   </main>
@@ -30,10 +31,16 @@
     function formValidation(){
       var email = document.getElementById("iemail"),
           errorMSG = document.getElementById("errorMSG"),
-          errorSymb = document.getElementById ("errorSymb");
-      if(email.value == ""){
-        errorMSG.innerHTML = "Please provide a valid email";
+          errorIcon = document.getElementById("errorIcon"),
+          submit = document.getElementById("isubmit"),
+          width = window.innerWidth;
+      if (width >= 320 && width <= 425){
+        if(email.value == ""){
+        errorMSG.innerText = "Please provide a valid email";
+        errorIcon.setAttribute("class", "displayInline");
+        submit.style.bottom = "43%"
         return false
+      }
       }
     }
   </script>

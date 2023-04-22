@@ -38,6 +38,13 @@ form{
 input[type="email"]{
     padding: 15px 150px 15px 15px;
 }
+
+#errorIcon{
+    position: relative;
+    bottom: 35%;
+    left: 32%;
+}
+
 input[type="submit"]{
     position: relative;
     bottom: 50%;
