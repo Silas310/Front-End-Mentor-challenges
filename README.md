@@ -20,3 +20,5 @@
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/009-social-proof-section/index.html">Social proof section 009</a>
 
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/010-base-apparel-coming-soon/index.html">Base apparel coming soon 010 (JS)</a>
+
+ <a href="https://silas310.github.io/Front-End-Mentor-challenges/011-profile-card-component/index.html">Profile card 011</a>
