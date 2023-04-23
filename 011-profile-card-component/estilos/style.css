@@ -10,6 +10,8 @@
     padding: 0px;
     font-size: 18px;
     font-family: 'Kumbh Sans';
+    font-weight: 700;
+    color: var(--veryDarkDesaturatedBlue);
 }
 
 :root{
@@ -19,4 +21,61 @@
     --darkGrayishBlue: hsl(227, 10%, 46%);
     /*Neutral*/
     --darkGray: hsl(0, 0%, 59%);
+}
+
+body{
+    background-color: var(--darkCyan);
+}
+
+#card{ /*Container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15vh;
+    background-color: white;
+    border-radius: 15px;
+    width: 350px;
+    border: 1px solid red
+}
+#card-bg{
+    border-radius: 15px 15px 0px 0px;
+}
+
+#profile-img{
+    border: 3px solid white;
+    margin-top: -15%;
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+
+.normal-weight{
+    font-weight: 400;
+}
+
+#local{
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+#stats{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    padding-top: 7%;
+    border-top: 1px solid rgba(95, 95, 95, 0.288);
+}
+
+.stats-desc{
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.6rem;
+}
+
+#numb-1{
+    margin-left: 5%;
 }
