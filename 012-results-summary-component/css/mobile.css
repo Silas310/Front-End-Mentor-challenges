@@ -1,20 +1,16 @@
 @charset "UTF-8";
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
     .container{
-        display: flex;
         flex-direction: column;
         max-width: 37.5rem;
         min-height: 60rem;
     }
     .result{ /*FILHO 1*/
-        display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-        text-align: center;
         height: 40%;
+        max-height: 30rem;
         border-radius: 0rem 0rem 2.5rem 2.5rem;
         padding: 1rem;
     }
@@ -44,6 +40,7 @@
         flex-direction: column;
         justify-content: space-between;
         height: 60%;
+        max-height: 45rem;
         padding: 2.5rem;
         box-shadow: 0rem 0.5rem 1rem hsla(234, 85%, 45%, 0.295);
     }
@@ -98,6 +95,11 @@
         flex-direction: row;
         justify-content: space-between;
         width: 23%;
+    }
+
+    a{
+        padding: 1.2rem;
+        border-radius: 2.5rem;
     }
 
     .title{ /*TITULOS*/

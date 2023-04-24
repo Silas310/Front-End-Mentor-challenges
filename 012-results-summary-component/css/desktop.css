@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+@media only screen and (min-width: 1025px) {
+    body{
+        align-items: center;
+    }
+    .container{
+        flex-direction: row;
+    }
+    .result{ /*FILHO 1*/
+        justify-content: space-around;
+    }
+}
