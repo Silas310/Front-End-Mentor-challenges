@@ -1,14 +1,58 @@
 @charset "UTF-8";
 
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1025px){
     body{
         align-items: center;
     }
     .container{
         flex-direction: row;
+        max-width: 70rem;
+        min-height: 40rem;
     }
+
     .result{ /*FILHO 1*/
         justify-content: space-around;
+        width: 50%;
+        padding: 1rem;
+        border-radius: 3rem;
     }
+    .overall{ /*CIRCULO*/
+        width: 17rem;
+        height: 17rem;   
+    }
+    .points{
+        font-size: 7rem;
+    }
+    .result-rank{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .result-para{ /*ref*/
+        font-size: 1.4rem;
+        width: 70%;
+    }
+
+    .summary{ /*FILHO 2*/
+        min-height: 40rem;
+        width: 50%;
+        padding: 2.5rem;
+        box-shadow: 0rem 0rem 1rem hsla(234, 85%, 45%, 0.13);
+    }
+    .summary-skills{ /*4 habilidades*/
+        border: 0.1rem solid black;
+        padding: 1rem; /*refatorar*/
+        font-size: 1.7rem;
+    }
+   
+    /*SKILLS*/
+    #reaction{width: 34%;}
+    #memory{width: 33%;}
+    #verbal{width: 28%;}
+    #visual{width: 27%;}
+
+    a{padding: 1.7rem;}
+
+    .title{font-size: 2.5rem;}/*TITULOS*/
+    .result-title{font-size: 120%;}
 }

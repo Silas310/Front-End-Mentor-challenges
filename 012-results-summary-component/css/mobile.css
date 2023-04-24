@@ -12,23 +12,14 @@
         height: 40%;
         max-height: 30rem;
         border-radius: 0rem 0rem 2.5rem 2.5rem;
-        padding: 1rem;
+        padding: 1rem; /*ref*/
     }
     .overall{ /*CIRCULO*/
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 50%;
         width: 12rem;
         height: 12rem;   
-        background-image: linear-gradient(var(--violetBlue), var(--persianBlue));
     }
     .points{
-        font-size: 4.5rem;
-        font-weight: 700;
-    }
-    .result-rank{
-        font-size: 2rem;
+        font-size: 5rem;
     }
     .result-para{
         font-size: 1.4rem;
@@ -36,78 +27,17 @@
     }
 
     .summary{ /*FILHO 2*/
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         height: 60%;
         max-height: 45rem;
         padding: 2.5rem;
-        box-shadow: 0rem 0.5rem 1rem hsla(234, 85%, 45%, 0.295);
+        box-shadow: 0rem 0.5rem 1rem hsla(234, 85%, 45%, 0.281);
     }
 
     .summary-skills{ /*4 habilidades*/
-        display: flex;
-        justify-content: space-between;
         padding: 1rem;
         font-size: 1.5rem;
     }
-
-    /*SKILL 1*/
-    .reaction-container{
-        background-color: hsla(0, 100%, 67%, 0.103);;
-    }
-    #reaction{
-        color: var(--lightRed);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 28%;
-    }
-    /*SKILL 2*/
-    .memory-container{
-        background-color:  hsla(39, 100%, 56%, 0.123);
-    }
-    #memory{
-        color: var(--orangeYellow);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 28%;
-    }
-    /*SKILL 3*/
-    .verbal-container{
-        background-color: hsla(166, 100%, 37%, 0.123);
-    }
-    #verbal{
-        color: var(--greenTeal);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 24%;
-    }
-    /*SKILL 4*/
-    .visual-container{
-        background-color:  hsla(234, 85%, 45%, 0.144);
-    }
-    #visual{
-        color: var(--cobaltBlue);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 23%;
-    }
-
-    a{
-        padding: 1.2rem;
-        border-radius: 2.5rem;
-    }
-
-    .title{ /*TITULOS*/
-        font-size: 2rem;
-    }
-    .result-title{
-        font-weight: 400;
-        color: var(--lightLavender);
-        font-size: 100%;
-    }
+    a{padding: 1.2rem;} /*Botao*/
+    .title{font-size: 2rem;}/*TITULOS*/
+    .result-title{font-size: 100%;}
 }
