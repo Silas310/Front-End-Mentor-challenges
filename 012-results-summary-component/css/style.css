@@ -62,3 +62,12 @@ img{
     color: white;
     background-color: var(--darkGrayBlue);
 }
+
+.light-color{
+    font-weight: 400;
+    color: var(--lightLavender);
+}
+.light-color-summary{
+    font-weight: 800;
+    color: var(--lightLavender);
+}

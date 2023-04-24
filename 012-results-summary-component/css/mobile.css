@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 768px){
     .container{
         display: flex;
         flex-direction: column;
@@ -45,6 +45,7 @@
         justify-content: space-between;
         height: 60%;
         padding: 2.5rem;
+        box-shadow: 0rem 0.5rem 1rem hsla(234, 85%, 45%, 0.295);
     }
 
     .summary-skills{ /*4 habilidades*/
@@ -106,9 +107,5 @@
         font-weight: 400;
         color: var(--lightLavender);
         font-size: 100%;
-    }
-    .light-color{
-        font-weight: 400;
-        color: var(--lightLavender);
     }
 }
