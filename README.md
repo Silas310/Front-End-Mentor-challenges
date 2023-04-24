@@ -23,4 +23,4 @@
 
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/011-profile-card-component/index.html">Profile card 011</a>
 
- <a href="https://silas310.github.io/Front-End-Mentor-challenges/012-results-summary-component/index.html"></a>
+ <a href="https://silas310.github.io/Front-End-Mentor-challenges/012-results-summary-component/index.html">Results summary 012</a>
