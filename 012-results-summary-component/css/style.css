@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Primary*/
+    --lightRed: hsl(0, 100%, 67%);
+    --orangeyYellow: hsl(39, 100%, 56%);
+    --greenTeal: hsl(166, 100%, 37%);
+    --cobaltBlue: hsl(234, 85%, 45%);
+
+    /*linear gradient*/
+    --lightSlateBlue /*(background)*/: hsl(252, 100%, 67%);
+    --lightRoyalBlue /*(background)*/: hsl(241, 81%, 54%);
+
+    --violetBlue /*(circle)*/: hsl(256, 72%, 46%);
+    --persianBlue /*(circle)*/: hsla(241, 72%, 46%, 0);
+
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --paleBlue: hsl(221, 100%, 96%);
+    --lightLavender: hsl(241, 100%, 89%);
+    --darkGrayBlue: hsl(224, 30%, 27%);
+    /*Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.*/
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: var(--white);
+}
