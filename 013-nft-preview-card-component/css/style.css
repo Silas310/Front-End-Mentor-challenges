@@ -47,7 +47,7 @@ body{
     background-image: url(../images/image-equilibrium.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    min-height: 30rem;
+    padding: 15rem;
 }
 .image:hover{
     background-image: url(../images/icon-view.svg), url(../images/image-equilibrium.jpg);
