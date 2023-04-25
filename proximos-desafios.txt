@@ -1,0 +1,20 @@
+1 - NFT preview card component || HTML + CSS
+https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U
+
+2 - FAQ accordion card || HTML + CSS + JS
+https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam
+
+3 - Ping single column coming soon page
+https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da
+
+4 - Base Apparel coming soon page
+https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0
+
+5 - Article preview
+https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT
+
+6 - Interactive rating
+https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI
+
+7 - Intro component with sign-up form
+https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1
