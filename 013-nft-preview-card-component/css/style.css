@@ -10,7 +10,6 @@
     box-sizing: border-box;
     font-family: 'Outfit';
 }
-
 html{font-size: 62.5%;}
 :root{
     /*Primary*/
@@ -22,6 +21,93 @@ html{font-size: 62.5%;}
     --lineDarkBlue: hsl(215, 32%, 27%);/*line*/
     --white: hsl(0, 0%, 100%);
 }
+
 body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
     font-size: 1.8rem;
+    color: var(--white);
+    background-color: var(--mainDarkBlue);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    background-color: var(--cardDarkBlue);
+    width: 34rem;
+    padding: 2rem;
+}
+
+.image{ /*FILHO 1*/
+    border-radius: 1rem;
+    background-image: url(../images/image-equilibrium.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 30rem;
+}
+.image:hover{
+    background-image: url(../images/icon-view.svg), url(../images/image-equilibrium.jpg);
+    background-size: 15%, contain;
+    background-position: center center;
+    background-color: var(--cyan);
+    background-blend-mode: hard-light;
+    cursor: pointer;
+}
+
+.title{/*FILHO 2*/
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.title:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.desc{ /*FILHO 3*/
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.ethe{ /*FILHO 4*/
+    color: var(--cyan);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.numb, .days{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+.numb{font-weight: 600;}
+
+hr{border: 0.1rem solid var(--lineDarkBlue);}
+
+.creator{ /*FILHO 5*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+}
+.creator > img{
+    width: 4rem;
+    border: 0.1rem solid var(--white);
+    border-radius: 50%;
+}
+.name{color: var(--white);font-weight: 600;}
+.name:hover{color: var(--cyan); cursor: pointer;}
+
+.light-color{
+    color: var(--softBlue);
 }
