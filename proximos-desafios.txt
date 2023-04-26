@@ -1,5 +1,5 @@
 1 - NFT preview card component || HTML + CSS
-https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U
+https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U OK
 
 2 - FAQ accordion card || HTML + CSS + JS
 https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam
