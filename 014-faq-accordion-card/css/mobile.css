@@ -22,19 +22,18 @@
 
     section{ /*FILHO 2*/
         /*section - details summary and p*/
-        display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
         border-radius: 0rem 0rem 3rem 3rem;
         padding-bottom: 5rem;
     }   
     section > h1{ /*FAQ*/
         font-size: 3rem;
+        text-align: center;
     }
     /*Acordion*/
     section > details{
-        width: 90%;
+        width: 100%;
         padding: 1.5rem;
         border-bottom: 0.1rem solid var(--lightGrayishBlue);
         text-align: left;
