@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 1440px) {
+    main{
+        flex-direction: row;
+        width: auto;
+        color: var(--veryDarkGrayishBlue);
+        font-weight: 400;
+    }
+    picture{/*FILHO 1*/
+        width: 50%;
+        padding: 8rem;
+        background-image: url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg);
+    }
+    picture > img{
+        width: auto;
+    }
+    section{ /*Filho 2*/
+        /*section - details summary and p*/
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+    } 
+}

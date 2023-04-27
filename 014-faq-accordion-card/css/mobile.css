@@ -1,15 +1,9 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 320px){
+@media screen and (min-width: 320px) and (max-width: 1439px){
     main{
-        display: flex;
         flex-direction: column;
         width: 34rem;
-        color: var(--veryDarkGrayishBlue);
-        font-weight: 400;
-    }
-    h1{
-        color: var(--veryDarkDesaturatedBlue);
     }
     
     picture{/*FILHO 1*/
@@ -19,11 +13,9 @@
         background-image: url(../images/bg-pattern-mobile.svg);
         background-repeat: no-repeat;
         background-position: center top;
-        background-color: white;
         margin-bottom: -10%;
     }
     picture > img{
-        position: relative;
         width: 70%;
         bottom: 10.5rem;
     }
@@ -36,7 +28,6 @@
         flex-direction: column;
         border-radius: 0rem 0rem 3rem 3rem;
         padding-bottom: 5rem;
-        background-color: white;
     }   
     section > h1{ /*FAQ*/
         font-size: 3rem;
