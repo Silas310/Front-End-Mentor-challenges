@@ -25,5 +25,10 @@ html{font-size: 62.5%;}
     --lightGrayishBlue: hsl(240, 5%, 91%);
 }
 body{
+    display: flex;  
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
     font-size: 1.2rem;
+    background-image: linear-gradient(var(--softViolet), var(--softBlue));
 }
