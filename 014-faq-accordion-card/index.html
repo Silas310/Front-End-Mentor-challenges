@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
 
   <title>Frontend Mentor | FAQ Accordion Card</title>
 </head>
 <body>
 
   <main>
+    <picture>
+      <source media="(min-width: 1440px)" srcset="images/illustration-woman-online-desktop.svg">
+      <img src="images/illustration-woman-online-mobile.svg" alt="Woman illustration">
+    </picture>
 
     <section>
       <h1>FAQ</h1>
@@ -21,13 +26,32 @@
           team members for the Premium plan.
         </p>
       </details>
-      <ul>
-        <li>How many team members can I invite?</li>
-        <li>What is the maximum file upload size?</li>
-        <li>How do I reset my password?</li>
-        <li>Can I cancel my subscription?</li>
-        <li>Do you provide additional support?</li>
-      </ul>
+      <details>
+        <summary>What is the maximum file upload size?</summary>
+        <p>
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </p>
+      </details>
+      <details>
+        <summary>How do I reset my password?</summary>
+        <p>
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+        </p>
+      </details>
+      <details>
+        <summary>Can I cancel my subscription?</summary>
+        <p>
+          Yes! Send us a message and we'll process your request no questions asked.
+        </p>
+      </details>
+      <details>
+        <summary>Do you provide additional support?</summary>
+        <p>
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </p>
+      </details>
+      
     </section>
   </main>
 
