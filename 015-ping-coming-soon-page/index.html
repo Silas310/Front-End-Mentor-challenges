@@ -5,18 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
   
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
 
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
+  <main>
+    <img src="images/logo.svg" alt="Logo">
+    <div class="desc">
+      <p class="first-p">We are launching <span>soon!</span></p>
+      <p class="sec-p">Subscribe and get notified</p>
+    </div>
+    <form action="">
+      <div class="email-container">
+        <label for="iemail">Your email address</label>
+        <input type="email" name="email" id="iemail">
+      </div>
+      <input type="submit" value="Notify Me"></input>
+    </form>
+    
+    &copy; Copyright Ping. All rights reserved.
+  </main>
 
 </body>
 </html>
