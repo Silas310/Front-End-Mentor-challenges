@@ -2,13 +2,25 @@
 
 
 @media screen and (min-width: 1440px) {
+    .logo{width: 7rem; margin-bottom: 4rem;}
+    .desc{margin-bottom: 3rem;}
+    .first-p{font-size: 4rem;}
+    .sec-p{font-size: 1.8rem;}
+
     form{
         flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 6rem;
+        width: 50%;
     }
-    input[type = "email"]{
-        padding: 1rem 10rem 1rem 2rem;
-    }
-    input[type = "submit"]{
-        padding: 1rem 2rem;
-    }
+    input[type = "email"]{ padding: 1.5rem 28rem 1.5rem 4rem;}
+
+    input[type = "submit"]{ padding: 1.5rem 6rem;}
+    
+    .dashboard{ width: 55%; margin-bottom: 7rem;}
+
+    .icons{ width: 12rem; margin-bottom: 2rem;}
+
+    .copy{font-size: 1rem;}
 }

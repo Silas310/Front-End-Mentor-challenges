@@ -21,7 +21,62 @@ html{font-size: 62.5%;}
     --gray: hsl(0, 0%, 59%);
     --veryDarkBlue: hsl(209, 33%, 12%);
 }
-body{
-    font-size: 2rem;
-    color: var(--veryDarkBlue);
+body{ font-size: 2rem; color: var(--veryDarkBlue);}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 7rem 2rem;
 }
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.first-p{
+    margin-bottom: 2rem;
+    color: var(--gray);
+    font-weight: 300;
+}
+.first-p > span{
+    color: var(--veryDarkBlue);
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type = "email"]{
+    border: 0.1rem solid var(--paleBlue);
+    border-radius: 2rem;
+}
+input[type = "email"]::placeholder{ color: var(--paleBlue);}
+input[type = "submit"]{
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 2rem;
+}
+input[type = "submit"]{
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 2rem;
+}
+
+.icons{display: flex; justify-content: space-between;}
+
+.icon{ border-radius: 50%; border: 0.5rem solid transparent;}
+
+.icon:active{ background-color: var(--blue); color: white;}
+
+.copy{ color: var(--gray); font-weight: 300;}
