@@ -91,3 +91,10 @@ input[type = "submit"]:active{
 }
 
 .copy{ color: var(--gray); font-weight: 300;}
+#errorMSG{
+    font-size: 1.2rem;
+    color: var(--lightRed);
+}
+.errorMode{
+    outline: 0.1rem solid var(--lightRed);
+}

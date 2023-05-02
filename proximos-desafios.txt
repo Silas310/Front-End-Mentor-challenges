@@ -5,7 +5,7 @@ https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U OK
 https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam OK
 
 3 - Ping single column coming soon page
-https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da
+https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da OK
 
 4 - Base Apparel coming soon page
 https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0

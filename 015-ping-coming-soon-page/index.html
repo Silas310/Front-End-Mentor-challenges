@@ -17,11 +17,17 @@
       <p class="first-p">We are launching <span>soon!</span></p>
       <p class="sec-p">Subscribe and get notified</p>
     </div>
-    <form action="">
-      <input type="email" name="email" id="iemail" placeholder="Your email address">
+
+    <form method="get" onsubmit="return formValidation()">
+      <div class="email-container">
+        <input type="email" name="email" id="iemail" placeholder="Your email address" maxlength="35" class="">
+        <p id="errorMSG"></p>
+      </div>
       <input type="submit" value="Notify Me"></input>
     </form>
+
     <img src="images/illustration-dashboard.png" alt="Dashboard" class="dashboard">
+
     <div class="icons">
       <ion-icon name="logo-facebook" class="icon"></ion-icon>
       <ion-icon name="logo-twitter" class="icon"></ion-icon>
@@ -29,6 +35,17 @@
     </div>
     <p class="copy">&copy; Copyright Ping. All rights reserved.</p>
   </main>
+  <script>
+    function formValidation(){
+      var email = document.getElementById("iemail"),
+          errorMSG = document.getElementById("errorMSG");
+          if (email.value == ""){
+            errorMSG.innerText = "Please provide a valid email address";
+            email.setAttribute("class", "errorMode")
+          }
+          return false
+    }
+  </script>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

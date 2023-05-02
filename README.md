@@ -28,3 +28,5 @@
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/013-nft-preview-card-component/index.html">NFT preview card 013</a>
 
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/014-faq-accordion-card/index.html">FAQ accordion card 014</a>
+
+ <a href="https://silas310.github.io/Front-End-Mentor-challenges/015-ping-coming-soon-page/index.html">Ping coming soon 015</a>
