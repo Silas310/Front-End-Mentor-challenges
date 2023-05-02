@@ -59,24 +59,35 @@ input[type = "email"]{
     border: 0.1rem solid var(--paleBlue);
     border-radius: 2rem;
 }
-input[type = "email"]::placeholder{ color: var(--paleBlue);}
-input[type = "submit"]{
-    background-color: var(--blue);
-    color: white;
-    border: none;
-    border-radius: 2rem;
+input[type = "email"]::placeholder{color: var(--paleBlue);}
+input[type = "email"]:focus{
+    outline: none;
 }
 input[type = "submit"]{
     background-color: var(--blue);
     color: white;
     border: none;
     border-radius: 2rem;
+    box-shadow: 0rem 0.5rem 1rem var(--paleBlue);
+    font-weight: 700;
+}
+input[type = "submit"]:hover{
+    cursor: pointer;
+}
+input[type = "submit"]:active{
+    cursor: pointer;
+    background-color: hsla(223, 87%, 63%, 0.849);
 }
 
 .icons{display: flex; justify-content: space-between;}
 
 .icon{ border-radius: 50%; border: 0.5rem solid transparent;}
 
-.icon:active{ background-color: var(--blue); color: white;}
+.icon:hover{
+    background-color: var(--blue); 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
 .copy{ color: var(--gray); font-weight: 300;}
