@@ -6,27 +6,31 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/desktop.css">
   
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
-
   <main>
-    <img src="images/logo.svg" alt="Logo">
+    <img src="images/logo.svg" alt="Logo" class="logo">
     <div class="desc">
       <p class="first-p">We are launching <span>soon!</span></p>
       <p class="sec-p">Subscribe and get notified</p>
     </div>
     <form action="">
-      <div class="email-container">
-        <label for="iemail">Your email address</label>
-        <input type="email" name="email" id="iemail">
-      </div>
+      <input type="email" name="email" id="iemail" placeholder="Your email address">
       <input type="submit" value="Notify Me"></input>
     </form>
-    
-    &copy; Copyright Ping. All rights reserved.
+    <img src="images/illustration-dashboard.png" alt="Dashboard" class="dashboard">
+    <div class="icons">
+      <ion-icon name="logo-facebook" class="icon"></ion-icon>
+      <ion-icon name="logo-twitter" class="icon"></ion-icon>
+      <ion-icon name="logo-instagram" class="icon"></ion-icon>
+    </div>
+    <p class="copy">&copy; Copyright Ping. All rights reserved.</p>
   </main>
 
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

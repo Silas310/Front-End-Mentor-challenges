@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 1440px) {
+    form{
+        flex-direction: row;
+    }
+    input[type = "email"]{
+        padding: 1rem 10rem 1rem 2rem;
+    }
+    input[type = "submit"]{
+        padding: 1rem 2rem;
+    }
+}

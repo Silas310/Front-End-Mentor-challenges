@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Libre Franklin' serif;
+    font-family: 'Libre Franklin', serif;
 }
 html{font-size: 62.5%;}
 :root{
@@ -24,31 +24,4 @@ html{font-size: 62.5%;}
 body{
     font-size: 2rem;
     color: var(--veryDarkBlue);
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    padding: 7rem 2rem;
-}
-.desc{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-img{
-    margin-bottom: 3rem;
-}
-.first-p{
-    margin-bottom: 2rem;
-    color: var(--gray);
-    font-size: 3rem;
-}
-.first-p > span{
-    color: var(--veryDarkBlue);
-    font-weight: 700;
 }
