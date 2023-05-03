@@ -28,7 +28,7 @@ body{
 }
 .main-container{
     display: flex;
-    background-color: white;
+    background-color: red;
     border-radius: 1rem;
     box-shadow: 0rem 0.5rem 1rem hsla(214, 17%, 51%, 0.295);;
 }
@@ -36,6 +36,7 @@ body{
 .desc{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .first-p, .name{
     color: var(--veryDarkGrayishBlue);
@@ -45,13 +46,17 @@ body{
     color: var(--desaturatedDarkBlue);
     font-weight: 500;
 }
+.profile-share{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
 
 .profile{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 .profile-info{
     display: flex;
@@ -61,10 +66,21 @@ body{
 .profile-pic{
     border-radius: 50%;
 }
-.share-icon{
-    background-color: var(--lightGrayishBlue);
+.dropbtn{
+    border: none;
     border-radius: 50%;
 }
-.share-icon:hover{
-    cursor: pointer;
+.dropbtn:hover, .dropbtn:focus{cursor: pointer;}
+.share-icon{margin: 1rem;}
+.dropdown{position: relative;}
+.dropdown-content{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 7rem;
+}
+
+.displayNone{
+    display: none;
 }

@@ -14,30 +14,32 @@
         border-radius: 1rem 1rem 0rem 0rem;
     }
 
-    .desc{
-        padding: 3rem 3rem 2rem 3rem;
-    }
+    .desc{align-items: center;}
     .first-p{
         font-size: 1.7rem;
-        width: 100%;
+        width: 80%;
+        margin-top: 2rem;
     }
     .sec-p{
         font-size: 1.3rem;
-        width: 100%;
+        width: 80%;
         margin-top: 1rem;
         text-align: left;
     }
-    .profile{
-        margin-top: 3rem;
-        width: 100%;
+
+    .profile-share{
+        min-width: 100%;
+        padding: 1rem 0rem 1.5rem 0rem;
+        margin-top: 1.5rem;
+        justify-content: space-around;
+        
     }
     .profile-pic{
         width: 4rem;
         margin-right: 1rem;
     }
-    .share-icon{
-        padding: 0.5rem;
-        background-color: var(--lightGrayishBlue);
-        border-radius: 50%;
+    .dropdown-content{
+        min-width: 15rem;
+        right: 20%;
     }
 }
