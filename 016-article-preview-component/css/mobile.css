@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+
+@media only screen and (min-width: 23.43rem) and (max-width: 64rem){ 
+    .main-container{
+        flex-direction: column;
+        width: 34rem;
+    }
+    .img{
+        width: 100%;
+    }
+
+    .desc{
+        padding: 3rem 3rem 2rem 3rem;
+    }
+    .first-p{
+        font-size: 1.7rem;
+        width: 100%;
+    }
+    .sec-p{
+        font-size: 1.3rem;
+        width: 100%;
+        margin-top: 1rem;
+        text-align: left;
+    }
+    .profile{
+        margin-top: 3rem;
+        width: 100%;
+    }
+    .profile-pic{
+        width: 4rem;
+        margin-right: 1rem;
+    }
+    .share-icon{
+        padding: 0.5rem;
+        background-color: var(--lightGrayishBlue);
+        border-radius: 50%;
+    }
+}

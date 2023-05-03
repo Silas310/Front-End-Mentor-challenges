@@ -18,4 +18,53 @@ html{font-size: 62.5%;}
     --lightGrayishBlue: hsl(210, 46%, 95%);
 }
 
-body{font-size: 1.3rem;}
+body{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--lightGrayishBlue);
+}
+.main-container{
+    display: flex;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0rem 0.5rem 1rem hsla(214, 17%, 51%, 0.295);;
+}
+.img{
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+}
+.first-p, .name{
+    color: var(--veryDarkGrayishBlue);
+    font-weight: 700;
+}
+.sec-p, .date{
+    color: var(--desaturatedDarkBlue);
+    font-weight: 500;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile-pic{
+    border-radius: 50%;
+}
+.share-icon{
+    background-color: var(--lightGrayishBlue);
+    border-radius: 50%;
+}
