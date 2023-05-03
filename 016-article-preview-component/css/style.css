@@ -32,9 +32,6 @@ body{
     border-radius: 1rem;
     box-shadow: 0rem 0.5rem 1rem hsla(214, 17%, 51%, 0.295);;
 }
-.img{
-    border-radius: 1rem 1rem 0rem 0rem;
-}
 
 .desc{
     display: flex;
@@ -67,4 +64,7 @@ body{
 .share-icon{
     background-color: var(--lightGrayishBlue);
     border-radius: 50%;
+}
+.share-icon:hover{
+    cursor: pointer;
 }

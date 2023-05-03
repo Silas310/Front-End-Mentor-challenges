@@ -1,13 +1,17 @@
 @charset "UTF-8";
 
 
-@media only screen and (min-width: 23.43rem) and (max-width: 64rem){ 
+@media only screen and (min-width: 23.43rem) and (max-width: 90rem){ 
+    body{
+        padding: 3rem 0rem 3rem 0rem;
+    }
     .main-container{
         flex-direction: column;
         width: 34rem;
     }
     .img{
         width: 100%;
+        border-radius: 1rem 1rem 0rem 0rem;
     }
 
     .desc{
