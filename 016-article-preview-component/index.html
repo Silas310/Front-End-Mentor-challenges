@@ -57,25 +57,38 @@
 
   </div>
   <script>
-    var profileInfo, dropList, menu, profileShare,btn;
+    var profileInfo, dropList, menu, profileShare, btn, width;
       profileInfo = document.getElementById('profile-info');
       dropList = document.getElementById('drop-list');
       menu = false;
       profileShare = document.getElementById("profile-share");
-      btn = document.getElementById("dropbtn")
+      btn = document.getElementById("dropbtn");
     function dropDownMenu(){
+      width = window.innerWidth;
       if(menu === false){
-        profileInfo.style.display = "none";
         dropList.classList.remove("displayNone");
-        dropList.classList.add("drop-fix")
-        profileShare.classList.add("profile-active");
-        btn.setAttribute("class", "btn-fix")
+        if(width >= 375 && width < 1440){
+          profileInfo.style.display = "none"; // Mostra icones
+          dropList.classList.add("drop-fix"); //Ajusta icones
+          profileShare.classList.add("profile-active"); //Mudar cor
+          btn.setAttribute("class", "btn-fix"); // Ajusta botao
+        }else if(width >= 1440){
+          dropList.classList.add('drop-fix-desktop') //Ajusta card e icones
+          dropList.classList.add("bottom-arrow");
+        }
+
         menu = true;
       }else{
-        profileInfo.style.display = "flex";
         dropList.classList.add("displayNone")
-        profileShare.classList.remove("profile-active");
-        btn.classList.remove("btn-fix");
+        if(width >= 375 && width < 1440){
+          profileInfo.style.display = "flex";
+          dropList.classList.remove("drop-fix")
+          profileShare.classList.remove("profile-active");
+          btn.classList.remove("btn-fix");
+        }else{
+          dropList.classList.remove("drop-fix-desktop")
+          dropList.classList.remove("bottom-arrow")
+        }
         menu = false;
       }
 

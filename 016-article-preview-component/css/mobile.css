@@ -47,4 +47,13 @@
         bottom: 10%;
         right: 200%;
     }
+
+    .profile-active{
+    background-color: var(--veryDarkGrayishBlue);
+    border-radius: 0rem 0rem 1rem 1rem;
+    }
+    .btn-fix{
+    margin-top: 5%;
+    margin-left: 117%;
+    }
 }

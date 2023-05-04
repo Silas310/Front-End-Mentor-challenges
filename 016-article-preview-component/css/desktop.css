@@ -9,17 +9,60 @@
     .img{width: 40%; border-radius: 1rem 0rem 0rem 1rem;}
     .first-p{
         font-size: 2.7rem;
-        width: 72%;
+        width: 80%;
     }
     .sec-p{font-size: 2.3rem;}
+    #profile-share{
+        min-width: 80%;
+        align-items: center;
+    }
     .profile{
-        margin-top: 3rem;
         width: 100%;
     }
     .profile-pic{
-        width: 5rem;
+        width: 6rem;
         margin-right: 2rem;
     }
     .name{font-size: 1.7rem;}
     .date{font-size: 1.5rem;}
+    #dropbtn{
+        width: 4rem;
+        height: 4rem;
+    }
+    .dropdown-content{
+        background-color: var(--veryDarkGrayishBlue);
+        padding: 1.5rem 13rem;
+        border-radius: 1rem;
+    }
+    .drop-fix-desktop{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        gap: 2rem;
+        background-color: var(--veryDarkGrayishBlue);
+        left: -270%;
+        bottom: 200%;
+    }
+    #drop-list > p {
+        font-size: 1.7rem;
+    }
+    .bottom-arrow{
+        border-bottom: 0.5rem solid var(--veryDarkGrayishBlue);
+    }
+    .bottom-arrow:after {
+        content:'';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 106%;
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-top: 1rem solid var(--veryDarkGrayishBlue);
+        border-left: 1.3rem solid transparent;
+        border-right: 1.3rem solid transparent;
+    }
+    .btn-fi-desktop{
+        background-color: var(--desaturatedDarkBlue);
+    }
 }

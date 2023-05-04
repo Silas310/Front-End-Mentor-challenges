@@ -33,6 +33,7 @@ body{
 }
 
 .desc{
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,13 +80,4 @@ body{
     align-items: center;
     min-width: 7rem;
 }
-
 .displayNone{display: none;}
-.profile-active{
-    background-color: var(--veryDarkGrayishBlue);
-    border-radius: 0rem 0rem 1rem 1rem;
-}
-.btn-fix{
-    margin-top: 5%;
-    margin-left: 117%;
-}
