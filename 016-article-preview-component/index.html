@@ -28,7 +28,7 @@
       </p>
 
 
-      <div class="profile-share">
+      <div id="profile-share" class="">
 
         <div class="profile">
           <div id="profile-info" class="">
@@ -44,7 +44,7 @@
           <button class="dropbtn" onclick="dropDownMenu()">
             <img src="images/icon-share.svg" alt="share icon" class="share-icon">
           </button>
-          <div id="dropw-list" class="dropdown-content displayNone">
+          <div id="drop-list" class="dropdown-content displayNone">
             <p>SHARE</p>
             <a href="#"><img src="images/icon-facebook.svg" alt="Facebook Icon"></a>
             <a href="#"><img src="images/icon-twitter.svg" alt="Twitter icon"></a>
@@ -56,6 +56,26 @@
     </div>
 
   </div>
-  
+  <script>
+    var profileInfo, dropList, menu, profileShare;
+      profileInfo = document.getElementById('profile-info');
+      dropList = document.getElementById('drop-list');
+      menu = false;
+      profileShare = document.getElementById("profile-share")
+    function dropDownMenu(){
+      if(menu === false){
+        profileInfo.style.display = "none";
+        dropList.classList.remove("displayNone");
+        profileShare.classList.add("profile-active");
+        menu = true;
+      }else{
+        profileInfo.style.display = "flex";
+        dropList.classList.add("displayNone")
+        profileShare.classList.remove("profile-active");
+        menu = false;
+      }
+
+    }
+  </script>
 </body>
 </html>

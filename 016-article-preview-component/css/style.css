@@ -45,7 +45,7 @@ body{
     color: var(--desaturatedDarkBlue);
     font-weight: 500;
 }
-.profile-share{
+#profile-share{
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -81,4 +81,7 @@ body{
 }
 
 .displayNone{display: none;}
-.displayO{display: flex;}
+.profile-active{
+    background-color: var(--veryDarkGrayishBlue);
+    border-radius: 0rem 0rem 1rem 1rem;
+}

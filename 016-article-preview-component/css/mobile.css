@@ -27,7 +27,7 @@
         text-align: left;
     }
 
-    .profile-share{
+    #profile-share{
         min-width: 100%;
         padding: 1rem 0rem 1.5rem 0rem;
         margin-top: 1.5rem;
