@@ -28,7 +28,6 @@ body{
 }
 .main-container{
     display: flex;
-    background-color: red;
     border-radius: 1rem;
     box-shadow: 0rem 0.5rem 1rem hsla(214, 17%, 51%, 0.295);;
 }
@@ -58,7 +57,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.profile-info{
+#profile-info{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -81,6 +80,5 @@ body{
     min-width: 7rem;
 }
 
-.displayNone{
-    display: none;
-}
+.displayNone{display: none;}
+.displayO{display: flex;}
