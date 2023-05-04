@@ -8,7 +8,7 @@ https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam OK
 https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da OK
 
 5 - Article preview
-https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT
+https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT OK
 
 6 - Interactive rating
 https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI

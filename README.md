@@ -30,3 +30,5 @@
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/014-faq-accordion-card/index.html">FAQ accordion card 014</a>
 
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/015-ping-coming-soon-page/index.html">Ping coming soon 015</a>
+
+ <a href="https://silas310.github.io/Front-End-Mentor-challenges/016-article-preview-component/index.html">Article preview 016</a>
