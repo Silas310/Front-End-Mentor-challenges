@@ -63,13 +63,9 @@ body{
     flex-direction: row;
     align-items: center;
 }
-.profile-pic{
-    border-radius: 50%;
-}
-#dropbtn{
-    border: none;
-    border-radius: 50%;
-}
+.profile-pic{ border-radius: 50%;}
+
+#dropbtn{ border: none;border-radius: 50%;}
 #dropbtn:hover, .dropbtn:focus{cursor: pointer;}
 .share-icon{margin: 1rem;}
 .dropdown{position: relative;}

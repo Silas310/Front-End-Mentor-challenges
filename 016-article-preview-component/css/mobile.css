@@ -2,24 +2,15 @@
 
 
 @media only screen and (min-width: 23.43rem) and (max-width: 90rem){ 
-    body{
-        padding: 3rem 0rem 3rem 0rem;
-    }
-    .main-container{
-        flex-direction: column;
-        width: 34rem;
-    }
+    body{ padding: 3rem 0rem 3rem 0rem;}
+    .main-container{flex-direction: column; width: 34rem;}
     .img{
         width: 100%;
         border-radius: 1rem 1rem 0rem 0rem;
     }
 
     .desc{align-items: center;}
-    .first-p{
-        font-size: 1.7rem;
-        width: 80%;
-        margin-top: 2rem;
-    }
+    .first-p{ font-size: 1.7rem; width: 80%;margin-top: 2rem;}
     .sec-p{
         font-size: 1.3rem;
         width: 80%;
@@ -33,27 +24,18 @@
         margin-top: 1.5rem;
         justify-content: space-around;
     }
-    .profile-pic{
-        width: 4rem;
-        margin-right: 1rem;
-    }
+    .profile-pic{ width: 4rem;margin-right: 1rem;}
     .dropdown-content{
         color: var(--grayishBlue);
         font-weight: 500;
         min-width: 15rem;
         right: 20%;
     }
-    .drop-fix{
-        bottom: 10%;
-        right: 200%;
-    }
+    .drop-fix{ bottom: 10%; right: 200%;}
 
     .profile-active{
     background-color: var(--veryDarkGrayishBlue);
     border-radius: 0rem 0rem 1rem 1rem;
     }
-    .btn-fix{
-    margin-top: 5%;
-    margin-left: 117%;
-    }
+    .btn-fix{ margin-top: 5%; margin-left: 117%;}
 }
