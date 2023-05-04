@@ -32,14 +32,19 @@
         padding: 1rem 0rem 1.5rem 0rem;
         margin-top: 1.5rem;
         justify-content: space-around;
-        
     }
     .profile-pic{
         width: 4rem;
         margin-right: 1rem;
     }
     .dropdown-content{
+        color: var(--grayishBlue);
+        font-weight: 500;
         min-width: 15rem;
         right: 20%;
+    }
+    .drop-fix{
+        bottom: 10%;
+        right: 200%;
     }
 }
