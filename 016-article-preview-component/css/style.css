@@ -65,11 +65,11 @@ body{
 .profile-pic{
     border-radius: 50%;
 }
-.dropbtn{
+#dropbtn{
     border: none;
     border-radius: 50%;
 }
-.dropbtn:hover, .dropbtn:focus{cursor: pointer;}
+#dropbtn:hover, .dropbtn:focus{cursor: pointer;}
 .share-icon{margin: 1rem;}
 .dropdown{position: relative;}
 .dropdown-content{
@@ -84,4 +84,8 @@ body{
 .profile-active{
     background-color: var(--veryDarkGrayishBlue);
     border-radius: 0rem 0rem 1rem 1rem;
+}
+.btn-fix{
+    margin-top: 5%;
+    margin-left: 117%;
 }

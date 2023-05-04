@@ -41,7 +41,7 @@
         </div>
         
         <div class="dropdown">
-          <button class="dropbtn" onclick="dropDownMenu()">
+          <button id="dropbtn" onclick="dropDownMenu()" class="">
             <img src="images/icon-share.svg" alt="share icon" class="share-icon">
           </button>
           <div id="drop-list" class="dropdown-content displayNone">
@@ -57,21 +57,24 @@
 
   </div>
   <script>
-    var profileInfo, dropList, menu, profileShare;
+    var profileInfo, dropList, menu, profileShare,btn;
       profileInfo = document.getElementById('profile-info');
       dropList = document.getElementById('drop-list');
       menu = false;
-      profileShare = document.getElementById("profile-share")
+      profileShare = document.getElementById("profile-share");
+      btn = document.getElementById("dropbtn")
     function dropDownMenu(){
       if(menu === false){
         profileInfo.style.display = "none";
         dropList.classList.remove("displayNone");
         profileShare.classList.add("profile-active");
+        btn.setAttribute("class", "btn-fix")
         menu = true;
       }else{
         profileInfo.style.display = "flex";
         dropList.classList.add("displayNone")
         profileShare.classList.remove("profile-active");
+        btn.classList.remove("btn-fix");
         menu = false;
       }
 
