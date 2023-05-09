@@ -133,3 +133,8 @@ input[type="submit"]:hover{
         border-radius: 5rem;
     }
 }
+
+input[type="button"].selecionado{
+    background-color: var(--lightGrey);
+    color: var(--white);
+}
