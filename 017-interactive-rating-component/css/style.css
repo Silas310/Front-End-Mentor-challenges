@@ -3,6 +3,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
 html{font-size: 62.5%;}
 :root{
     /*Primary*/
@@ -10,7 +17,119 @@ html{font-size: 62.5%;}
     /*Neutral*/
     --white: hsl(0, 0%, 100%);
     --lightGrey: hsl(217, 12%, 63%);
-    --mediumGrey: hsl(216, 12%, 54%);
-    --darkBlue: hsl(213, 19%, 18%);
+    --mediumGrey: rgb(124, 135, 152);
+    --darkBlue: rgb(37, 45, 55);
     --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--veryDarkBlue);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--darkBlue);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    color: var(--white);
+    width: clamp(34rem, 32%, 50rem);
+}
+main > *{
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgba(124, 135, 152, 0.144);
+}
+.icon > img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+h1{
+    font-size: 2rem; 
+    font-weight: 700;}
+p, input{
+    font-size: 1.5rem; 
+    color: var(--lightGrey);
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    width: auto;
+}
+input[type = "button"]{
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(124, 135, 152, 0.144);
+}
+input[type = "button"]:hover{
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+    transition: background-color 0.5s;
+}
+input[type="submit"]{
+    background-color: var(--orange);
+    border: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 100%;
+    color: var(--white);
+    font-weight: 700;
+}
+input[type="submit"]:hover{
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+@media screen and (min-width: 90rem) { /*Desktop*/
+    main{
+        padding: 2rem;
+    
+    }
+    h1{
+        font-size: 2.8rem;
+    }
+    p{
+        font-size: 1.87rem;
+    }
+    .icon{
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 2rem;
+    }
+    .icon > img{
+        width: 1.35rem;
+        height: 1.35rem;
+    }
+    input[type="button"]{
+        width: 6rem;
+        height: 6rem;
+        font-size: 2.25rem;
+        margin-bottom: 2rem;
+    }
+    input[type="submit"]{
+        padding: 1.5rem;
+        font-size: 2.2rem;
+        border-radius: 5rem;
+    }
 }
