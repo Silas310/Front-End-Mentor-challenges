@@ -39,11 +39,15 @@ main{
     color: var(--white);
     width: clamp(34rem, 32%, 50rem);
 }
+.main-thanks{
+    align-items: center;
+    text-align: center;
+}
 main > *{
     margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
-.icon{
+.icon, .illustration{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +68,12 @@ p, input{
     font-size: 1.5rem; 
     color: var(--lightGrey);
 }
-
+#rating{
+    color: var(--orange);
+    padding: 1rem;
+    background-color: rgba(124, 135, 152, 0.144);
+    border-radius: 2rem;
+}
 form{
     display: flex;
     justify-content: space-between;
