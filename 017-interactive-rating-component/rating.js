@@ -13,13 +13,3 @@ function selecaoElemento(id){
         document.getElementById(id).classList.add("selecionado") //Add bg
     }
 }
-
-
-/*function avaliadorNota(){
-    showMSG(botoesSel[0][4])
-}*/
-
-
-/*function showMSG(nota){
-    rating.innerText = 'tchau'
-}*/
