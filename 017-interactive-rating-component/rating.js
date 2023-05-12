@@ -35,7 +35,7 @@ function selecaoElemento(id){
 
 function avaliadorNota(event){
     if(botoesSel.length === 0){ // Se valor nao foi selecionado
-        alert("selecione um valor")            
+        alert("0? We couldn't be so bad!")            
     }else{
         main.style.display = "none"
         /*thanks.classList.add("display")*/
