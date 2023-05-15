@@ -27,4 +27,39 @@ body{
     align-items: center;
     min-height: 100vh;
     font-size: 1.6rem;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color: var(--red);
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 7vw;
+    max-width: 45rem;
+    text-align: center;
+}
+
+h1{font-size: 2.6rem; margin: 0rem 0rem 1rem 0rem;}
+p{
+    font-size: 1.6rem;
+    font-weight: 600; 
+    margin: 0rem 0rem 4rem 0rem;
+}
+.purple-div{
+    font-weight: 500;
+    color: white;
+    padding: 2rem 5rem;
+    background-color: var(--blue);
+    border-radius: 1rem;
+    box-shadow: 0rem 1rem 0.2rem rgba(0, 0, 0, 0.178);
+    margin: 0rem 0rem 3rem 0rem;
+}
+form{
+    background-color: white;
+    color: var(--darkBlue);
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 1rem;
 }
