@@ -11,7 +11,7 @@ https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5ca
 https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT OK
 
 6 - Interactive rating
-https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI
+https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUm OK
 
 7 - Intro component with sign-up form
 https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1
