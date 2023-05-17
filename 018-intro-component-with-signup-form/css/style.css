@@ -60,6 +60,47 @@ form{
     background-color: white;
     color: var(--darkBlue);
     font-weight: 500;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 1rem;
+}
+.input-container{
+    display: flex;
+    justify-content: start;
+    border: 0.1rem solid var(--grayishBlue);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem 2rem 1rem;
+}
+.label{
+    position: absolute;
+}
+
+input[type = "text"]{
+    width: 100%;
+    border: none;
+}
+input[type = "text"]:focus{
+    outline: none;
+}
+input[type = "submit"]{
+    padding: 2rem;
+    width: 100%;
+    background-color: var(--green);
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.4rem 0rem hsl(154, 60%, 40%);
+    margin-bottom: 1rem;
+}
+form > p {
+    color: var(--grayishBlue);
+    font-size: 1.2rem;
+    width: 70%;
+    margin: auto;
+}
+form span{
+    color: var(--red);
+    font-weight: 700;
 }
