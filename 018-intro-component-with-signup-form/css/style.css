@@ -99,6 +99,10 @@ form span{
     font-weight: 700;
 }
 
+.error-border{
+    border: 0.1rem solid var(--red);
+}
+
 @media screen and (max-width: 1439px){
     body{
         font-size: 1.6rem;
