@@ -53,28 +53,22 @@ form{
     border-radius: 1rem;
     box-shadow: 0rem 0.5rem 0rem rgba(0, 0, 0, 0.274);
 }
-.input-container{
-    display: flex;
-    justify-content: start;
-    border: 0.1rem solid var(--grayishBlue);
-    border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
-    /*padding: 1.5rem 1rem 2rem 1rem;*/
-}
-.label{
-    position: absolute;
-    
-}
-/*.label:hover{
-    cursor: text;
-}*/
 
 input[type = "text"]{
     width: 100%;
-    border: none;
+    border: 0.1rem solid var(--grayishBlue);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+}
+input[type = text]::placeholder{
+    color: hsla(249, 10%, 26%, 0.719);
+    font-weight: 700;
 }
 input[type = "text"]:focus{
     outline: none;
+    border: 0.1rem solid var(--blue);
 }
 input[type = "submit"]{
     padding: 2rem;
@@ -127,15 +121,8 @@ form span{
         margin: 0rem 0rem 3rem 0rem;
         padding: 2rem 5rem;
     }
-    .input-container{
-        padding: 1rem 0rem 2rem 1rem;
-    }
-    .label:hover{
-        cursor: text;
-
-    }
-    
 }
+
 @media screen and (min-width: 1024px) {
     body{
         justify-content: center;
