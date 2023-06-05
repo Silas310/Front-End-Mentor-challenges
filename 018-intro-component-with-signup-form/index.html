@@ -22,20 +22,27 @@
         <strong>Try it free 7 days</strong> then $20/mo. thereafter
       </div>
       <form>
-        <div class="input-container" id="input1" onclick="borderChange()">
-          <label for="first-name" class="label">First Name</label>
+        <div class="input-container" id="input1">
+          <label for="first-name" class="label">First Name
+          </label>
           <input type="text" name="" id="first-name">
         </div>
         <div class="input-container" id="input2">
-          <label for="last-name" class="label">Last Name</label>
+          <label for="last-name" class="label">
+            Last Name
+          </label>
           <input type="text" name="" id="last-name">
         </div>
         <div class="input-container" id="input3">
-          <label for="email-add" class="label">Email Address</label>
+          <label for="email-add" class="label">
+            Email Address            
+          </label>
           <input type="text" name="" id="email-add">
         </div>
         <div class="input-container" id="input4">
-          <label for="password" class="label">Password</label>
+          <label for="password" class="label">
+            Password
+          </label>
           <input type="text" name="" id="password">
         </div>
         <input type="submit" value="CLAIM YOUR FREE TRIAL"></input>
@@ -43,5 +50,48 @@
       </form>
     </div>
   </main>
+
+  <script>
+    let labels = document.querySelectorAll(".label"), 
+      inputs = document.querySelectorAll("input");
+      for(let i = 0; i < inputs.length; i++){
+        inputs[i].addEventListener("focus", hideLabel);
+        inputs[i].addEventListener("blur", showLabel);
+      }
+      function hideLabel(event){        
+        switch (event.currentTarget.id){
+          case "first-name":
+            labels[0].style.visibility = "hidden";
+            break;
+          case "last-name":
+            labels[1].style.visibility = "hidden";
+            break;
+          case "email-add":
+            labels[2].style.visibility = "hidden";                
+            break;
+          case "password":
+            labels[3].style.visibility = "hidden";
+            break;
+        }
+      }
+      function showLabel(event){
+        switch (event.currentTarget.id){
+          case "first-name":
+            labels[0].style.visibility = "visible";
+            break;
+          case "last-name":
+            labels[1].style.visibility = "visible";
+            break;
+          case "email-add":
+            labels[2].style.visibility
+            = "visible";                
+            break;
+          case "password":
+            labels[3].style.visibility = "visible";
+            break;
+        }
+      }
+    
+  </script>
 </body>
 </html>
