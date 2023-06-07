@@ -45,6 +45,7 @@ p{
     border-radius: 1rem;
     box-shadow: 0rem 1rem 0.2rem rgba(0, 0, 0, 0.178);
 }
+
 form{
     background-color: white;
     color: var(--darkBlue);
@@ -53,12 +54,16 @@ form{
     border-radius: 1rem;
     box-shadow: 0rem 0.5rem 0rem rgba(0, 0, 0, 0.274);
 }
-
+.input-box{margin-bottom: 0rem; height: 6rem;}
+.input-box > img{
+    position: relative; 
+    bottom: 3.5rem;
+    left: 40%;
+}
 input[type = "text"]{
     width: 100%;
     border: 0.1rem solid var(--grayishBlue);
     padding: 1.5rem;
-    margin-bottom: 1rem;
     border-radius: 0.5rem;
     font-weight: 700;
 }
@@ -70,6 +75,7 @@ input[type = "text"]:focus{
     outline: none;
     border: 0.1rem solid var(--blue);
 }
+
 input[type = "submit"]{
     padding: 2rem;
     width: 100%;
@@ -99,6 +105,15 @@ form span{
 
 .error-border{
     border: 0.1rem solid var(--red);
+}
+.error-msg{
+    position: absolute;
+    left: 50%;
+    color: var(--red);
+    font-size: 1rem;
+}
+.displayNone{
+    display: none;
 }
 
 @media screen and (max-width: 1023px){
