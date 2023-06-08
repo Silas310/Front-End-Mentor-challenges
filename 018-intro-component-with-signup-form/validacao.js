@@ -35,7 +35,7 @@ function validacao(event){
         errorMsg = divs[index].children[2];
     switch(index){
         case 2:
-            if(event.target.value.match(emailFormat)){      
+            if(event.target.value.match(emailFormat)){    
                 img.setAttribute("class", "displayNone");
                 errorMsg.classList.add("displayNone");
             }else{

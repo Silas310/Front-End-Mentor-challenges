@@ -82,6 +82,9 @@ input[type = "text"]:focus, #password:focus{
     outline: none;
     border: 0.1rem solid var(--blue);
 }
+input[type = text]:invalid, #password:invalid{
+    border: 0.1rem solid var(--red);
+}
 
 input[type = "submit"]{
     padding: 2rem;
@@ -108,10 +111,6 @@ form > p {
 form span{
     color: var(--red);
     font-weight: 700;
-}
-
-.error-border{
-    border: 0.1rem solid var(--red);
 }
 .error-msg{
     position: relative;
