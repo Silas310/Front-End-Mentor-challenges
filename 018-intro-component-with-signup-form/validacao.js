@@ -14,23 +14,36 @@ for(let i = 0; i < form.length - 1; i++){
 }
 
 function campoInvalido(event){
-    if(event.target.id === "email-add"){
-        let img = divs[2].children[1],
-            errorMsg = divs[2].children[2];
-        if(event.target.value.match(emailFormat)){
-            validationSum++;
-            img.setAttribute("class", "displayNone");
-            errorMsg.classList.add("displayNone");
-        }else{
-            validationSum--;
-            img.removeAttribute("class", "");
-            errorMsg.classList.remove("displayNone"); 
-        }
+    let index = null;
+    switch(event.target.id){
+        case "first-name":
+            index = 0;
+            break
+        case "last-name":
+            index = 1;
+            break;
+        case "email-add":
+            index = 2;
+            break;
+        case "password":
+            index = 3;
+            break;
+    }
+    if(index === 2){
+
     }else{
 
     }
+
+    let img = divs[index].children[1],
+        errorMsg = divs[index].children[2];
+    if(event.target.value.match(emailFormat) || !(event.target.value === "")){
+        img.setAttribute("class", "displayNone");
+        errorMsg.classList.add("displayNone");
+    }else{
+        img.removeAttribute("class", "");
+        errorMsg.classList.remove("displayNone");
+    }
+    
+    
 }
-
-
-
-/*/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/*/

@@ -26,6 +26,10 @@ body{
     min-height: 100vh;
     background-color: var(--red);
     color: white;
+    font-size: 1.6rem;
+    background-image: url(../imagesbg-intro-mobile.png);
+    justify-content: center;
+    align-items: center;
 }
 
 main{
@@ -54,7 +58,10 @@ form{
     border-radius: 1rem;
     box-shadow: 0rem 0.5rem 0rem rgba(0, 0, 0, 0.274);
 }
-.input-box{margin-bottom: 0rem; height: 6rem;}
+.input-box{
+    margin-bottom: 0.5rem; 
+    height: 6rem;
+}
 .input-box > img{
     position: relative; 
     bottom: 3.5rem;
@@ -107,16 +114,21 @@ form span{
     border: 0.1rem solid var(--red);
 }
 .error-msg{
-    position: absolute;
-    left: 50%;
+    position: relative;
     color: var(--red);
     font-size: 1rem;
+    display: flex;
+    justify-content: end;
+    justify-content: row;
+    left: 0%;
+    bottom: 50%;
 }
+
 .displayNone{
     display: none;
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1439px){
     body{
         font-size: 1.6rem;
         background-image: url(../images/bg-intro-mobile.png);
@@ -138,7 +150,7 @@ form span{
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     body{
         justify-content: center;
         background-image: url(../images/bg-intro-desktop.png);
@@ -149,14 +161,14 @@ form span{
         max-width: 100rem;
     }
     h1{
-        width: 70%;
+        width: 80%;
         line-height: 5rem;
         font-size: 3.5rem;
         text-align: left;
         margin-bottom: 2rem;
     }
     p{
-        width: 90%;
+        width: 80%;
         font-size: 1.4rem;
         text-align: left;
     }
@@ -164,6 +176,9 @@ form span{
         padding: 1.5rem 0rem;
         font-size: 1.4rem;
         margin-bottom: 2.5rem;
+    }
+    section{
+        width: 50%;
     }
     form{
         max-width: 60rem;
@@ -174,6 +189,9 @@ form span{
         margin-bottom: 2rem;
         font-size: 1.4rem;
     }
+    .input-box{
+        margin-bottom: 1rem;
+    }
     input[type = "submit"]{
         padding: 1.5rem;
         font-size: 1.4rem;
@@ -182,4 +200,8 @@ form span{
         text-align: center;
         width: 100%;
     }
+    .error-msg{
+        left: 20%;
+    }
+    
 }
