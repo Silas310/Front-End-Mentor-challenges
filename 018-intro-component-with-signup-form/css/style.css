@@ -67,18 +67,18 @@ form{
     bottom: 3.5rem;
     left: 40%;
 }
-input[type = "text"]{
+input[type = "text"], #password{
     width: 100%;
     border: 0.1rem solid var(--grayishBlue);
     padding: 1.5rem;
     border-radius: 0.5rem;
     font-weight: 700;
 }
-input[type = text]::placeholder{
+input[type = text], #password::placeholder{
     color: hsla(249, 10%, 26%, 0.719);
     font-weight: 700;
 }
-input[type = "text"]:focus{
+input[type = "text"]:focus, #password:focus{
     outline: none;
     border: 0.1rem solid var(--blue);
 }
@@ -184,11 +184,11 @@ form span{
         max-width: 60rem;
         padding: 3rem;
     }
-    .input-container{
+    /*.input-container{
         width: 45rem;
         margin-bottom: 2rem;
         font-size: 1.4rem;
-    }
+    }*/
     .input-box{
         margin-bottom: 1rem;
     }
@@ -203,5 +203,4 @@ form span{
     .error-msg{
         left: 20%;
     }
-    
 }

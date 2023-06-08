@@ -1,24 +1,25 @@
 let form = document.querySelector("form"),
     validationSum = 0,
     divs = document.querySelectorAll("div.input-box"),
-    emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+    validation = false;
 
 form.addEventListener("submit", event => {
     event.preventDefault();
 });
 
 for(let i = 0; i < form.length - 1; i++){
-    form[i].addEventListener("input", campoInvalido);
-    
-
+    form[i].addEventListener("input", validacao);
 }
 
-function campoInvalido(event){
+form[4].addEventListener("click", enviar);
+
+function validacao(event){
     let index = null;
     switch(event.target.id){
         case "first-name":
             index = 0;
-            break
+            break;
         case "last-name":
             index = 1;
             break;
@@ -29,21 +30,47 @@ function campoInvalido(event){
             index = 3;
             break;
     }
-    if(index === 2){
-
-    }else{
-
-    }
 
     let img = divs[index].children[1],
         errorMsg = divs[index].children[2];
-    if(event.target.value.match(emailFormat) || !(event.target.value === "")){
-        img.setAttribute("class", "displayNone");
-        errorMsg.classList.add("displayNone");
-    }else{
-        img.removeAttribute("class", "");
-        errorMsg.classList.remove("displayNone");
+    switch(index){
+        case 2:
+            if(event.target.value.match(emailFormat)){      
+                img.setAttribute("class", "displayNone");
+                errorMsg.classList.add("displayNone");
+            }else{
+                img.removeAttribute("class", "displayNone");
+                errorMsg.classList.remove("displayNone");
+            }
+            break;
+        case 0:
+        case 1:
+        case 3:
+            if(event.target.value != ""){      
+                img.setAttribute("class", "displayNone");
+                errorMsg.classList.add("displayNone");
+            }else{
+                img.removeAttribute("class", "displayNone");
+                errorMsg.classList.remove("displayNone");
+            }
+            break;
     }
-    
-    
+}
+
+function enviar(){
+    let contador = 0;
+    for(let i = 0; i < 4; i++){
+        if( divs[i].children[2].classList.contains("displayNone") && divs[i].children[0].value != ""){
+            contador++;
+        }else{
+            if(contador > 0){
+                contador--;
+            }
+        }
+    }
+    if(contador === 4){
+        location.reload();
+    }else{
+        alert("Insira os dados")
+    }
 }
