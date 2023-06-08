@@ -34,3 +34,5 @@
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/016-article-preview-component/index.html">Article preview 016</a>
 
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/017-interactive-rating-component/index.html">Interactive rating 017</a>
+
+<a href="https://silas310.github.io/Front-End-Mentor-challenges/018-intro-component-with-signup-form/index.html">Intro Component with signup form</a>
