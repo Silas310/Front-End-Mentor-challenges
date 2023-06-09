@@ -31,33 +31,36 @@ function validacao(event){
             break;
     }
 
-    let img = divs[index].children[1],
+    let input = divs[index].children[0],
+        img = divs[index].children[1],
         errorMsg = divs[index].children[2];
     switch(index){
         case 2:
             if(event.target.value.match(emailFormat)){    
-                mudarEstado(img, errorMsg, true);
+                mudarEstado(input, img, errorMsg, true);
             }else{
-                mudarEstado(img, errorMsg, false);
+                mudarEstado(input, img, errorMsg, false);
             }
             break;
         case 0:
         case 1:
         case 3:
             if(event.target.value != ""){      
-                mudarEstado(img,errorMsg, true);
+                mudarEstado(input ,img, errorMsg, true);
             }else{
-                mudarEstado(img, errorMsg, false);
+                mudarEstado(input ,img, errorMsg, false);
             }
             break;
     }
 }
 
-function mudarEstado(imagem, mensagem, validade){
+function mudarEstado(entrada ,imagem, mensagem, validade){
     if (validade === true){
+        entrada.classList.remove("error-border");
         imagem.setAttribute("class", "displayNone");
         mensagem.classList.add("displayNone");
     }else{
+        entrada.classList.add("error-border");
         imagem.removeAttribute("class", "displayNone");
         mensagem.classList.remove("displayNone");
     }
