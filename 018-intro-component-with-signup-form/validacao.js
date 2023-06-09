@@ -36,24 +36,30 @@ function validacao(event){
     switch(index){
         case 2:
             if(event.target.value.match(emailFormat)){    
-                img.setAttribute("class", "displayNone");
-                errorMsg.classList.add("displayNone");
+                mudarEstado(img, errorMsg, true);
             }else{
-                img.removeAttribute("class", "displayNone");
-                errorMsg.classList.remove("displayNone");
+                mudarEstado(img, errorMsg, false);
             }
             break;
         case 0:
         case 1:
         case 3:
             if(event.target.value != ""){      
-                img.setAttribute("class", "displayNone");
-                errorMsg.classList.add("displayNone");
+                mudarEstado(img,errorMsg, true);
             }else{
-                img.removeAttribute("class", "displayNone");
-                errorMsg.classList.remove("displayNone");
+                mudarEstado(img, errorMsg, false);
             }
             break;
+    }
+}
+
+function mudarEstado(imagem, mensagem, validade){
+    if (validade === true){
+        imagem.setAttribute("class", "displayNone");
+        mensagem.classList.add("displayNone");
+    }else{
+        imagem.removeAttribute("class", "displayNone");
+        mensagem.classList.remove("displayNone");
     }
 }
 
