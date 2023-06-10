@@ -34,7 +34,13 @@ function validacao(event){
     let input = divs[index].children[0],
         img = divs[index].children[1],
         errorMsg = divs[index].children[2];
-    switch(index){
+    if((event.target.value.match(emailFormat) && index === 2) || 
+        (event.target.value != "" && index != 2)){    
+        mudarEstado(input, img, errorMsg, true);
+    }else{
+        mudarEstado(input, img, errorMsg, false);
+    }
+    /*switch(index){
         case 2:
             if(event.target.value.match(emailFormat)){    
                 mudarEstado(input, img, errorMsg, true);
@@ -51,7 +57,7 @@ function validacao(event){
                 mudarEstado(input ,img, errorMsg, false);
             }
             break;
-    }
+    }*/
 }
 
 function mudarEstado(entrada ,imagem, mensagem, validade){
