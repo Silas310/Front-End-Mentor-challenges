@@ -26,11 +26,32 @@
 html{font-size: 62.6%;}
 
 body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
     font-size: 1.6rem;
     font-family: "Roboto";
     font-weight: normal;
 }
 
+main{
+    display: flex;
+    flex-direction: column-reverse;
+    color: var(--charcoalGrey);
+}
 h1{
+    color: var(--darkSlateGrey);
+    font-weight: bold;
+}
+li{
+    list-style-type: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: var(--darkSlateGrey);
     font-weight: bold;
 }
