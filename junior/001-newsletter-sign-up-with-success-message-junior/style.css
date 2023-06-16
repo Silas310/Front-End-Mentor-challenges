@@ -33,25 +33,66 @@ body{
     font-size: 1.6rem;
     font-family: "Roboto";
     font-weight: normal;
+    background-color: var(--darkSlateGrey);
 }
 
 main{
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: start;
     color: var(--charcoalGrey);
+    background-color: var(--white);
+    max-width: 50rem;
+    min-height: clamp(50rem, 100vh, 70rem);
 }
+.left-side{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
 h1{
     color: var(--darkSlateGrey);
     font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+ul{
+    margin-top: 2rem;
 }
 li{
     list-style-type: none;
+    display: flex;
+    justify-content: start;
+}
+li > img{
+    margin: 0rem 1rem 3rem 0rem;
 }
 form{
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 label{
     color: var(--darkSlateGrey);
     font-weight: bold;
+    font-size: 1.4rem;
+}
+input{
+    padding: 2rem;
+    border-radius: 0.7rem;
+    border: none;
+}
+input[type = "email"]{
+    border: 0.1rem solid var(--grey);
+}
+input[type = "submit"]{
+    background-color: var(--darkSlateGrey);
+    color: var(--white);
+    font-weight: bold;
+}
+input::placeholder{
+    color: var(--grey);
+    
 }
