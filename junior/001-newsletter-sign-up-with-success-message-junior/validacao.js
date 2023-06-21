@@ -5,7 +5,6 @@ form.addEventListener("submit", event => {
     event.preventDefault();
 })
 
-console.log(form[0])
 form[0].addEventListener("input", validacao);
 
 
@@ -18,9 +17,11 @@ function validacao(event){
 }
 
 function mudarEstado(validade){
+    let msg = document.querySelector(".errorMsg");
+    console.log(msg);
     if(validade === true){
-        
+        msg.classList.add("displayNone");
     }else{
-
+        msg.classList.remove("displayNone");
     }
 }
