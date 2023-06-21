@@ -68,7 +68,6 @@ li > img{margin: 0rem 1rem 3rem 0rem;}
 form{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
 }
 label{
     color: var(--darkSlateGrey);
@@ -80,28 +79,39 @@ input{
     border-radius: 0.7rem;
     border: none;
 }
-input[type = "email"]{
+.email{
     border: 0.1rem solid var(--grey);
     color: var(--darkSlateGrey);
     font-weight: normal;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
-input[type = "email"]:focus{
+.email:focus{
     border: 0.1rem solid var(--darkSlateGrey);
     outline: none;
 }
-input[type = "email"]:hover, input[type = "submit"]:hover{
+.email:hover, .submit:hover{
     cursor: pointer;
 }
-input[type = "submit"]{
+.submit{
     background-color: var(--darkSlateGrey);
     color: var(--white);
     font-weight: bold;
 }
-input[type = "submit"]:hover{
-    background: linear-gradient(90deg, rgba(255,73,122,1) 0%, rgba(255,98,87,1) 61%);;
+.submit:hover{
+    background: linear-gradient(90deg, rgba(255,73,122,1) 0%, rgba(255,98,87,1) 61%);
+    box-shadow: 0rem 1.5rem 2rem rgba(255, 98, 87, 0.315);
 }
-input::placeholder{color: var(--grey); }
-
+input::placeholder{color: var(--grey);}
+.displayNone{display: none;}
+.error-msg{
+    color: var(--tomato);
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: relative;
+    left: 73%;
+    bottom: 1.7rem;
+}
 
 @media screen and (min-width: 1440px){
     main{
@@ -113,5 +123,8 @@ input::placeholder{color: var(--grey); }
     h1{font-size: 6rem;}
     p{width: 90%;}
     input{width: 90%; border-radius: 1rem;}
-    input[type = "email"]{margin-bottom: 1rem;}
+    .email{margin-bottom: 1rem;}
+    .error-msg{
+        left: 62%;
+    }
 }
