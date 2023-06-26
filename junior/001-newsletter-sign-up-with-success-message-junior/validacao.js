@@ -1,5 +1,6 @@
 let form = document.querySelector("form"),
-    emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+    condicao = false;
 
 form.addEventListener("submit", event => {
     event.preventDefault();
@@ -22,11 +23,17 @@ function mudarEstado(validade){
     console.log(msg);
     if(validade === true){
         msg.classList.add("displayNone");
+        condicao = true;
     }else{
         msg.classList.remove("displayNone");
+        condicao = false;
     }
 }
 
 function enviar(){
-    alert("evniado")
+    if(condicao === true){
+        window.location.href = "success.html";
+    }else{
+        mudarEstado(false)
+    }
 }

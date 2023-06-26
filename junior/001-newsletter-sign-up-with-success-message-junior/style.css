@@ -93,12 +93,12 @@ input{
 .email:hover, .submit:hover{
     cursor: pointer;
 }
-.submit{
+.submit, .button{
     background-color: var(--darkSlateGrey);
     color: var(--white);
     font-weight: bold;
 }
-.submit:hover{
+.submit:hover, .button:hover{
     background: linear-gradient(90deg, rgba(255,73,122,1) 0%, rgba(255,98,87,1) 61%);
     box-shadow: 0rem 1.5rem 2rem rgba(255, 98, 87, 0.315);
 }
