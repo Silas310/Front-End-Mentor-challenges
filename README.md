@@ -1,5 +1,5 @@
 # Projetos
- Primeiros projetos
+ Newbie
 
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/001-order-summary-newbie/order-summary-component-main/index.html">Order summary component 001</a>
 
@@ -36,3 +36,7 @@
  <a href="https://silas310.github.io/Front-End-Mentor-challenges/017-interactive-rating-component/index.html">Interactive rating 017</a>
 
 <a href="https://silas310.github.io/Front-End-Mentor-challenges/018-intro-component-with-signup-form/index.html">Intro Component with signup form 18</a>
+
+Junior
+
+<a href = "https://silas310.github.io/Front-End-Mentor-challenges/junior/001-newsletter-sign-up-with-success-message-junior/index.html">Newsletter sign up with success message 001</a>
