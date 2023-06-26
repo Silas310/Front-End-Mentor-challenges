@@ -6,6 +6,7 @@ form.addEventListener("submit", event => {
 })
 
 form[0].addEventListener("input", validacao);
+form[1].addEventListener("click", enviar);
 
 
 function validacao(event){
@@ -24,4 +25,8 @@ function mudarEstado(validade){
     }else{
         msg.classList.remove("displayNone");
     }
+}
+
+function enviar(){
+    alert("evniado")
 }
