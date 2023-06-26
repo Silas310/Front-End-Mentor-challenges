@@ -28,6 +28,7 @@ html{font-size: 62.6%;}
 body{
     display: flex;
     min-height: 100vh;
+    max-width: 100vw;
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
@@ -73,6 +74,7 @@ label{
     color: var(--darkSlateGrey);
     font-weight: bold;
     font-size: 1.4rem;
+    width: 100%;
 }
 input{
     padding: 2rem;
@@ -84,7 +86,7 @@ input{
     color: var(--darkSlateGrey);
     font-weight: normal;
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 .email:focus{
     border: 0.1rem solid var(--darkSlateGrey);
@@ -108,9 +110,20 @@ input::placeholder{color: var(--grey);}
     color: var(--tomato);
     font-size: 1.4rem;
     font-weight: bold;
-    position: relative;
+    /*position: relative;
     left: 73%;
-    bottom: 1.7rem;
+    bottom: 1.7rem;*/
+}
+
+.label-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.label-container > p {
+    font-size: 1.4rem;
+    text-align: right;
+    width: 100%;
 }
 
 @media screen and (min-width: 1440px){
@@ -124,7 +137,7 @@ input::placeholder{color: var(--grey);}
     p{width: 90%;}
     input{width: 90%; border-radius: 1rem;}
     .email{margin-bottom: 1rem;}
-    .errorMsg{
-        left: 62%;
+    .label-container{
+        width: 90%;
     }
 }

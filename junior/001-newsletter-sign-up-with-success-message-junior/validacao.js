@@ -20,7 +20,6 @@ function validacao(event){
 
 function mudarEstado(validade){
     let msg = document.querySelector(".errorMsg");
-    console.log(msg);
     if(validade === true){
         msg.classList.add("displayNone");
         condicao = true;
