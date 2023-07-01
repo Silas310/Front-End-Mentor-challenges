@@ -12,18 +12,21 @@
   <main>
     <form id="form">
       <div class="input-container">
-        <label for="">DAY</label>
-        <input type="number" placeholder="DD">
+        <label for="input-day">DAY</label>
+        <input type="number" placeholder="DD" id="input-day" class="input">
+        <p class="error-msg displayNone">Must be a valid date</p>
       </div>
 
       <div class="input-container">
-        <label for="">MONTH</label>
-        <input type="number" placeholder="MM">
+        <label for="input-month">MONTH</label>
+        <input type="number" placeholder="MM" id="input-month" class="input">
+        <p class="error-msg displayNone">Must be a valid month</p>
       </div>
 
       <div class="input-container">
-        <label for="">YEAR</label>
-        <input type="number" placeholder="YYYY">
+        <label for="input-year">YEAR</label>
+        <input type="number" placeholder="YYYY" id="input-year" class="input">
+        <p class="error-msg displayNone">Must be in the past</p>
       </div>
     </form>
 
@@ -36,5 +39,6 @@
       </div>
     </div>
   </main>
+  <script src="validacao.js"></script>
 </body>
 </html>

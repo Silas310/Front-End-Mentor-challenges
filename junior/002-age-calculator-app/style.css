@@ -63,7 +63,7 @@ label{
     letter-spacing: 0.3rem;
 }
 
-input{
+.input, .submit{
     padding: 1rem;
     border-radius: 1rem;
     border: 0.1rem solid var(--lightGrey);
@@ -117,6 +117,18 @@ span{
     letter-spacing: 1rem;
 }
 
+.displayNone{
+    display: none;
+}
+.error-msg{
+    color: var(--lightRed);
+    font-size: clamp(0.7rem, 1.6vw, 1.2rem);
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+.error-border{border: 0.1rem solid var(--lightRed);}
+.error-color{color: var(--lightRed);}
+
 @media screen and (min-width: 1024px){
     main{
         padding: 5rem;
@@ -131,9 +143,13 @@ span{
     p{
         font-size: 8rem;
     }
+    .input{
+        padding: 1.2rem;
+    }
     .submit{
         left: 46%;
         width: 10rem;
         padding: 3rem;
+        bottom: 4.4rem;
     }
 }
