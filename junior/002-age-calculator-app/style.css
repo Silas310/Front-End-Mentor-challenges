@@ -34,18 +34,23 @@ body{
     font-size: 1.2rem;
 }
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--white);
-    border-radius: 2rem;
-    padding: 2rem 0rem;
+    border-radius: 2rem 2rem 10rem 2rem;
+    padding: 2rem 1rem;
     width: calc(100% - 2rem);
     max-width: 76.8rem;
 }
 
 form{
-    border: 0.1rem solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
+    padding-bottom: 6rem;
+    border-bottom: 0.1rem solid var(--lightGrey);
 }
 .input-container{
     display: flex;
@@ -63,7 +68,8 @@ input{
     border-radius: 1rem;
     border: 0.1rem solid var(--lightGrey);
     font-size: 2rem;
-    transition: border 0.3s;
+    transition: border 0.4s, background-color 0.4s;
+    caret-color: var(--purple);
 }
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
     -webkit-appearance: none;
@@ -75,4 +81,59 @@ input:focus{
 input:hover{
     cursor: pointer;
     border: 0.1rem solid var(--purple);
+}
+.submit{
+    position: relative;
+    bottom: 3.5rem;
+    width: 7rem;
+    border-radius: 50%;
+    padding: 2rem;
+    background-image: url(assets/images/icon-arrow.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-color: var(--purple);
+}
+.submit:hover{
+    background-color: var(--offBlack);
+    border: 0.1rem solid var(--offBlack);
+}
+
+.age-wrapper{
+    width: 100%;
+}
+.age{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: italic;
+}
+span{
+    color: var(--purple);
+    letter-spacing: 1rem;
+}
+
+@media screen and (min-width: 1024px){
+    main{
+        padding: 5rem;
+    }
+    form{
+        padding-right: 10rem;
+        justify-content: space-between;
+    }
+    .age{
+        align-items: start;
+    }
+    p{
+        font-size: 8rem;
+    }
+    .submit{
+        left: 46%;
+        width: 10rem;
+        padding: 3rem;
+    }
 }
