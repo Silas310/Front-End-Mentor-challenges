@@ -1,48 +1,78 @@
 let form = document.querySelectorAll("form"),
-    labels = document.querySelectorAll("label");
+    labels = document.querySelectorAll("label"),
+    dia = document.getElementById("input-day").value,
+    mes = document.getElementById("input-month").value,
+    ano = document.getElementById("input-year").value;
 const data = new Date();
 
+
+for(let i = 0; i < 3; i++){
+    form[0][i].addEventListener("input", verificar);
+}
 
 form[0].addEventListener("submit", event =>{
     event.preventDefault();
 })
 
-for(let i = 0; i < 3; i++){
-    form[0][i].addEventListener("input", verificacao);
-}
-
 form[0][3].addEventListener("click", enviar);
 
 
-function verificacao(event, id = event.target.id){
-    let diasDisponiveis,
-        elemento = document.getElementById(id),
-        statusAtual = false;
-    console.log(id)
+function verificar(event, id = event.target.id){
+    let valorInserido = event.target.value;
     switch(id){
         case "input-day":
-            if( elemento.value < 0 || 
-                elemento.value > 31 || 
-                elemento.value > diasDisponiveis){
+            if(verificarDia(valorInserido, mes, ano) === false){
                 mudarEstado(false, 0);
-                statusAtual = false
-            }else{ mudarEstado(true, 0); statusAtual = true;}
+            }else{
+                mudarEstado(true, 0);
+            }
             break;
         case "input-month":
-            if(elemento.value < 0 ||
-                elemento.value > 12){
-                    mudarEstado(false, 1);
-                    statusAtual = false;
-                }else{ mudarEstado(true, 1); statusAtual = true;}
+            if(verificarMes(valorInserido) === false){
+                mudarEstado(false, 1);
+            }else{
+                mudarEstado(true, 1);
+            }
             break;
         case "input-year":
-            if(elemento.value < 0 || 
-                elemento.value > 2023){
-                    mudarEstado(false, 2);
-                    statusAtual = false;
-            }else{ mudarEstado(true, 2); statusAtual = true;}
-        break;         
+            if(verificarAno(valorInserido) === false){
+                mudarEstado(false, 2);
+            }else{
+                mudarEstado(true, 2);
+            }
+            break;
     }
+}
+
+
+function verificarDia(dia, mes = null, ano = null){
+    if(dia < 1 || dia > 31){
+        return false;
+    }
+    if(mes === 4 ||
+       mes === 6 ||
+       mes === 9 ||
+       mes === 11){
+        return dia <= 30;
+       }
+    if(mes === 2){
+        if(ano % 4 === 0 && (ano % 100 !== 0 || ano % 400 === 0) ){
+            return dia <= 29;
+        }else{
+            return dia <= 28;
+        }
+    }
+    return true;
+}
+
+
+function verificarMes(mes){
+    return mes >= 1 && mes <= 12;
+}
+
+
+function verificarAno(ano){
+    return ano >= 0 && ano <= data.getFullYear();
 }
 
 
@@ -60,7 +90,6 @@ function mudarEstado(validade, index){
     }
 }
 
-
 function enviar(){
-    verificacao("input-day");
+
 }
