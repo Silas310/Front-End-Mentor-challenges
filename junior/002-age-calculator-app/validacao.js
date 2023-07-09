@@ -1,8 +1,8 @@
 let form = document.querySelectorAll("form"),
     labels = document.querySelectorAll("label"),
-    dia = document.getElementById("input-day").value,
-    mes = document.getElementById("input-month").value,
-    ano = document.getElementById("input-year").value;
+    dia = document.getElementById("input-day"),
+    mes = document.getElementById("input-month"),
+    ano = document.getElementById("input-year");
 const data = new Date();
 
 
@@ -10,15 +10,20 @@ for(let i = 0; i < 3; i++){
     form[0][i].addEventListener("input", verificar);
 }
 
+form[0][1].addEventListener("input", reavaliarDia);
+form[0][2].addEventListener("input", reavaliarDia);
+
 form[0].addEventListener("submit", event =>{
     event.preventDefault();
 })
 
-form[0][3].addEventListener("click", enviar);
+/*form[0][3].addEventListener("click", enviar);*/
 
 
 function verificar(event, id = event.target.id){
-    let valorInserido = event.target.value;
+    let valorInserido = event.target.value,
+        mes = document.getElementById("input-month").value,
+        ano = document.getElementById("input-year").value;
     switch(id){
         case "input-day":
             if(verificarDia(valorInserido, mes, ano) === false){
@@ -46,6 +51,7 @@ function verificar(event, id = event.target.id){
 
 
 function verificarDia(dia, mes = null, ano = null){
+    mes = parseInt(mes);
     if(dia < 1 || dia > 31){
         return false;
     }
@@ -75,6 +81,16 @@ function verificarAno(ano){
     return ano >= 0 && ano <= data.getFullYear();
 }
 
+function reavaliarDia(){
+    let dia = document.getElementById("input-day").value,
+        mes = document.getElementById("input-month").value,
+        ano = document.getElementById("input-year").value;
+    if(verificarDia(dia, mes, ano) === false){
+        mudarEstado(false, 0);
+    }else{
+        mudarEstado(true, 0);
+    }
+}
 
 function mudarEstado(validade, index){
     if(validade === true){
@@ -88,8 +104,4 @@ function mudarEstado(validade, index){
         form[0].children[index].children[2].
         classList.remove("displayNone");
     }
-}
-
-function enviar(){
-
 }
