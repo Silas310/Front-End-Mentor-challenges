@@ -78,7 +78,7 @@ function verificarMes(mes){
 
 
 function verificarAno(ano){
-    return ano >= 0 && ano <= data.getFullYear();
+    return ano >= 1 && ano <= data.getFullYear();
 }
 
 function reavaliarDia(){
