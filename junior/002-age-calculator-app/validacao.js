@@ -17,7 +17,7 @@ form[0].addEventListener("submit", event =>{
     event.preventDefault();
 })
 
-/*form[0][3].addEventListener("click", enviar);*/
+form[0][3].addEventListener("click", mostrarResultado);
 
 
 function verificar(event, id = event.target.id){
@@ -104,4 +104,44 @@ function mudarEstado(validade, index){
         form[0].children[index].children[2].
         classList.remove("displayNone");
     }
+}
+
+
+function mostrarResultado(){
+    let diaNascimento, mesNascimento, anoNascimento;
+        diaNascimento = document.getElementById("input-day").value,
+        mesNascimento = document.getElementById("input-month").value,
+        anoNascimento = document.getElementById("input-year").value;
+    const idade = calcularIdade(diaNascimento, 
+        mesNascimento, anoNascimento);
+    let resultados = document.querySelectorAll(".result");
+    resultados[0].innerText = idade.anos;
+    resultados[1].innerText = idade.meses;
+    resultados[2].innerText = idade.dias;
+
+}
+
+function calcularIdade(diaN, mesN, anoN){
+    const anoAtual = data.getFullYear(),
+        mesAtual = data.getMonth() + 1,
+        diaAtual = data.getDate();
+    let idadeAnos = anoAtual - anoN,
+        idadeMeses = mesAtual - mesN,
+        idadeDias = diaAtual - diaN;
+    if(idadeDias < 0){
+        idadeMeses--;
+        idadeDias += diasNoMes(mesAtual - 1, anoAtual);
+    }
+    if(idadeMeses < 0){
+        idadeAnos--;
+        idadeMeses += 12;
+
+    }
+    console.log(diasNoMes(2, 2022));
+    return {anos: idadeAnos, meses: idadeMeses, dias: idadeDias}
+    
+
+    function diasNoMes(mes, ano){
+        return new Date(ano, mes, 0).getDate();
+    } 
 }
