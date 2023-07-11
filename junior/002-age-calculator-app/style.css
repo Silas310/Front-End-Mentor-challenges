@@ -115,6 +115,7 @@ p{
 span{
     color: var(--purple);
     letter-spacing: 1rem;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .displayNone{

@@ -115,9 +115,18 @@ function mostrarResultado(){
     const idade = calcularIdade(diaNascimento, 
         mesNascimento, anoNascimento);
     let resultados = document.querySelectorAll(".result");
-    resultados[0].innerText = idade.anos;
+    console.log(idade)
+    for(let i = 0; i < 3; i++){
+        resultados[i].style.opacity = 0;
+        setTimeout( () => {
+            resultados[i].innerText = idade[i];
+            resultados[i].style.opacity = 1;
+        }, 1000 )
+        /*resultados[i].innerText = idade[i];*/
+    }
+    /*resultados[0].innerText = idade.anos;
     resultados[1].innerText = idade.meses;
-    resultados[2].innerText = idade.dias;
+    resultados[2].innerText = idade.dias;*/
 
 }
 
@@ -138,7 +147,7 @@ function calcularIdade(diaN, mesN, anoN){
 
     }
     console.log(diasNoMes(2, 2022));
-    return {anos: idadeAnos, meses: idadeMeses, dias: idadeDias}
+    return [idadeAnos, idadeMeses, idadeDias]
     
 
     function diasNoMes(mes, ano){
