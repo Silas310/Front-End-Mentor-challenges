@@ -10,7 +10,6 @@
 <body>
   <!--xyz-->
   <main>
-
     <div class="left">
       <div class="logo-wrapper">
         <img src="images/logo.svg" alt="Logo">
@@ -26,9 +25,18 @@
       <p>
         You've used <strong>815GB</strong> of your storage
       </p>
-      
-      
-      <input type="range" name="range" id="range" step="1" min="0" max="1000" value="815" aria-label="Gigabyte range">
+
+      <div class="range-wrapper">
+        <input type="range" name="range" id="range" min="0" max="815" value="815" disabled>
+      </div>
+
+      <div class="min-max">
+        <p>0 GB</p>
+        <p>1000 GB</p>
+      </div>
+    </div>
+    <div class="gb-left">
+      <p><span class="gb-value">185</span> <span>GB LEFT</span></p>
     </div>
   </main>
 </body>
