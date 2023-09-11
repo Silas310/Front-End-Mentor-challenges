@@ -53,6 +53,17 @@ h2{color: var(--softOrange);}
 .news  h3{color: var(--offWhite);}
 .news p{color: var(--grayishBlue);}
 
+.top-news{
+    display: flex;
+}
+
+.top-news-icon-container{
+    background-size: cover;
+}
+#icon-1{background-image: url(../images/image-retro-pcs.jpg);}
+#icon-2{background-image: url(../images/image-top-laptops.jpg);}
+#icon-3{background-image: url(../images/image-gaming-growth.jpg);}
+
 img{display: block; max-width: 100%;}
 .displayNone{display: none;}
 
@@ -111,5 +122,26 @@ img{display: block; max-width: 100%;}
     .news > :not(:first-child):not(:last-child){
         border-bottom: 0.1rem solid var(--offWhite);
     }
+
+    .top-3{
+        margin-top: 3rem;
+    }
+    .top-3 ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top-3 li{
+        margin: 1rem 0rem;
+    }
+    .top-3 img{
+        width: 80%;
+    }
+    .top-news-icon-container{
+        width: 200px;
+        height: 177.8px;
+    }
+    #icon-2{}
+    
 
 }
