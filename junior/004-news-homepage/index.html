@@ -9,16 +9,13 @@
   <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
-  <!-- x y z-->
   <div class="container">
     <header class="header">
       <img src="assets/images/logo.svg" alt="Logo" class="logo">
-
+      
       <nav class="menu">
-        
-        <button class="hamburguer-button">
-          <div class="hamburguer"></div>
-        </button>
+        <img src="assets/images/icon-menu.svg" alt="Menu Icon">
+        <img src="assets/images/icon-menu-close.svg" class="displayNone" alt="Close Menu">
         <ul class="menu-items">
           <li><a href="#">Home</a></li>
           <li><a href="#">New</a></li>
@@ -28,17 +25,18 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <picture>
         <source media="(min-width: 1440px)" srcset="assets/images/image-web-3-desktop.jpg" type="image/jpg">
         <img src="assets/images/image-web-3-mobile.jpg" alt="Web 3 Illustration">
       </picture>
-      <h1>The Bright Future of Web 3.0?</h1>
+      <h1 class="main-title">The Bright Future of Web 3.0?</h1>
       <p>
         We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
         But is it really fulfilling its promise?
       </p>
-      <button>READ MORE</button>
+      <button class="button">READ MORE</button>
     </main>
     <section>
       <h2>New</h2>
@@ -90,5 +88,6 @@
       </ul>
     </section>
   </div>
+  <script src="assets/scripts/menu.js"></script>
 </body>
 </html>
