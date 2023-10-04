@@ -44,3 +44,5 @@ Junior
 <a href = "https://silas310.github.io/Front-End-Mentor-challenges/junior/002-age-calculator-app/index.html">Age calculator 002</a>
 
 <a href="https://silas310.github.io/Front-End-Mentor-challenges/junior/003-fylo-data-storage-component/index.html">Fylo data storage 003</a>
+
+<a href ="https://silas310.github.io/Front-End-Mentor-challenges/junior/004-news-homepage/index.html">News homepage 004</a>
