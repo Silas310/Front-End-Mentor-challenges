@@ -183,6 +183,9 @@ img{display: block; max-width: 100%;}
         width: 3rem;
         margin-left: auto;
     }
+    .close-button:hover{
+        cursor: pointer;
+    }
     .menu-items{
         list-style-type: none;
     }
