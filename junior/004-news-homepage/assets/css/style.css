@@ -31,6 +31,10 @@ body{
 }
 .container{display: grid;}
 
+.open-button:hover{
+    cursor: pointer;
+}
+
 p{
     color: var(--darkGrayishBlue);
     line-height: 2.2rem;
@@ -54,7 +58,7 @@ h2{color: var(--softOrange);}
 .top-news{
     display: grid;
     grid-template-columns: 30% 60%;
-    column-gap: 2rem;
+    column-gap: 3rem;
 }
 
 .top-news-icon-container{
@@ -116,9 +120,7 @@ img{display: block; max-width: 100%;}
         font-size: 4rem;
     }
 
-    .menu-items{display: none;}
-
-    .menu{height: 1.7rem;}
+    .nav{height: 1.7rem;}
 
     main > p{
         width: 100%; 
@@ -163,5 +165,34 @@ img{display: block; max-width: 100%;}
         width: 110px;
         height: 150px;
     }
-    
+
+    .menu-items-container{
+        position: fixed;
+        background-color: white;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 70vw;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15%;
+    }
+    .close-button{
+        height: 3rem;
+        width: 3rem;
+        margin-left: auto;
+    }
+    .menu-items{
+        list-style-type: none;
+    }
+    .menu-items > li{
+        padding: 1.5rem 0rem;
+    }
+    .menu-items a{
+        text-decoration: none;
+        color: var(--veryDarkBlue);
+        font-weight: 400;
+        font-size: 2rem;
+    }
 }
