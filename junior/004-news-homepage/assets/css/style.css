@@ -166,15 +166,15 @@ img{display: block; max-width: 100%;}
         height: 150px;
     }
 
-    .menu-items-container{
-        position: fixed;
+    #menu-items-container{
+        position: absolute;
         background-color: white;
         top: 0;
         right: 0;
         height: 100%;
         width: 70vw;
         padding: 2rem;
-        display: flex;
+        display: none;
         flex-direction: column;
         row-gap: 15%;
     }
