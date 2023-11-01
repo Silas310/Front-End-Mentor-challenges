@@ -9,3 +9,20 @@ function closeMenu(){
     menu.style.display = "none";
     document.body.style.backgroundColor = "white";
 }
+
+function verifyMenu(){
+    let larguraAtualJanela = updateWindowWidth();
+    if(larguraAtualJanela >= 64){
+        closeMenu();
+    }
+}
+
+function updateWindowWidth(){
+    let larguraJanela = window.innerWidth;
+    larguraJanela = larguraJanela/16;
+    return larguraJanela;
+}
+
+window.addEventListener("resize", verifyMenu);
+
+verifyMenu();
