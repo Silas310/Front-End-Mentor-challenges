@@ -169,7 +169,7 @@ img{display: block; max-width: 100%;}
 
     #menu-items-container{
         display: none;
-        position: absolute;
+        position: fixed;
         background-color: white;
         top: 0;
         right: 0;

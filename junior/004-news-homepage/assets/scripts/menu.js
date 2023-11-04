@@ -16,8 +16,9 @@ function verifyMenu(){
     if(larguraAtualJanela >= 64){
         closeMenu();
         menu.style.display = "flex";
-    }else{
+    }else if(larguraAtualJanela < 64){
         menu.style.display = "none";
+        document.body.style.backgroundColor = "white";
     }
 }
 
