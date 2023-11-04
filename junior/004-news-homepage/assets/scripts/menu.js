@@ -11,9 +11,13 @@ function closeMenu(){
 }
 
 function verifyMenu(){
-    let larguraAtualJanela = updateWindowWidth();
+    let larguraAtualJanela = updateWindowWidth(),
+        menu = document.querySelector("#menu-items-container");
     if(larguraAtualJanela >= 64){
         closeMenu();
+        menu.style.display = "flex";
+    }else{
+        menu.style.display = "none";
     }
 }
 
