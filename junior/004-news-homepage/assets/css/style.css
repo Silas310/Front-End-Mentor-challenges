@@ -237,7 +237,7 @@ ul{list-style-type: none;}
     main{
         grid-area: main;
         display: grid;
-        column-gap: 15rem;
+        column-gap: 10rem;
         row-gap: 3rem;
         max-width: 150rem;
         grid-template-columns: 1fr 1fr;
@@ -254,19 +254,24 @@ ul{list-style-type: none;}
     main > div{display:flex; flex-direction: column; justify-content: space-between;}
     main  p{
         grid-row: 2/2;
-        width: 95%;
+        width: 90%;
     }
     .button{
         padding: 1.5rem 4rem;
         width: 50%;
     }
 
-    .news{
-        grid-area: news;
+    .news{grid-area: news;}
+    h2{font-size: 4rem;}
+    .news h3{font-size: 2rem;}
+    .news article{padding-top: 4rem; padding-bottom: 4rem;}
+
+    .top-3{grid-area: top-3;}
+    .top-3 > ul{
+        display: flex;
+        flex-direction: row;
     }
-    .top-3{
-        grid-area: top-3;
-    }
+    .top-news{column-gap: 2rem;}
 
     .open-button{display: none;}
     .close-button{display: none;}
