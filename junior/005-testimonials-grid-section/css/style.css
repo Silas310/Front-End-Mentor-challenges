@@ -29,4 +29,45 @@
 body{
     font-size: 1.3rem;
     font-family: "Barlow Semi Condensed";
+    background-color: var(--lightGrayishBlue);
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main{display: grid;}
+
+.profile, .profile-info{display: flex;}
+.profile{
+    column-gap: 2rem;
+}
+.profile-pic{
+    border-radius: 50%;
+    border: 0.1rem solid red;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.profile-info{
+    flex-direction: column;
+}
+
+.container-1{background-color: var(--moderateViolet);}
+.container-2{background-color: var(--veryDarkGrayishBlue);}
+.container-3{background-color: var(--white);}
+.container-4{background-color: var(--veryDarkBlackishBlue);}
+.container-5{background-color: var(--white);}
+
+
+@media screen and (max-width: 63.9375rem) {
+    .main-container{
+        padding: 5rem 2rem;
+    }
+    main{
+        grid-template-rows: repeat(5, auto);
+    }
+
 }
