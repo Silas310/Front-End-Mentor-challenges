@@ -39,28 +39,34 @@ body{
     min-height: 100vh;
 }
 
-main{display: grid;}
+main{display: grid; row-gap: 2rem;}
 
-.profile, .profile-info{display: flex;}
-.profile{
-    column-gap: 2rem;
-}
-.profile-pic{
-    border-radius: 50%;
-    border: 0.1rem solid red;
-    width: 3.5rem;
-    height: 3.5rem;
-}
-.profile-info{
-    flex-direction: column;
-}
-
+.container{padding: 3rem; border: 0.5re;}
 .container-1{background-color: var(--moderateViolet);}
 .container-2{background-color: var(--veryDarkGrayishBlue);}
 .container-3{background-color: var(--white);}
 .container-4{background-color: var(--veryDarkBlackishBlue);}
 .container-5{background-color: var(--white);}
 
+
+.profile, .profile-info{display: flex;}
+.profile{
+    column-gap: 2rem;
+}
+
+.profile > .profile-pic{border: 0.1rem solid var(--moderateViolet);}
+
+.profile-pic{
+    border-radius: 50%;
+    border: 0.1rem solid rgba(255, 255, 255, 0.63);
+    width: 3rem;
+    height: 3rem;
+}
+
+.profile-info{
+    flex-direction: column;
+    font-weight: 500;
+}
 
 @media screen and (max-width: 63.9375rem) {
     .main-container{
