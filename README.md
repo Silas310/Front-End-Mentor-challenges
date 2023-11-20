@@ -47,4 +47,4 @@ Junior
 
 <a href ="https://silas310.github.io/Front-End-Mentor-challenges/junior/004-news-homepage/index.html">News homepage 004</a>
 
-<a href = "">Testimonials grid section</a>
+<a href = "https://silas310.github.io/Front-End-Mentor-challenges/junior/005-testimonials-grid-section/index.html">Testimonials grid section 005</a>
