@@ -20,7 +20,7 @@
     --veryLightGrayishBlue: hsl(210, 60%, 98%);
     --lightGrayishBlue1: hsl(211, 68%, 94%);
     --lightGrayishBlue2: hsl(205, 33%, 90%);
-    --GrayishBlue: hsl(219, 14%, 63%);
+    --grayishBlue: hsl(219, 14%, 63%);
     --darkGrayishBlue: hsl(219, 12%, 42%);
     --veryDarkBlue: hsl(224, 21%, 14%);
 
@@ -28,6 +28,26 @@
 }
 
 body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--veryLightGrayishBlue);
     font-size: 1.6rem;
     font-family: "Plus Jakarta Sans";
 }
+
+.menu-container{
+    border: 0.1rem solid black;
+}
+
+.top{padding: 1rem;}
+.top, .title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+h1{font-size: 2rem;}
