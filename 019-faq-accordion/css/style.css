@@ -9,6 +9,7 @@
     --lightPink: hsl(275, 100%, 97%);
     --grayishPurple: hsl(292, 16%, 49%);
     --darkPurple: hsl(292, 42%, 14%);
+    font-size: 62.5%;
 }
 
 
@@ -26,36 +27,70 @@
 4. Improve text rendering
 */
 body {
+    background-color: var(--lightPink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     font-family: "Work Sans", sans-serif;
+    font-size: 1.6rem;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
 /* 5. Improve media defaults*/
 img, picture, video, canvas, svg {
-display: block;
-max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 /* 6. Remove built-in form typography styles*/
 input, button, textarea, select {
-font: inherit;
+    font: inherit;
 }
 /* 7. Avoid text overflows*/
 p, h1, h2, h3, h4, h5, h6 {
-overflow-wrap: break-word;
+    overflow-wrap: break-word;
 }
  /* 8. Create a root stacking context */
 #root, #__next {
-isolation: isolate;
+    isolation: isolate;
 }
 
+main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 0.1px solid black;
+    padding: 1rem;
+
+    width: clamp(36rem, 50%, 54rem);
+}
+
+details p{
+    margin-left: 0.5rem;
+}
+
+.titulo-container{
+    display: flex;
+}
+.titulo-container img{width: 7%;}
+h1{
+    margin-left: 1rem;
+}
+h1, summary{color: var(--darkPurple);}
+/*Accordion*/
 summary{
     display: flex;
+    justify-content: space-between;
+    column-gap: 0.2rem;
+    padding: 0.5rem;
     list-style-type: none;
     cursor: pointer;
+    font-weight: 600;
 }
-summary::before{
+summary::after{
     content: url(../assets/images/icon-plus.svg);
 }
-details[open]> summary::before{
+details[open] > summary::after{
     content: url(../assets/images/icon-minus.svg);
 }
