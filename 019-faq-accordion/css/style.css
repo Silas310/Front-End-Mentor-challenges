@@ -26,6 +26,7 @@
 4. Improve text rendering
 */
 body {
+    font-family: "Work Sans", sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
@@ -45,4 +46,16 @@ overflow-wrap: break-word;
  /* 8. Create a root stacking context */
 #root, #__next {
 isolation: isolate;
+}
+
+summary{
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;
+}
+summary::before{
+    content: url(../assets/images/icon-plus.svg);
+}
+details[open]> summary::before{
+    content: url(../assets/images/icon-minus.svg);
 }
