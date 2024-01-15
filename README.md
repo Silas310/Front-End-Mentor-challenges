@@ -37,6 +37,8 @@
 
 <a href="https://silas310.github.io/Front-End-Mentor-challenges/018-intro-component-with-signup-form/index.html">Intro Component with signup form 18</a>
 
+<a href = "https://silas310.github.io/Front-End-Mentor-challenges/019-faq-accordion/index.html">FAQ Accordion 19</a>
+
 Junior
 
 <a href = "https://silas310.github.io/Front-End-Mentor-challenges/junior/001-newsletter-sign-up-with-success-message-junior/index.html">Newsletter sign up with success message 001</a>
