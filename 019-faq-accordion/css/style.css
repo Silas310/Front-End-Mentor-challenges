@@ -96,6 +96,7 @@ summary{
 summary::after{
     content: url(../assets/images/icon-plus.svg);
 }
+summary:hover{color:rgb(155, 0, 194);}
 details[open] > summary::after{
     content: url(../assets/images/icon-minus.svg);
 }
