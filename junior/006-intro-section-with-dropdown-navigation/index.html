@@ -13,18 +13,22 @@
   
 </head>
 <body>  
-  <nav>
-    <img src="images/logo.svg" alt="logo">
-    <ul>
-      <li>Features</li>
-      <li>Company</li>
-      <li>Careers</li>
-      <li>About</li>
-    </ul>
+  <header class="header">
+    <img class="header__logo" src="images/logo.svg" alt="Logo">
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-dropdown">Features</li>
+        <li class="header__nav-dropdown">Company</li>
+        <li class="header__nav-item">Careers</li>
+        <li class="header__nav-item">About</li>
+      </ul>
+    </nav>
 
-    <a href="#">Login</a>
-    <a href="#">Register</a>
-  </nav>
+    <div>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+    </div>
+  </header>
 
   <picture>
     <source media="(min-width: 1440px)" srcset="images/image-hero-desktop.png">
