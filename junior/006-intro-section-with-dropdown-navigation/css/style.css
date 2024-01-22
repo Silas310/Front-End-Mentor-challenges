@@ -13,13 +13,37 @@
   font-size: 62.5%;
 }
 
-body {
+.page {
   font-family: 'Epilogue', sans-serif;
   font-size: 1.8rem;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 /* MOBILE FIRST */
 
-body {
-  
+@media screen and (max-width: 768px) {
+  .page-mobile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-height: 100vh;
+  }
+
+  /*HEADER*/
+  .header-mobile {
+    padding: 2rem 1rem;
+  }
+
+  .header__nav-list {
+    display: none;
+  }
+  .header__auth-links {
+    display: none;
+  }
 }
