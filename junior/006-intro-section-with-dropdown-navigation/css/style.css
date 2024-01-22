@@ -37,6 +37,8 @@
 }
 .button:hover {cursor: pointer;}
 
+.footer {display: flex; width: 100%;}
+
 /* MOBILE FIRST */
 
 @media screen and (max-width: 768px) {
@@ -83,5 +85,15 @@
   }
 
   /*FOOTER*/
-  
+  .footer-mobile {
+    align-items: center;
+    justify-content: space-between;
+    /* column-gap: 2rem; */
+    max-width: 50rem;
+    padding: 2rem 1rem;
+    padding-bottom: 7rem;
+  }
+  .footer__img {
+    width: 6rem;
+  }
 }
