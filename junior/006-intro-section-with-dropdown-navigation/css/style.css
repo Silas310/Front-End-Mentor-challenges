@@ -29,6 +29,13 @@
   display: flex;
   flex-direction: column;
 }
+.button {
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+.button:hover {cursor: pointer;}
 
 /* MOBILE FIRST */
 
@@ -65,4 +72,16 @@
     font-size: 1.7rem;
     max-width: 40rem;
   }
+
+  .main__button {
+    background-color: var(--almostBlack);
+    color: var(--almostWhite);
+  }
+  .main__button:hover {
+    background-color: var(--almostWhite);
+    color: var(--almostBlack);
+  }
+
+  /*FOOTER*/
+  
 }
