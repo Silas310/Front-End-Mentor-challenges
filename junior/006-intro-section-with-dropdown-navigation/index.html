@@ -12,47 +12,48 @@
  
   
 </head>
-<body class="page page-mobile page-desktop">  
-  <header class="header header-mobile">
-    <img class="header__logo" src="images/logo.svg" alt="Logo" width="84" height="27">
+<body>  
+  <div class="page page-mobile page-desktop">
+    <header class="header header-mobile">
+      <img class="header__logo" src="images/logo.svg" alt="Logo" width="84" height="27">
 
-    <nav class="header__nav">
-      <img class="header__icon" src="images/icon-menu.svg" alt="Menu Icon">
-      <ul class="header__nav-list">
-        <li class="header__nav-dropdown">Features</li>
-        <li class="header__nav-dropdown">Company</li>
-        <li class="header__nav-item">Careers</li>
-        <li class="header__nav-item">About</li>
-      </ul>
-    </nav>
+      <nav class="header__nav">
+        <img class="header__icon" src="images/icon-menu.svg" alt="Menu Icon">
+        <ul class="header__nav-list">
+          <li class="header__nav-dropdown">Features</li>
+          <li class="header__nav-dropdown">Company</li>
+          <li class="header__nav-item">Careers</li>
+          <li class="header__nav-item">About</li>
+        </ul>
+      </nav>
+      <div class="header__auth-links">
+        <a class="header__auth-link" href="#">Login</a>
+        <a class="button header__auth-link" href="#">Register</a>
+      </div>
+    </header>
 
-    <div class="header__auth-links">
-      <a class="header__auth-link" href="#">Login</a>
-      <a class="button header__auth-link" href="#">Register</a>
+    <div class="image-container">
+      <picture class="image-container__picture">
+        <source media="(min-width: 1440px)" srcset="images/image-hero-desktop.png">
+        <img class="image-container__img" src="images/image-hero-mobile.png" alt="">
+      </picture>
     </div>
-  </header>
 
-  <div class="image-container">
-    <picture class="image-container__picture">
-      <source media="(min-width: 1440px)" srcset="images/image-hero-desktop.png">
-      <img class="image-container__img" src="images/image-hero-mobile.png" alt="">
-    </picture>
+    <main class="main main-mobile">
+      <h1 class="main__heading">Make remote work</h1>
+      <p class="main__paragraph">
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <a class="button main__button" href="#">Learn more</a>
+    </main>
+
+    <footer class="footer">
+      <img class="footer__img" src="images/client-databiz.svg" alt="databiz">
+      <img class="footer__img" src="images/client-audiophile.svg" alt="audiophile">
+      <img class="footer__img" src="images/client-meet.svg" alt="meet">
+      <img class="footer__img" src="images/client-maker.svg" alt="maker">
+    </footer>
   </div>
-
-  <main class="main">
-    <h1 class="main__heading">Make remote work</h1>
-    <p class="main_paragraph">
-      Get your team in sync, no matter your location. Streamline processes,
-      create team rituals, and watch productivity soar.
-    </p>
-    <a class="button main__button" href="#">Learn more</a>
-  </main>
-
-  <footer class="footer">
-    <img class="footer__img" src="images/client-databiz.svg" alt="databiz">
-    <img class="footer__img" src="images/client-audiophile.svg" alt="audiophile">
-    <img class="footer__img" src="images/client-meet.svg" alt="meet">
-    <img class="footer__img" src="images/client-maker.svg" alt="maker">
-  </footer>
 </body>
 </html>

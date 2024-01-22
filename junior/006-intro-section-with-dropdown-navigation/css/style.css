@@ -24,6 +24,12 @@
   width: 100%;
 }
 
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 /* MOBILE FIRST */
 
 @media screen and (max-width: 768px) {
@@ -37,7 +43,8 @@
 
   /*HEADER*/
   .header-mobile {
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
+    width: 95%;
   }
 
   .header__nav-list {
@@ -45,5 +52,17 @@
   }
   .header__auth-links {
     display: none;
+  }
+
+  /*MAIN*/
+  .main-mobile {
+    padding: 3rem 0.5rem;
+    row-gap: 2rem;
+    text-align: center;
+  }
+  .main__paragraph {
+    color: var(--mediumGray);
+    font-size: 1.7rem;
+    max-width: 40rem;
   }
 }
