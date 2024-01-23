@@ -14,21 +14,23 @@
 </head>
 <body>  
   <div class="page page-mobile page-desktop">
-    <header class="header header-mobile">
+    <header class="header header-mobile header-desktop">
       <img class="header__logo" src="images/logo.svg" alt="Logo" width="84" height="27">
 
       <nav class="header__nav">
-        <img class="header__icon" src="images/icon-menu.svg" alt="Menu Icon">
+        <img class="header__menu-icon" src="images/icon-menu.svg" alt="Menu Icon">
+
         <ul class="header__nav-list">
-          <li class="header__nav-dropdown">Features</li>
-          <li class="header__nav-dropdown">Company</li>
+          <li class="header__nav-item header__nav-dropdown">Features</li>
+          <li class="header__nav-item header__nav-dropdown">Company</li>
           <li class="header__nav-item">Careers</li>
           <li class="header__nav-item">About</li>
         </ul>
       </nav>
+
       <div class="header__auth-links">
         <a class="header__auth-link" href="#">Login</a>
-        <a class="button header__auth-link" href="#">Register</a>
+        <a class="button auth-button header__auth-link" href="#">Register</a>
       </div>
     </header>
 
@@ -55,5 +57,6 @@
       <img class="footer__img" src="images/client-maker.svg" alt="maker">
     </footer>
   </div>
+  <script src="menu.js"></script>
 </body>
 </html>

@@ -19,23 +19,39 @@
 }
 
 .header {
+  color: var(--mediumGray);
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-
+.header__auth-link {
+  color: var(--mediumGray);
+  text-decoration: none;
+}
 .main {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
+
+.main__button {
+  background-color: var(--almostBlack);
+  border: 0.1rem solid var(--almostBlack);
+  color: var(--almostWhite);
+  font-weight: bolder;
+}
+.main__button:hover {background-color: var(--almostWhite);}
+
 .button {
-  border: 0.1rem solid black;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   padding: 1rem 2rem;
   text-decoration: none;
+  transition: 0.3s;
 }
-.button:hover {cursor: pointer;}
+.button:hover {
+  color: var(--almostBlack);
+  cursor: pointer;
+}
 
 .footer {display: flex; width: 100%;}
 
@@ -56,12 +72,8 @@
     width: 95%;
   }
 
-  .header__nav-list {
-    display: none;
-  }
-  .header__auth-links {
-    display: none;
-  }
+  .header__nav-list {display: none;}
+  .header__auth-links {display: none;}
 
   /*MAIN*/
   .main-mobile {
@@ -75,25 +87,64 @@
     max-width: 40rem;
   }
 
-  .main__button {
-    background-color: var(--almostBlack);
-    color: var(--almostWhite);
-  }
-  .main__button:hover {
-    background-color: var(--almostWhite);
-    color: var(--almostBlack);
-  }
-
   /*FOOTER*/
   .footer-mobile {
     align-items: center;
     justify-content: space-between;
-    /* column-gap: 2rem; */
     max-width: 50rem;
     padding: 2rem 1rem;
     padding-bottom: 7rem;
   }
   .footer__img {
     width: 6rem;
+  }
+}
+
+
+/*DESKTOP*/
+@media screen and (min-width: 769px) {
+  .page-desktop {
+    display: grid;
+  }
+
+  /*HEADER*/
+  .header-desktop {
+    padding: 3rem;
+  }
+  .header__menu-icon{display: none;}
+
+  .header__nav-list {
+    display: flex;
+    list-style-type: none;
+    column-gap: 4rem;
+  }
+  .header__nav-item {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .header__nav-item:hover {color: var(--almostBlack);}
+  .header__nav-dropdown::after {
+    content: " " url(../images/icon-arrow-down.svg);
+    transition: 0.3s ease;
+  }
+  .header__nav-dropdown:hover::after {
+    color: var(--almostBlack);
+    filter: contrast(300%);
+  }
+
+  .header__auth-links {
+    margin-left: auto;
+  }
+  /*BUTTONS*/
+  .header__auth-link {
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .header__auth-link:hover {color: var(--almostBlack);}
+  .auth-button:hover {border: 0.2rem solid var(--almostBlack);}
+  .auth-button {
+    border: 0.2rem solid var(--mediumGray);
+    margin-left: 1rem;
+    transition: 0.3s;
   }
 }
