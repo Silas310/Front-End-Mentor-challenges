@@ -57,7 +57,7 @@
 
 /* MOBILE FIRST */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .page-mobile {
     align-items: center;
     display: flex;
@@ -102,7 +102,7 @@
 
 
 /*DESKTOP*/
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
   .page-desktop {
     display: grid;
   }
