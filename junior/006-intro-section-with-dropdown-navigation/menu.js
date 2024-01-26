@@ -9,7 +9,6 @@ function controlarMenu() {
       fecharMenu(nav);
     }
   }
-
 }
 
 function abrirMenu(nav) {
@@ -31,11 +30,13 @@ function verificarStatusMenu(nav) {
   }
 }
 
+
 function atualizarLargura() {
   let larguraJanela = window.innerWidth;
   larguraJanela = larguraJanela/16;
   return larguraJanela;
 }
+
 
 document.querySelector(".header__open-icon")
 .addEventListener("click", controlarMenu);
