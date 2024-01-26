@@ -1,6 +1,6 @@
 function controlarMenu() {
   let largura = atualizarLargura(),
-      nav = document.querySelector(".header__items");
+      nav = document.querySelector(".header__items-mobile");
 
   if (largura < 64) {
     if ( verificarStatusMenu(nav) == false) {
@@ -14,10 +14,12 @@ function controlarMenu() {
 
 function abrirMenu(nav) {
   nav.classList.remove("header__items_not-displayed");
+  nav.classList.add("header__items_open");
 }
 
 function fecharMenu(nav) {
   nav.classList.add("header__items_not-displayed");
+  nav.classList.remove("header__items_open");
 }
 
 
@@ -35,5 +37,6 @@ function atualizarLargura() {
   return larguraJanela;
 }
 
-document.querySelector(".header__menu-icon")
+document.querySelector(".header__open-icon")
 .addEventListener("click", controlarMenu);
+document.querySelector(".header__close-icon").addEventListener("click", controlarMenu);
