@@ -26,23 +26,52 @@
 body {
   align-items: center;
   background-color: var(--offBlack);
+  color: var(--white);
   display: flex;
+  font-family: "Inter", sans-serif;
   justify-content: center;
   min-height: 100vh;
 }
 main {
   align-items: center;
   background-color: var(--darkGrey);
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 2.5rem;
+  row-gap: 0.8rem;
 }
 
 img {
   border-radius: 50%;
   display: block;
-  max-width: 100%;
-  width: 50%;
+  margin-bottom: 0.7rem;
+  width: clamp(5rem, 3vw, 8rem);
 }
 
-p {font-size: 14px;}
+.address {
+  color: var(--green);
+}
+
+h1 {
+  font-size: 24px;
+}
+p {
+  margin: 1rem 0rem;
+  font-size: 14px;
+}
+.btn {
+  background-color: var(--grey);
+  border-radius: 1rem;
+  font-size: 800;
+  max-width: 50rem;
+  padding: 0.7rem 0rem;
+  text-align: center;
+  transition: 0.5s;
+  width: 100%;
+}
+.btn:hover {
+  background-color: var(--green);
+  color: var(--offBlack);
+  cursor: pointer;
+}
