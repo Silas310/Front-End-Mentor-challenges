@@ -14,6 +14,7 @@
 
   --nutmeg: hsl(14, 45%, 36%);
   --darkRaspberry: hsl(332, 51%, 32%);
+  --darkRaspberry--05: hsla(332, 51%, 32%, 0.103);
 
   /* Neutral */
 
@@ -21,6 +22,69 @@
   --roseWhite: hsl(330, 100%, 98%);
   --eggshell: hsl(30, 54%, 90%);
   --lightGrey: hsl(30, 18%, 87%);
+  --lightGrey--05: hsla(30, 18%, 87%, 0.5);
   --wengeBrown: hsl(30, 10%, 34%);
   --darkCharcoal: hsl(24, 5%, 18%);
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--eggshell);
+  color: var(--wengeBrown);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+}
+
+main {background-color: var(--white);}
+
+main, section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(3rem, 2vw, 5rem);
+  row-gap: 3rem;
+}
+
+section.introduction {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+h1, h2 {font-family: 'Young Serif', 'Arial Narrow Bold', sans-serif;}
+
+h1 {
+  color: var(--darkCharcoal); 
+  font-size: 3.2rem; 
+  font-weight: lighter;
+  line-height: 1.2;
+}
+h2 {color: var(--nutmeg);}
+h3 {color: var(--darkRaspberry);}
+
+section.preparation {
+  background-color: var(--darkRaspberry--05);
+  padding: 2rem;
+}
+
+ul {
+  line-height: 1.7;
+  width: 90%;
+}
+
+ul, ol {
+  line-height: 1.7;
+  padding-left: 2.2rem;
+}
+
+ol {width: 92%;}
+
+li {padding-left: 1rem;}
+
+hr {
+  border: 0.1rem solid var(--lightGrey--05);
 }
