@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
@@ -14,17 +14,19 @@
 
     <main class="main">
       <section class="bill-container">
-        <label for="tip-input">Bill</label>
+        <label class="label" for="tip-input">Bill</label>
         <input type="number" id="tip-input"></input>
 
-        <button value="5">5%</button>
-        <button value="10">10%</button>
-        <button value="15">15%</button>
-        <button value="25">25%</button>
-        <button value="50">50%</button>
-        <input type="number" placeholder="Custom"></input>
+        <div class="tip-values">
+          <button value="5">5%</button>
+          <button value="10">10%</button>
+          <button value="15">15%</button>
+          <button value="25">25%</button>
+          <button value="50">50%</button>
+          <input type="number" placeholder="Custom"></input>
+        </div>
 
-        <label for="people-input">Number of People</label>
+        <label class="label" for="people-input">Number of People</label>
         <input type="number" id="people-input"></input>
       </section>
 
