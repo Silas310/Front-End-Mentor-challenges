@@ -15,23 +15,35 @@
     <main class="main">
       <section class="bill-container">
         <label for="tip-input">Bill</label>
-        <input type="number" id="tip-input">Select Tip %</input>
+        <input type="number" id="tip-input"></input>
+
         <button value="5">5%</button>
         <button value="10">10%</button>
         <button value="15">15%</button>
         <button value="25">25%</button>
         <button value="50">50%</button>
         <input type="number" placeholder="Custom"></input>
-        <label for="">Number of People</label>
-        <input type="number" id=""></input>
+
+        <label for="people-input">Number of People</label>
+        <input type="number" id="people-input"></input>
       </section>
 
       <section class="result-container">
-        Tip Amount
-        / person
-        Total
-        / person
-        Reset
+        <div class="tip-container">
+          <span>
+            Tip Amount
+            / person
+          </span>
+          <span class="tip-result">0</span>
+        </div>
+        <div class="total-container">
+          <span>
+            Total
+            / person
+          </span>
+          <span class="total-result">0</span>
+        </div>
+        <button>Reset</button>
       </section>
     </main>
   </div>
