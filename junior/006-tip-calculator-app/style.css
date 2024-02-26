@@ -28,7 +28,61 @@
 }
 
 body {
+  align-items: center;
   background-color: var(--lightGrayishCyan);
+  display: flex;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
+  height: 100vh;
+  justify-content: center;
+}
+
+
+.heading {
+  font-size: 2.4rem;
+  letter-spacing: 1rem;
+  text-align: center;
+}
+
+.calculator-container {
+  background-color: var(--white);
+}
+
+
+.input {
+  background-color: var(--veryLightGrayishCyan);
+  background-size: 3%;
+  border: 0.2rem solid var(--veryLightGrayishCyan);
+  border-radius: 0.5rem;
+  color: var(--veryDarkCyan);
+  font-family: 'Space Mono';
+  text-align: right;
+  transition: border 0.3s;
+}
+.input::placeholder {
+  color: var(--grayishCyan);
+  font-family: "Space Mono";
+  text-align: right;
+}
+.input:focus{
+  border: 0.2rem solid var(--strongCyan);
+  outline: none;
+}
+
+input::-webkit-inner-spin-button,  /*Remove setas do input*/
+input::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.bill-input {background-image: url(images/icon-dollar.svg); }
+.people-input {background-image: url(images/icon-person.svg);}
+.bill-input, .people-input {
+  background-position: 0.5rem 50%;
+  background-repeat: no-repeat;
+}
+
+.heading, .label {color: var(--darkGrayishCyan);}
+body, .bill-container, .people-container{
+  display: flex;
+  flex-direction: column;
 }
