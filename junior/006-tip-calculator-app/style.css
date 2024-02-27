@@ -50,6 +50,12 @@ body {
   padding: 3rem;
 }
 
+.calc-area {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
 .tip-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -57,9 +63,13 @@ body {
   gap: 1.5rem;
 }
 
+.bill-container, .people-container {
+  row-gap: 0.5rem;
+}
+
 /* LABEL / INPUT / BUTTON */
 .label {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .input {
