@@ -47,23 +47,29 @@ body {
 .calculator-container {
   background-color: var(--white);
   border-radius: 1.5rem;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .tip-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1.5rem;
 }
 
 /* LABEL / INPUT / BUTTON */
+.label {
+  font-size: 1.2rem;
+}
+
 .input {
   background-color: var(--veryLightGrayishCyan);
-  background-size: 3%;
+  background-size: 4%;
   border: 0.2rem solid var(--veryLightGrayishCyan);
   border-radius: 0.5rem;
   color: var(--veryDarkCyan);
   font-family: 'Space Mono';
-  padding: 0.3rem;
+  padding: 0.3rem 1rem;
   text-align: right;
   transition: border 0.3s;
 }
@@ -86,6 +92,7 @@ input::-webkit-outer-spin-button{
 .bill-input, .people-input {
   background-position: 1rem 50%;
   background-repeat: no-repeat;
+  font-size: 2.4rem;
 }
 
 .btn {
@@ -94,16 +101,24 @@ input::-webkit-outer-spin-button{
   border-radius: 0.5rem;
   color: var(--white);
   cursor: pointer;
+  font-size: 2.4rem;
   font-weight: 700;
   text-align: center;
   transition: 0.3s;
+  width: 100%;
+  max-width: 25rem;
 }
-.btn:active {
+.btn:focus {
   background-color: var(--strongCyan);
   border: none;
   color: var(--veryDarkCyan);
 }
-
+.tip-input {
+  font-size: 2.2rem;
+  padding: 0rem 1.5rem;
+  width: 100%;
+  max-width: 25rem;
+}
 .heading, .label {color: var(--darkGrayishCyan);}
 body, .bill-container, .people-container{
   display: flex;
