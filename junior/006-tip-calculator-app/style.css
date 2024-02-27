@@ -48,7 +48,7 @@ body {
   background-color: var(--white);
 }
 
-
+/* LABEL / INPUT */
 .input {
   background-color: var(--veryLightGrayishCyan);
   background-size: 3%;
@@ -68,7 +68,6 @@ body {
   border: 0.2rem solid var(--strongCyan);
   outline: none;
 }
-
 input::-webkit-inner-spin-button,  /*Remove setas do input*/
 input::-webkit-outer-spin-button{
   -webkit-appearance: none;
