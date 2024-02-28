@@ -38,14 +38,19 @@ body {
 }
 
 .main {
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 55rem;
+  height: 100vh;
 }
 
 .heading {
   font-size: 2.4rem;
   letter-spacing: 1rem;
-  margin: auto;
+  /* margin: auto; */
+  padding: 3rem 0rem 1rem 0rem;
+  text-align: center;
   margin-bottom: 2rem;
   width: 30%;
   word-wrap: break-word;
@@ -53,8 +58,11 @@ body {
 
 .calculator-container {
   background-color: var(--white);
-  border-radius: 1.5rem;
-  padding: 3rem;
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  padding: 2rem;
 }
 
 .calc-area {
@@ -68,6 +76,37 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1.5rem;
+}
+
+.result-area {
+  align-items: center;
+  background-color: var(--veryDarkCyan);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  row-gap: 2rem;
+}
+
+.result-container {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.result-label {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+.person {
+  color: rgba(255, 255, 255, 0.432); 
+  font-size: 1rem;
+}
+.result {
+  color: var(--strongCyan);
+  font-size: 2.4rem;
 }
 
 .bill-container, .people-container {
@@ -120,6 +159,7 @@ input::-webkit-outer-spin-button{
   cursor: pointer;
   font-size: 2.4rem;
   font-weight: 700;
+  padding: 1rem 2rem;
   text-align: center;
   transition: 0.3s;
   width: 100%;
@@ -135,6 +175,22 @@ input::-webkit-outer-spin-button{
   padding: 0rem 1.5rem;
   width: 100%;
   max-width: 25rem;
+}
+
+.reset-btn {
+  background-color: var(--lightGrayishCyan);
+  opacity: 0.2;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--veryDarkCyan);
+  cursor: pointer;
+  font-weight: 700;
+  max-width: 30rem;
+  padding: 1rem 5rem;
+  width: 100%;
+}
+.reset-btn:hover {
+  opacity: 1;
 }
 .heading, .label {color: var(--darkGrayishCyan);}
 body, .bill-container, .people-container{
