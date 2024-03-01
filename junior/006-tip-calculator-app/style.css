@@ -27,10 +27,8 @@
   font-size: 62.5%;
 }
 
-body {
-  align-items: center;
+body { 
   background-color: var(--lightGrayishCyan);
-  display: flex;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
   height: 100vh;
@@ -38,7 +36,6 @@ body {
 }
 
 .main {
-  align-items: center;
   max-width: 55rem;
   height: 100vh;
 }
@@ -46,10 +43,9 @@ body {
 .heading {
   font-size: 2.4rem;
   letter-spacing: 1rem;
-  /* margin: auto; */
+  margin-bottom: 2rem;
   padding: 3rem 0rem 1rem 0rem;
   text-align: center;
-  margin-bottom: 2rem;
   width: 30%;
   word-wrap: break-word;
 }
@@ -61,11 +57,7 @@ body {
   padding: 2rem;
 }
 
-.calc-area {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-}
+.calc-area {row-gap: 2rem;}
 
 .tip-container {
   display: grid;
@@ -75,7 +67,6 @@ body {
 }
 
 .result-area {
-  align-items: center;
   background-color: var(--veryDarkCyan);
   border-radius: 1rem;
   justify-content: space-between;
@@ -84,7 +75,6 @@ body {
 }
 
 .result-container {
-  align-items: center;
   justify-content: space-between;
   display: flex;
   width: 100%;
@@ -187,4 +177,7 @@ input::-webkit-outer-spin-button{
 body, .main, .calculator-container, .bill-container, .people-container, .result-area{
   display: flex;
   flex-direction: column;
+}
+body, .main, .calc-area, .result-area, .result-container {
+  align-items: center;
 }
