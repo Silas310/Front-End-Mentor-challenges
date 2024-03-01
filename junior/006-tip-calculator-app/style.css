@@ -13,9 +13,7 @@
 :root {
   /* Colors */
   /* Primary */
-
   --strongCyan: hsl(172, 67%, 45%);
-
   /* Neutral */
   --veryDarkCyan: hsl(183, 100%, 15%);
   --darkGrayishCyan: hsl(186, 14%, 43%);
@@ -23,7 +21,6 @@
   --lightGrayishCyan: hsl(185, 41%, 84%);
   --veryLightGrayishCyan: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
-
   font-size: 62.5%;
 }
 
@@ -34,12 +31,10 @@ body {
   height: 100vh;
   justify-content: center;
 }
-
 .main {
   max-width: 55rem;
   height: 100vh;
 }
-
 .heading {
   font-size: 2.4rem;
   letter-spacing: 1rem;
@@ -58,14 +53,12 @@ body {
 }
 
 .calc-area {row-gap: 2rem;}
-
 .tip-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1.5rem;
 }
-
 .result-area {
   background-color: var(--veryDarkCyan);
   border-radius: 1rem;
@@ -73,13 +66,11 @@ body {
   padding: 3rem 2rem;
   row-gap: 2rem;
 }
-
 .result-container {
   justify-content: space-between;
   display: flex;
   width: 100%;
 }
-
 .result-label {
   color: var(--white);
   font-size: 1.2rem;
@@ -92,7 +83,6 @@ body {
   color: var(--strongCyan);
   font-size: 2.4rem;
 }
-
 .bill-container, .people-container {
   row-gap: 0.5rem;
 }
