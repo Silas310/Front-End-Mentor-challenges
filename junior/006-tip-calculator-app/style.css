@@ -181,3 +181,65 @@ body, .main, .calculator-container, .bill-container, .people-container, .result-
 body, .main, .calc-area, .result-area, .result-container {
   align-items: center;
 }
+
+@media screen and (min-width:768px) {
+  body {padding: 6vw;}
+  .main {
+    max-width: 90rem;
+    row-gap: 4rem;
+  }
+  .heading {
+    padding: 0;
+    width: 13%;
+    font-size: 2.4rem;
+  }
+  .calculator-container {
+    border-radius: 2rem;
+    column-gap: 5rem;
+    flex-direction: row;
+    max-width: 100rem;
+    padding: 3rem;
+  }
+  .calc-area, .result-area {width: 50%;}
+  .calc-area {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    row-gap: 3rem;
+  }
+  .tip-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .btn {
+    flex-basis: 3;
+  }
+  .bill-container, .people-container{
+    row-gap: 0.7rem;
+    width: 100%;
+  }
+  .label, .bill-input {width: 100%;}
+  .tip-container {margin-top: -1rem;}
+  .result-area {
+    border-radius: 1.5rem;
+    justify-content: start;
+    row-gap: 4rem;
+  }
+  .result-label {
+    font-size: 1.4rem;
+  }
+  .person {
+    font-size: 1.2rem;
+  }
+  .result {
+    font-size: 4rem;
+  }
+  .reset-btn{
+    font-size: 1.8rem;
+    margin-top: 13rem;
+    padding: 1.5rem 5rem;
+    max-width: 50rem;
+  }
+}
