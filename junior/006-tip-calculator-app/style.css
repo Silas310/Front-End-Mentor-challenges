@@ -109,10 +109,14 @@ body {
   border: 0.2rem solid var(--strongCyan);
   outline: none;
 }
-input::-webkit-inner-spin-button,  /*Remove setas do input*/
-input::-webkit-outer-spin-button{
-  -webkit-appearance: none;
-  margin: 0;
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
 .bill-input {background-image: url(images/icon-dollar.svg); }
 .people-input {background-image: url(images/icon-person.svg);}
