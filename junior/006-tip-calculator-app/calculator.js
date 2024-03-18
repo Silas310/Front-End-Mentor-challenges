@@ -20,6 +20,7 @@ function manageValues(e) {
   }
 }
 
+
 let values = {};
 function storeValues(value, type) {
   switch (type) {
@@ -34,7 +35,7 @@ function storeValues(value, type) {
       break;
   }
   Object.keys(values).length;
-  calculateTip(values);
+  console.log(calculateTip(values));
 }
 
 
@@ -44,9 +45,13 @@ function calculateTip(operands) {
     let total = parseFloat(operands.total),
         tip = parseFloat(operands.tip),
         divider = parseFloat(operands.divider);
-    console.log( Math.round((total * tip) / divider) );
+    let results = [];
+    results[0] = Math.round((total * tip) / divider),
+    results[1] = total * tip;
+    return results;
   }
 }
+
 
 billInput.addEventListener("input", manageValues);
 for (let i = 0; i < tipBtn.length; i++) {
