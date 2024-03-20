@@ -16,6 +16,7 @@ function manageValues(e) {
       break;
     case "input people-input":
       storeValues(e.target.value, 3);
+      toggleErrorMessage(parseInt(e.target.value));
       break;
   }
 }
@@ -57,6 +58,16 @@ function showResults(valores) {
   let mostrador = document.querySelectorAll(".result");
   mostrador[0].innerHTML = "$" + valores[0];
   mostrador[1].innerHTML = "$" + valores[1];
+}
+
+
+function toggleErrorMessage(totalPeople) {
+  const errorMessage = document.getElementById('error-msg');
+  if (totalPeople <= 0) {
+    errorMessage.classList.remove('display-none');
+  } else {
+    errorMessage.classList.add('display-none');
+  }
 }
 
 
