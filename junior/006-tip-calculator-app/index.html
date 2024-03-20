@@ -19,10 +19,10 @@
           <input type="number" id="bill-inputID" class="input bill-input" placeholder="0">
         </div>
 
-        <span class="label">Select Tip %</span> <!--***-->
+        <div class="label select-label">Select Tip %</div> <!--***-->
         <div class="tip-container">
           <button id="btn5" class="btn" value="5">5%</button>
-          <button id="btn10" class="btn" value="1">10%</button>
+          <button id="btn10" class="btn" value="10">10%</button>
           <button id="btn15" class="btn" value="15">15%</button>
           <button id="btn25" class="btn" value="25">25%</button>
           <button id="btn50" class="btn" value="50">50%</button>
@@ -30,7 +30,10 @@
         </div>
 
         <div class="people-container">
-          <label for="people-inputID" class="label">Number of People</label>
+          <div class="error-msg-container">
+            <label for="people-inputID" class="label">Number of People</label>
+            <span id="error-msg" class="display-none">Can't be zero</span>
+          </div>
           <input type="number" id="people-inputID" class="input people-input" placeholder="0">
         </div>
       </section>

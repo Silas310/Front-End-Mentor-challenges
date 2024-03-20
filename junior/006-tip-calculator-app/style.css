@@ -52,12 +52,12 @@ body {
   padding: 2rem;
 }
 
-.calc-area {row-gap: 2rem;}
 .tip-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1.5rem;
+  margin-top: 1rem;
 }
 .result-area {
   background-color: var(--veryDarkCyan);
@@ -88,7 +88,7 @@ body {
 }
 
 /* LABEL / INPUT / BUTTON */
-.label {font-size: 1.4rem;}
+.label {font-size: 1.4rem; margin: 0.5rem 0;}
 .input {
   background-color: var(--veryLightGrayishCyan);
   background-size: 4%;
@@ -124,6 +124,7 @@ input[type=number] {
   background-position: 1rem 50%;
   background-repeat: no-repeat;
   font-size: 2.4rem;
+  margin-bottom: 1rem;
 }
 
 .btn {
@@ -176,6 +177,20 @@ body, .main, .calc-area, .result-area, .result-container {
   align-items: center;
 }
 
+.error-msg-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#error-msg { 
+  color: tomato;
+  width: 100%;
+  text-align: right;
+}
+.display-none {
+  display: none;
+}
+
 @media screen and (min-width:768px) {
   body {padding: 6vw;}
   .main {
@@ -201,7 +216,6 @@ body, .main, .calc-area, .result-area, .result-container {
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
-    row-gap: 3rem;
   }
   .tip-container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -215,7 +229,7 @@ body, .main, .calc-area, .result-area, .result-container {
     width: 100%;
   }
   .label, .bill-input {width: 100%;}
-  .tip-container {margin-top: -1rem;}
+  .tip-container {margin-top: -2rem;}
   .result-area {
     border-radius: 1.5rem;
     justify-content: start;
