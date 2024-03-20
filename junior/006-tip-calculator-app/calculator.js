@@ -35,7 +35,8 @@ function storeValues(value, type) {
       break;
   }
   Object.keys(values).length;
-  console.log(calculateTip(values));
+  let resultados = calculateTip(values);
+  showResults(resultados);
 }
 
 
@@ -45,10 +46,17 @@ function calculateTip(operands) {
         tip = parseFloat(operands.tip / 100),
         divider = parseFloat(operands.divider);
     let results = [];
-    results[0] = ( (total * tip) / divider ).toFixed(2);
+    results[0] = ( (total * tip) / divider ).toFixed(2); /*Tip*/
     results[1] = ( (total + (total * tip)) / divider ).toFixed(2);
     return results;
   }
+}
+
+
+function showResults(valores) {
+  let mostrador = document.querySelectorAll(".result");
+  mostrador[0].innerHTML = "$" + valores[0];
+  mostrador[1].innerHTML = "$" + valores[1];
 }
 
 
