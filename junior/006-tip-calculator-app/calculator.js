@@ -40,14 +40,13 @@ function storeValues(value, type) {
 
 
 function calculateTip(operands) {
-  console.log(operands);
   if (Object.keys(operands).length == 3) {
     let total = parseFloat(operands.total),
         tip = parseFloat(operands.tip),
         divider = parseFloat(operands.divider);
     let results = [];
-    results[0] = Math.round((total * tip) / divider),
-    results[1] = total * tip;
+    results[0] = ( (total * tip) / divider ).toFixed(2);
+    results[1] = ( (total + (total * tip)) / divider ).toFixed(2);
     return results;
   }
 }
