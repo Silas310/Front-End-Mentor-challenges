@@ -42,7 +42,7 @@ function storeValues(value, type) {
 function calculateTip(operands) {
   if (Object.keys(operands).length == 3) {
     let total = parseFloat(operands.total),
-        tip = parseFloat(operands.tip),
+        tip = parseFloat(operands.tip / 100),
         divider = parseFloat(operands.divider);
     let results = [];
     results[0] = ( (total * tip) / divider ).toFixed(2);
