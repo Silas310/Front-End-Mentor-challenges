@@ -163,9 +163,14 @@ input[type=number] {
   font-weight: 700;
   max-width: 30rem;
   padding: 1rem 5rem;
+  transition:  0.5s;
   width: 100%;
 }
-.reset-btn:hover {
+.reset-btn:hover{
+  opacity: 1;
+}
+.active-state{
+  background-color: var(--strongCyan);
   opacity: 1;
 }
 .heading, .label {color: var(--darkGrayishCyan);}

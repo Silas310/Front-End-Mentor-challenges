@@ -3,7 +3,7 @@ let tipBtn = document.querySelectorAll(".btn");
 let customInput = document.querySelector(".tip-input");
 let peopleInput = document.querySelector(".people-input");
 let results = document.querySelectorAll(".result");
-
+let resetBtn = document.querySelector(".reset-btn");
 
 function manageValues(e) {
   switch (e.target.className) {
@@ -39,6 +39,9 @@ function storeValues(value, type) {
   let resultados = calculateTip(values);
   if ( resultados[0] > 0 && resultados[0] != Infinity) {
     showResults(resultados);
+    activeState(true);
+  }else {
+    activeState(false)
   }
 }
 
@@ -73,9 +76,27 @@ function toggleErrorMessage(totalPeople) {
 }
 
 
+function resetResults() {
+  let mostrador = document.querySelectorAll(".result");
+  mostrador[0].innerHTML = "$" + "0.00";
+  mostrador[1].innerHTML = "$" + "0.00";
+  activeState(false);
+}
+
+
+function activeState(btnState) {
+  let resetBtn = document.querySelector(".reset-btn");
+  if (btnState === true) {
+    resetBtn.classList.add("active-state");
+  }else {
+    resetBtn.classList.remove("active-state");
+  }
+}
+
 billInput.addEventListener("input", manageValues);
 for (let i = 0; i < tipBtn.length; i++) {
   let item = tipBtn[i].addEventListener("click", manageValues);
 }
 customInput.addEventListener("input", manageValues);
 peopleInput.addEventListener("input", manageValues);
+resetBtn.addEventListener("click", resetResults);
