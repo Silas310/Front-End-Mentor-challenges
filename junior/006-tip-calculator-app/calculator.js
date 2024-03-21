@@ -37,7 +37,9 @@ function storeValues(value, type) {
   }
   Object.keys(values).length;
   let resultados = calculateTip(values);
-  showResults(resultados);
+  if ( resultados[0] > 0 && resultados[0] != Infinity) {
+    showResults(resultados);
+  }
 }
 
 
