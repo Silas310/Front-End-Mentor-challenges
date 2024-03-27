@@ -15,6 +15,6 @@ Your users should be able to:
 ## Useful articles
 
 ### Semantic Tags
-HEADER - Link: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header
-SECTION - Link: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
-ARTICLE - Link: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article
+- HEADER - Link: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header
+- SECTION - Link: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
+- ARTICLE - Link: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article
