@@ -15,7 +15,7 @@ Your users should be able to:
 ## Useful articles
 
 ### Semantic Tags
-- BUTTON - [Link] (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
-- HEADER - [Link] (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
-- SECTION - [Link] (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)
-- ARTICLE - [Link] (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)
+- BUTTON - [Link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
+- HEADER - [Link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
+- SECTION - [Link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)
+- ARTICLE - [Link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)
