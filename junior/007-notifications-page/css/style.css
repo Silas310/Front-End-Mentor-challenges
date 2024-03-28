@@ -35,4 +35,77 @@
   --grayishBlue: hsl(219, 14%, 63%);
   --darkGrayishBlue: hsl(219, 12%, 42%);
   --veryDarkBlue: hsl(224, 21%, 14%);
+
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+}
+
+
+.body {
+  align-items: center;
+  background-color: var(--veryLightGrayishBlue);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main { border: 1px solid red;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem 1rem 0rem;
+  row-gap: 1.3rem;
+}
+
+/* .header {
+  padding: 1rem;
+} */
+.notification-container {column-gap: 0.5rem;}
+.header, .notification-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.notification-heading { /*H1*/
+  color: var(--veryDarkBlue);
+  font-size: 1.5rem;
+}
+.notification-count {
+  background-color: var(--blue);
+  border-radius: 0.3rem;
+  color: white;
+  padding: 0.1rem 0.5rem;
+}
+
+
+.notifications {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.notification {
+  align-items: center;
+  background-color: var(--veryLightGrayishBlue);
+  border-radius: 0.5rem;
+  display: flex;
+  padding: 0.7rem;
+}
+.profile-img {
+  width: 2rem;
+}
+
+.mark-btn {
+  border: none;
+  background-color: white;
+  color: var(--grayishBlue);
+  cursor: pointer;
+}
+.mark-btn:active{
+  color: var(--blue);
+}
+
+img{
+  display: block;
+  max-width: 100%;
 }
