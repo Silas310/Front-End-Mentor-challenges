@@ -98,7 +98,12 @@
 .profile-img {
   width: 2.5rem;
 }
-.post-class{color: var(--darkGrayishBlue); cursor: pointer; font-weight: 800;}
+.post-class {color: var(--darkGrayishBlue); }
+.club-class {color: var(--blue);}
+.post-class, .club-class {
+  cursor: pointer; 
+  font-weight: 800;
+}
 .action, .time {
   color: var(--grayishBlue);
 }
