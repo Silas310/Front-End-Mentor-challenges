@@ -18,7 +18,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-} 
+}
 
 
 :root {
@@ -57,10 +57,6 @@
   padding: 1rem 1rem 0rem;
   row-gap: 1.3rem;
 }
-
-/* .header {
-  padding: 1rem;
-} */
 .notification-container {column-gap: 0.5rem;}
 .header, .notification-container {
   align-items: center;
@@ -77,10 +73,6 @@
   color: white;
   padding: 0.1rem 0.5rem;
 }
-.notification-content > * {
-  font-size: 0.875rem;
-  margin: 0rem 0.1rem
-}
 
 .notifications {
   display: flex;
@@ -89,19 +81,36 @@
 }
 .notification {
   align-items: start;
-  background-color: var(--veryLightGrayishBlue);
   border-radius: 0.5rem;
   column-gap: 1rem;
   display: flex;
   padding: 1rem;
 }
+.notification-unread {
+  background-color: var(--veryLightGrayishBlue);
+}
+.notification-unread .notification-action::after {
+  background-color: var(--red); /* Cor vermelha */
+  border-radius: 50%; /* Torna a bolinha redonda */
+  content: "";
+  display: inline-block;
+  height: 8px; /* Altura da bolinha */
+  margin-left: 6px; /* Espaçamento entre o texto e a bolinha */
+  vertical-align: middle;
+  width: 8px; /* Largura da bolinha */
+}
 .profile-img {
   width: 2.5rem;
 }
+/* .notification-action::after {
+  background-color: var(--red);
+  content: "";
+  border: 1px solid red;
+} */
 .post-class {color: var(--darkGrayishBlue); }
 .club-class {color: var(--blue);}
 .post-class, .club-class {
-  cursor: pointer; 
+  cursor: pointer;
   font-weight: 800;
 }
 .action, .time {
