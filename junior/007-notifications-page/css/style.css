@@ -99,7 +99,8 @@
   vertical-align: middle;
   width: 8px; /* Largura da bolinha */
 }
-.profile-img {
+.post-img {display: inline; margin-left: auto;} 
+.profile-img, .post-img{
   width: 2.5rem;
 }
 .name {
