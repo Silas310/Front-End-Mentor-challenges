@@ -42,7 +42,6 @@
 
 
 .body {
-  align-items: center;
   background-color: var(--veryLightGrayishBlue);
   display: flex;
   flex-direction: column;
@@ -51,7 +50,6 @@
 
 .main {
   background-color: white;
-  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   padding: 1rem 1rem 0rem;
@@ -129,4 +127,15 @@
 img{
   display: block;
   max-width: 100%;
+}
+
+@media screen and (min-width: 48rem) {
+  .body {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .main {
+    border-radius: 1rem;
+  }
 }
