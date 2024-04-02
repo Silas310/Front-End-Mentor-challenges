@@ -150,7 +150,7 @@ img{
   max-width: 100%;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 40rem) {
   .body {
     flex-direction: row;
     align-items: center;
