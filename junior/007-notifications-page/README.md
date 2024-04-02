@@ -19,3 +19,9 @@ Your users should be able to:
 - HEADER - [Link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
 - SECTION - [Link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)
 - ARTICLE - [Link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)
+
+### Methods
+- querySelectorAll() - [Link](https://www.w3schools.com/jsref/met_document_queryselectorall.asp)
+
+### DOM
+- NodeList - [Link](https://www.w3schools.com/js/js_htmldom_nodelist.asp)

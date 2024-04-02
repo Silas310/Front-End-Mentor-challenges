@@ -99,9 +99,20 @@
   vertical-align: middle;
   width: 8px; /* Largura da bolinha */
 }
-.post-img {display: inline; margin-left: auto;} 
+.post-img {
+  border: 0.1rem solid var(--white);
+  cursor: pointer;
+  display: inline; 
+  margin-left: auto;
+  padding: 0.05rem;
+} 
 .profile-img, .post-img{
   width: 2.5rem;
+}
+.post-img:hover {
+  border: 0.1rem solid var(--lightGrayishBlue1);
+  border-radius: 0.5rem;
+  
 }
 .name {
   cursor: pointer;
