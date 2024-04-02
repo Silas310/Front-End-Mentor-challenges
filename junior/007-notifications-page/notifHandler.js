@@ -7,4 +7,6 @@ function markAsRead() {
   for (let i = 0; i < 3; i++) {
     notifications[i].classList.remove("notification-unread");
   }
+  document.querySelector(".notification-count").
+  style.display = "none";
 }
