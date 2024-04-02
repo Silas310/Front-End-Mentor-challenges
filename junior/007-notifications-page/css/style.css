@@ -94,10 +94,10 @@
   border-radius: 50%; /* Torna a bolinha redonda */
   content: "";
   display: inline-block;
-  height: 8px; /* Altura da bolinha */
-  margin-left: 6px; /* Espaçamento entre o texto e a bolinha */
+  height: 0.5rem; /* Altura da bolinha */
+  margin-left: 0.375rem; /* Espaçamento entre o texto e a bolinha */
   vertical-align: middle;
-  width: 8px; /* Largura da bolinha */
+  width: 0.5rem; /* Largura da bolinha */
 }
 .post-img {
   border: 0.1rem solid var(--white);
