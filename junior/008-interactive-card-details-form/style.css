@@ -22,6 +22,11 @@
   --veryDarkViolet: hsl(278, 68%, 11%);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 body {
   font-size: 1.125rem;
 }
