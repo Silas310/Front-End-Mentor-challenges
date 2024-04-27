@@ -12,7 +12,7 @@
 
 :root {
   /* Primary */
-  --linearGradient : hsl(249, 99%, 64%) to hsl(278, 94%, 30%); /*(active input border)*/
+  /* linearGradient : hsl(249, 99%, 64%) to hsl(278, 94%, 30%); (active input border)*/
   --red : hsl(0, 100%, 66%); /*(input errors)*/
 
   /* Neutral */
@@ -28,5 +28,19 @@ img {
 }
 
 body {
+  color: var(--veryDarkViolet);
+  font-family: "Space Grotesk";
   font-size: 1.125rem;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+}
+
+
