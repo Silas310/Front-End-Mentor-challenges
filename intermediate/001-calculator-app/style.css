@@ -13,3 +13,13 @@
 body {
   font-family: 'League Spartan', sans-serif;
 }
+
+.header {
+  align-items: center;
+  display: flex;
+}
+
+.toggle-container {
+  align-items: end;
+  display: flex;
+}
