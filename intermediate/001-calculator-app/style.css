@@ -35,6 +35,22 @@ body {
   display: flex;
 }
 
+/* BUTTONS */
+.switch {
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-labels, .theme-options {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 0.3rem;
+}
+.theme-options {
+  border: 1px solid orange;
+}
+
+
 .result {
   padding: 1rem;
   text-align: right;
