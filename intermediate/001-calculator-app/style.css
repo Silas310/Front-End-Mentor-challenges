@@ -20,6 +20,7 @@ body {
 
 .calculator {
   border: 1px solid gray;
+  padding: 1rem;
 }
 
 .header { border: 1px solid red;
@@ -35,7 +36,7 @@ body {
   display: flex;
 }
 
-/* BUTTONS */
+/* TOGGLE */
 .switch {
   display: flex;
   flex-direction: column;
@@ -63,11 +64,17 @@ body {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.btn {
+[class~= "btn"] {
+  border: 1px solid green;
   border-radius: 0.5rem;
   box-shadow: 0px 2px black;
-  padding: 1rem;
+  font-size: 2rem;
+  padding: .7rem;
+  align-content: center;
   text-align: center;
+}
+.btn-function {
+  font-size: 1.3rem;
 }
 
 .reset {
