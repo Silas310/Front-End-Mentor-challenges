@@ -1,5 +1,5 @@
 document.querySelector(".operators").
-addEventListener("click", manageCalculator);
+addEventListener("click", handleCalculatorInput);
 
 
 function buildMathExpression() {
