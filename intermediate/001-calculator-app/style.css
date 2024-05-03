@@ -60,11 +60,18 @@ body {
   flex-direction: column;
   row-gap: 1rem;
 }
-.result {
+.result-container {
+  position: relative;
   border: 1px solid brown;
   font-size: 2rem;
   padding: 1.5rem;
   text-align: right;
+}
+
+.expression {
+  right: 8.5%;
+  position: absolute;
+  font-size: 1rem;
 }
 
 .operators {
