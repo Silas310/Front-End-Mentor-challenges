@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root{
+/* Colors primary */
+  --green: hsl(148, 38%, 91%); /*200 (lighter)*/
+  --green: hsl(169, 82%, 27%); /*600 (medium)*/
+  --red: hsl(0, 66%, 54%);
+
+/* neutral  */
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(186, 15%, 59%); /*500 (medium)*/
+  --grey: hsl(187, 24%, 22%); /*900 (darker)**/
+
+  font-family: "Karla", sans-serif;
+}
