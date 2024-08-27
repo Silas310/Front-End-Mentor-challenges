@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <section class="container">
+    <header class="header">
+      <h1>calc</h1>
+      <div class="toggle-container">
+        <span class="theme-title">THEME</span>
+        <span>
+          <div class="switch">
+            <div class="theme-labels">
+              <label for="theme1ID">1</label>
+              <label for="theme2ID">2</label>
+              <label for="theme3ID">3</label>
+            </div>
+            <div class="theme-options">
+              <input type="checkbox" id="theme1ID">
+              <input type="checkbox" id="theme2ID">
+              <input type="checkbox" id="theme3ID">
+            </div>
+          </div>
+        </span>
+      </div>
+    </header>
+
+    <main class="calculator">
+      <div class="result-container">
+        <p class="result">399,981</p>
+        <div class="expression"></div>
+      </div>
+      <div class="operators">
+        <button class="btn" value="number">7</button>
+        <button class="btn" value="number">8</button>
+        <button class="btn" value="number">9</button>
+        <button class="btn btn-function" value="function">DEL</button>
+        <button class="btn" value="number">4</button>
+        <button class="btn" value="number">5</button>
+        <button class="btn" value="number">6</button>
+        <button class="btn" value="operator">+</button>
+        <button class="btn" value="number">1</button>
+        <button class="btn" value="number">2</button>
+        <button class="btn" value="number">3</button>
+        <button class="btn" value="operator">-</button>
+        <button class="btn" value="function">.</button>
+        <button class="btn" value="number">0</button>
+        <button class="btn" value="operator">/</button>
+        <button class="btn" value="operator">x</button>
+        <button class="btn btn-function reset" value="function">RESET</button>
+        <button class="btn equal" value="function">=</button>
+      </div>
+    </main>
+  </section>
+  <script src="calculatorApp.js"></script>
+</body>
+</html>
