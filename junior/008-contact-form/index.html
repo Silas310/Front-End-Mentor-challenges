@@ -30,8 +30,12 @@
 
       <div>
         <label for="query-type">Query Type</label>
-        <input type="radio" name="query-type" id="general-enquiry">General Enquiry</input>
-        <input type="radio" name="query-type" id="support-request">Support Request</input>
+        <div class="radio-container">
+          <input type="radio" name="query-type" id="general-enquiry"><span class="radio-text">General Enquiry</span></input>
+        </div>
+        <div class="radio-container">
+          <input type="radio" name="query-type" id="support-request"><span class="radio-text">Support Request</span></input>
+        </div>
       </div>
 
       <div>
@@ -39,7 +43,7 @@
         <textarea></textarea>
       </div>
       
-      <input type="checkbox">I consent to being contacted by the team</input>
+      <input type="checkbox"><span class="label">I consent to being contacted by the team</span></input>
 
       <button>Submit</button>
     </form>
