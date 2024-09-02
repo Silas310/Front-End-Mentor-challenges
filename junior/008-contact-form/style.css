@@ -32,3 +32,11 @@ body{
   justify-content: center;
   min-height: 100vh;
 }
+
+main{
+  width: clamp(23rem, 50vw, 62.5rem);
+}
+
+label, button, textarea{display: block;}
+
+
