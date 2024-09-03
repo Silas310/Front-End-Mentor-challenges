@@ -45,20 +45,21 @@ h1, label{
   color: var(--greyDarker);
 }
 
-input{
-  color: red;
+.radio-container, .label{
+  cursor: pointer;
 }
 
 button{
   background-color: var(--greenMedium);
   border: 0.1rem solid var(--greenMedium);
+  border-radius: 0.3rem;
   color: var(--white);
   font-weight: 700;
 }
-
-label::after, .label::after{
-  color: var(--greenMedium);
-  content: " *";
+button:hover{
+  background-color: var(--greyDarker);
+  border: 0.1rem solid var(--greyDarker);
+  cursor: pointer;
 }
 
 input, textarea, .radio-text{
@@ -66,13 +67,23 @@ input, textarea, .radio-text{
   color: var(--greyDarker);
 }
 
-input:focus, textarea:focus{
-  border: .1rem solid var(--greenMedium);
-  outline: none;
-}
-
 input, textarea, .radio-container{
   border: 0.1rem solid var(--greyMedium);
+}
+
+label::after, .label::after{
+  color: var(--greenMedium);
+  content: " *";
+}
+
+/* input:hover, .radio-container:hover{
+  cursor: pointer;
+} */
+
+input:focus, textarea:focus, input:hover, textarea:hover{
+  border: .1rem solid var(--greenMedium);
+  cursor: pointer;
+  outline: none;
 }
 
 label, button, textarea{display: block;}
