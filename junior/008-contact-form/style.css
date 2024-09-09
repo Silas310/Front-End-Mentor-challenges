@@ -38,7 +38,18 @@ body{
 main{
   background-color: var(--white);
   border-radius: 0.7rem;
+  padding: 1rem;
   width: clamp(23rem, 50vw, 62.5rem);
+}
+
+form, input, div, textarea{
+  width: 100%;
+}
+
+main, form{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, label{
@@ -49,19 +60,46 @@ h1, label{
   cursor: pointer;
 }
 
+textarea{
+  padding: 2rem;
+}
+
 button{
   background-color: var(--greenMedium);
   border: 0.1rem solid var(--greenMedium);
   border-radius: 0.3rem;
   color: var(--white);
   font-weight: 700;
+  padding: .5rem;
+  width: 100%;
 }
 button:hover{
   background-color: var(--greyDarker);
   border: 0.1rem solid var(--greyDarker);
   cursor: pointer;
 }
+input{
+  margin-top: 0.3rem;
+  padding: .5rem;
+}
 
+input[type = "radio"] {
+  width: 10%;
+}
+input[type = "checkbox"] {
+  width: 5%;
+}
+.consent {
+  display: flex;
+}
+.radio-container{
+  align-items: center;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: start;
+  padding: 0.5rem;
+  width: auto;
+}
 input, textarea, .radio-text{
   border-radius: 0.3rem;
   color: var(--greyDarker);
