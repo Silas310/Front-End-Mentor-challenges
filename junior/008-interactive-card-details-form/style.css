@@ -30,3 +30,87 @@ html{
   font-weight: 500;
   font-style: normal;
 }
+
+body{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.background {
+  background-image: url(images/bg-main-mobile.png);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  row-gap: .4em;
+}
+
+.date-cvc-container {
+  display: flex;
+}
+
+
+.label {
+  color: var(--veryDarkViolet);
+  font-size: .8rem;
+}
+
+.input {
+  border: .1rem solid var(--lightGrayishViolet);
+  border-radius: 0.5rem;
+  color: var(--lightGrayishViolet);
+  padding: 0.7rem;
+}
+.input:focus {
+  border: 0.1rem solid var(--veryDarkViolet);
+  outline: none;
+}
+
+.input-group{
+  display: flex;
+}
+
+.date-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 0.5rem; 
+}
+
+.input-small {
+  width: 45%;
+}
+
+
+.cvc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-medium {
+  width: 100%; 
+}
+
+.submit-btn {
+  background-color: var(--veryDarkViolet);
+  border: 0.25rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  padding: 0.7rem;
+}

@@ -10,25 +10,34 @@
 <body>
   <main>
     <section class="background">
-
+      <img src="images/bg-card-back.png" alt="Card background">
+      <img src="images/bg-card-front.png" alt="Card front">
     </section>
     <section>
-      <form action="">
-        <label for="carholder-name">CARDHOLDER NAME</label>
-        <input type="text" id="carholder-name" placeholder="e.g. Jane Appleseed">
+      <form action="" class="form">
+        <label for="carholder-name" class="label">CARDHOLDER NAME</label>
+        <input type="text" id="carholder-name" placeholder="e.g. Jane Appleseed" class="input">
 
-        <label for="card-number">CARD NUMBER</label>
-        <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000">
+        <label for="card-number" class="label">CARD NUMBER</label>
+        <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000" class="input">
 
-        <label for="exp-date">EXP. DATE (MM/YY)</label>
-        <div class="exp-container">
-          <input type="text" id="exp-month" placeholder="MM">
-          <input type="text" id="exp-year" placeholder="YY">
-          <label for="cvc">CVC</label>
-          <input type="text" id="cvc" placeholder="e.g. 123">
+        <div class="input-group">
+
+          <div class="date-container">
+            <label class="label">EXP.DATE (MM/YY)</label>
+            <div class="date-inputs">
+              <input type="number" placeholder="MM" class="input input-small">
+              <input type="number" placeholder="YY" class="input input-small">
+            </div>
+          </div>
+
+          <div class="cvc-container">
+            <label for="cvc-input" class="label">CVC</label>
+            <input type="number" id="cvc-number" placeholder="eg. 123" class="input">
+          </div>
         </div>
 
-        <input type="submit" value="Confirm">
+        <input type="submit" value="Confirm" class="submit-btn">
       </form>
     </section>
   </main>
