@@ -29,6 +29,7 @@ html{
   font-size: 1.125rem;
   font-weight: 500;
   font-style: normal;
+  letter-spacing: 0.1rem;
 }
 
 body{
@@ -38,6 +39,9 @@ body{
   min-height: 100vh;
 }
 
+main {
+  max-width: 20.83rem;
+}
 
 img {
   max-width: 100%;
@@ -46,12 +50,79 @@ img {
 
 .background {
   background-image: url(images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+}
+
+.card-container {
+  height: 13.33rem;
+  position: relative;
+  width: 100%;
+}
+
+.card {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0.25rem;
+  color: var(--white);
+  height: 64.6%;
+  position: absolute;
+  width: 75%;
+  
+}
+
+.front {
+  align-items: start;
+  background-image: url(images/bg-card-front.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  left: 5%;
+  padding: 0rem 1rem;
+  top: 51%;
+  z-index: 1;
+}
+
+.card-logo {
+  width: 25%;
+}
+.card-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-number {
+  text-align: center;
+}
+
+.card-details > div {
+  margin-top: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-name, .card-expiry {
+  font-size: 0.5rem;
+}
+
+.back {
+  background-image: url(images/bg-card-back.png);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  left: 20%;
+  top: 15%;
+}
+
+.cvc {
+  font-size: 0.5rem;
+  margin-right: 2rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-top: 5rem;
   padding: 1rem;
   row-gap: .4em;
 }
@@ -63,20 +134,24 @@ img {
 
 .label {
   color: var(--veryDarkViolet);
-  font-size: .8rem;
+  font-size: .6rem;
 }
 
 .input {
   border: .1rem solid var(--lightGrayishViolet);
   border-radius: 0.5rem;
-  color: var(--lightGrayishViolet);
+  color: var(--veryDarkViolet);
   padding: 0.7rem;
+  font-weight: bold;
 }
 .input:focus {
   border: 0.1rem solid var(--veryDarkViolet);
   outline: none;
 }
-
+input::placeholder {
+  color: var(--lightGrayishViolet);
+  font-weight: bold;
+}
 .input-group{
   display: flex;
 }

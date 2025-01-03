@@ -10,9 +10,24 @@
 <body>
   <main>
     <section class="background">
-      <img src="images/bg-card-back.png" alt="Card background">
-      <img src="images/bg-card-front.png" alt="Card front">
+      <div class="card-container">
+        <div class="card front">
+          <img src="images/card-logo.svg" alt="Card Logo" class="card-logo">
+          <div class="card-details">
+            <span class="card-number">0000 0000 0000 0000</span>
+            <div>
+              <span class="card-name">JANE APPLESEED</span>
+              <span class="card-expiry">00/00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card back">
+          <span class="cvc">000</span>
+        </div>
+      </div>
     </section>
+    
     <section>
       <form action="" class="form">
         <label for="carholder-name" class="label">CARDHOLDER NAME</label>
