@@ -50,7 +50,6 @@ input[type=number] {
 }
 
 main {
-  border: 1px solid red;
   width: clamp(20.83rem, 90%, 32rem);
 }
 
@@ -203,4 +202,18 @@ input::placeholder {
   border-radius: 0.5rem;
   color: var(--white);
   padding: 0.7rem;
+}
+
+@media (min-width: 48rem) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .background {
+    background-image: url(images/bg-main-desktop.png);
+    min-height: 100vh;
+    padding: 1rem;
+    width: 30%;
+  }
 }
