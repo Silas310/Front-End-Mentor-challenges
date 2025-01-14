@@ -50,7 +50,8 @@ input[type=number] {
 }
 
 main {
-  max-width: 20.83rem;
+  border: 1px solid red;
+  width: clamp(20.83rem, 90%, 32rem);
 }
 
 img {
@@ -61,6 +62,7 @@ img {
 .background {
   background-image: url(images/bg-main-mobile.png);
   background-repeat: no-repeat;
+  background-size: cover; 
 }
 
 .card-container {
@@ -76,7 +78,7 @@ img {
   color: var(--white);
   height: 64.6%;
   position: absolute;
-  width: 75%;
+  width: auto;
   
 }
 
@@ -87,13 +89,13 @@ img {
   flex-direction: column;
   justify-content: space-evenly;
   left: 5%;
-  padding: 0rem 1rem;
+  padding: 0rem 0.9rem;
   top: 51%;
   z-index: 1;
 }
 
 .card-logo {
-  width: 25%;
+  width: 3rem;
 }
 .card-details {
   display: flex;
@@ -115,17 +117,20 @@ img {
 }
 
 .back {
+  align-items: center;
   background-image: url(images/bg-card-back.png);
   display: flex;
-  align-items: center;
-  justify-content: end;
+  /* justify-content: end; */
   left: 20%;
   top: 15%;
+  padding: 7rem;
 }
 
 .cvc {
   font-size: 0.5rem;
-  margin-right: 2rem;
+  position: relative;
+  left: 5rem;
+  bottom: 2.9rem;
 }
 
 .form {
