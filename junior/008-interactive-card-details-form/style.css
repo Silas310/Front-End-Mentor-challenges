@@ -71,18 +71,16 @@ img {
 }
 
 .card {
-  background-size: contain;
   background-repeat: no-repeat;
   border-radius: 0.25rem;
   color: var(--white);
-  height: 64.6%;
   position: absolute;
   width: auto;
   
 }
 
 .front {
-  align-items: start;
+  /* align-items: start;
   background-image: url(images/bg-card-front.png);
   display: flex;
   flex-direction: column;
@@ -90,11 +88,24 @@ img {
   left: 5%;
   padding: 0rem 0.9rem;
   top: 51%;
+  z-index: 1; */
+  align-items: start;
+  background-image: url(images/bg-card-front.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 8.16rem;
+  justify-content: space-between;
+  left: 5%;
+  padding: 0.9rem;
+  top: 49%;
+  width: 14.88rem; /* 60% */
   z-index: 1;
 }
 
 .card-logo {
   width: 3rem;
+  margin-bottom: 1rem;
 }
 .card-details {
   display: flex;
@@ -117,19 +128,19 @@ img {
 
 .back {
   align-items: center;
+  background-size: cover;
   background-image: url(images/bg-card-back.png);
   display: flex;
-  /* justify-content: end; */
+  height: 8.16rem;
   left: 20%;
   top: 15%;
-  padding: 7rem;
+  width: 14.88rem; /* 60% */
 }
 
 .cvc {
   font-size: 0.5rem;
   position: relative;
-  left: 5rem;
-  bottom: 2.9rem;
+  left: 11.5rem;
 }
 
 .form {
