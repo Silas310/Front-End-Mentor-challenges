@@ -157,6 +157,9 @@ img {
   padding: 0.7rem;
   margin-bottom: .7rem;
 }
+.input:hover {
+  cursor: pointer;
+}
 .input:focus {
   border: 0.1rem solid var(--veryDarkViolet);
   outline: none;
