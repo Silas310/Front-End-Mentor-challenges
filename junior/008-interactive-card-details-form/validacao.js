@@ -35,5 +35,25 @@ function writeCard(index, value) {
         cardFields[0].innerHTML = value;
       }
       break;
+
+    case 2:
+      if (cardFields[index]) {
+        cardFields[index].children[0].innerHTML = value;
+      }
+      break;
+
+    case 3:
+      if (cardFields[2]) {
+        cardFields[2].children[1].innerHTML = value;
+      }
+      break;
+
+    case 4:
+      if (cardFields[3]) {
+        cardFields[3].innerHTML = value;
+      }
+      break;
   }
 }
+
+function validateInput(){}
