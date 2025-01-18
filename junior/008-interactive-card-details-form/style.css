@@ -204,6 +204,12 @@ input::placeholder {
 }
 
 .display-none{display: none;}
+.error-msg {
+  position: relative;
+  bottom: .7rem;
+  color: var(--red);
+  font-size: .6rem;
+}
 
 @media (min-width: 80rem) {
   body {

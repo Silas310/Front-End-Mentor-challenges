@@ -5,17 +5,43 @@ let errorMSGs = document.querySelectorAll(".error-msg");
 
 for (let input of inputs) {
   if (input.type !== "submit") {  
-    input.addEventListener("input", updateCards);
-    input.addEventListener("blur", validateInput);
-  }
+    input.addEventListener("input", validateInput);
+  } 
 }
 
 
-function updateCards(event) {
+function validateInput(event) {
   const input = event.target;
   const inputIndex = Array.from(inputs).indexOf(input);
+
+
+  switch (inputIndex) {
+    case 0:
+      let msg = isNameValid(input);
+      
+      break;
+  }
+
+
+  // writeCard(inputIndex, input.value);
+}
+
+
+function isNameValid(input) {
+  if (input.value.trim() == "") {
+    // console.log("branco");
+    let msg = "Can't be blank"
+    showError(input, msg);
+    return false;
+  }
+  console.log("FOI");
+  return true;
   
-  writeCard(inputIndex, input.value);
+}
+
+
+function showError(input, msg) {
+  console.log(input, msg);
 }
 
 
@@ -55,5 +81,3 @@ function writeCard(index, value) {
       break;
   }
 }
-
-function validateInput(){}
