@@ -17,8 +17,11 @@ function validateInput(event) {
 
   switch (inputIndex) {
     case 0:
-      let msg = isNameValid(input);
-      
+      if (isNameBlank(input) && isNameLengthValid(input) ) {
+        writeCard(inputIndex, input.value);
+      } else {
+        console.log("ERRO");
+      }
       break;
   }
 
@@ -27,16 +30,19 @@ function validateInput(event) {
 }
 
 
-function isNameValid(input) {
-  if (input.value.trim() == "") {
-    // console.log("branco");
-    let msg = "Can't be blank"
-    showError(input, msg);
+function isNameBlank(input) {
+  if (input.value.trim() == "") { return false;}
+  return true;
+}
+
+
+function isNameLengthValid(input) {
+  let length =  input.value.trim().length;
+  if (length > 25 ) {
+    console.log("INVALID")
     return false;
   }
-  console.log("FOI");
   return true;
-  
 }
 
 

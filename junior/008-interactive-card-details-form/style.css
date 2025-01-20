@@ -158,7 +158,7 @@ img {
   padding: 0.7rem;
   margin-bottom: .7rem;
 }
-.input:hover {
+.input:hover, .submit-btn:hover {
   cursor: pointer;
 }
 .input:focus {
@@ -202,6 +202,7 @@ input::placeholder {
   color: var(--white);
   padding: 0.8rem;
 }
+
 
 .display-none{display: none;}
 .error-msg {
