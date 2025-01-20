@@ -23,6 +23,13 @@ function validateInput(event) {
         console.log("ERRO");
       }
       break;
+    case 1:
+      if (isCardNumberValid(input.value)) {
+        writeCard(inputIndex, input.value);
+      } else {
+        console.log("ERRO");
+      }
+      break;
   }
 
 
@@ -40,6 +47,15 @@ function isNameLengthValid(input) {
   let length =  input.value.trim().length;
   if (length > 25 ) {
     console.log("INVALID")
+    return false;
+  }
+  return true;
+}
+
+
+function isCardNumberValid(number) {
+  console.log(number.length)
+  if (number.length < 1 || number.length > 16 ) {
     return false;
   }
   return true;
