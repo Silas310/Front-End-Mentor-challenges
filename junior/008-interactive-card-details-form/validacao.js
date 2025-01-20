@@ -30,6 +30,14 @@ function validateInput(event) {
         console.log("ERRO");
       }
       break;
+
+    case 2:
+      if (isMonthValid(input)) {
+        writeCard(inputIndex, input.value);
+      } else {
+        console.log("ERRO");
+      }
+      break;
   }
 
 
@@ -56,6 +64,16 @@ function isNameLengthValid(input) {
 function isCardNumberValid(number) {
   console.log(number.length)
   if (number.length < 1 || number.length > 16 ) {
+    return false;
+  }
+  return true;
+}
+
+
+function isMonthValid(input) {
+  let month = input.value;
+  if (month.length < 1 || month > 12) {
+    console.log("MES ERRO");
     return false;
   }
   return true;
