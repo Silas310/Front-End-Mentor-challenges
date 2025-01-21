@@ -183,6 +183,7 @@ input::placeholder {
 }
 
 .date-inputs {
+  flex-wrap: wrap;
   display: flex;
   gap: 0.5rem; 
 }
@@ -211,6 +212,7 @@ input::placeholder {
   color: var(--red);
   font-size: .6rem;
 }
+.input-error { border: 1px solid var(--red);}
 
 @media (min-width: 80rem) {
   body {
