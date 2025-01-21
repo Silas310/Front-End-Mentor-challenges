@@ -20,7 +20,7 @@ function validateInput(event) {
       if (isNameBlank(input) && isNameLengthValid(input) ) {
         writeCard(inputIndex, input.value);
       } else {
-        console.log("ERRO");
+        console.log(inputs[3].value.length);
       }
       break;
     case 1:
@@ -35,6 +35,14 @@ function validateInput(event) {
       if (isMonthValid(input)) {
         writeCard(inputIndex, input.value);
       } else {
+        console.log("ERRO");
+      }
+      break;
+
+    case 3:
+      if (isYearValid(input)) {
+        writeCard(inputIndex, input.value);
+      }else {
         console.log("ERRO");
       }
       break;
@@ -74,6 +82,18 @@ function isMonthValid(input) {
   let month = input.value;
   if (month.length < 1 || month > 12) {
     console.log("MES ERRO");
+    return false;
+  }
+  return true;
+}
+
+
+function isYearValid(input) {
+  let year = input.value;
+  if (year.length == 2 && year < 25) {
+    return false;
+  }
+  if (year.length >= 3) {
     return false;
   }
   return true;
