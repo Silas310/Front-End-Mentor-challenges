@@ -46,6 +46,14 @@ function validateInput(event) {
         console.log("ERRO");
       }
       break;
+
+    case 4:
+      if (isCvcValid(input)) {
+        writeCard(inputIndex, input.value);
+      } else {
+        console.log("ERRO");
+      }
+      break;
   }
 
 
@@ -97,6 +105,14 @@ function isYearValid(input) {
     return false;
   }
   return true;
+}
+
+
+function isCvcValid(input) {
+  if (input.value.length < 4) {
+    return true;
+  }
+  return false;
 }
 
 
