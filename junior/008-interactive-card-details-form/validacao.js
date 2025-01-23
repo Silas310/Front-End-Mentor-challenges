@@ -10,6 +10,17 @@ for (let input of inputs) {
 }
 
 
+inputs[1].addEventListener("input", (event) => {
+  const input = event.target;
+  let value = input.value.replace(/\D/g, '');
+
+  value = value.replace(/(\d{4})(?=\d)/g, '$1 ');
+
+  input.value = value; 
+});
+
+
+
 function validateInput(event) {
   const input = event.target;
   const inputIndex = Array.from(inputs).indexOf(input);
@@ -17,34 +28,37 @@ function validateInput(event) {
 
   switch (inputIndex) {
     case 0:
-      if (isNameBlank(input) && isNameLengthValid(input) ) {
+      if (isNotBlank(input) && isNameLengthValid(input) && isNameValid(input) ) {
+        hideError(input);
         writeCard(inputIndex, input.value);
       }
       break;
 
     case 1:
-      if (isCardNumberValid(input)) {
+      if (true) {
+        hideError(input);
         writeCard(inputIndex, input.value);
       }
       break;
 
     case 2:
       if (isMonthValid(input)) {
+        hideError(input);
         writeCard(inputIndex, input.value);
       }
       break;
 
     case 3:
       if (isYearValid(input)) {
+        hideError(input);
         writeCard(inputIndex, input.value);
       }
       break;
 
     case 4:
       if (isCvcValid(input)) {
+        hideError(input);
         writeCard(inputIndex, input.value);
-      } else {
-        console.log("ERRO");
       }
       break;
   }
@@ -54,7 +68,7 @@ function validateInput(event) {
 }
 
 
-function isNameBlank(input) {
+function isNotBlank(input) {
   if (input.value.trim() == "") {
     showError(input, "Can't be blank");
     return false;
@@ -63,21 +77,20 @@ function isNameBlank(input) {
 }
 
 
-function isNameLengthValid(input) {
-  let length =  input.value.trim().length;
-  if (length > 25 ) {
-    showError(input, "The name must be 25 characters or fewer")
+function isNameValid(input) {
+  let name = input.value;
+  if (!/^[a-zA-Z\s]+$/.test(name)) {
+    showError(input, "Letters only, no numbers or symbols allowed ");
     return false;
-  }
+  } 
   return true;
 }
 
 
-function isCardNumberValid(input) {
-  let number = input.value;
-  console.log(number.length)
-  if (number.length < 1 || number.length > 16 ) {
-    showError(input, "Only 16 digits allowed");
+function isNameLengthValid(input) {
+  let length =  input.value.trim().length;
+  if (length > 25 ) {
+    showError(input, "The name must be 25 characters or fewer")
     return false;
   }
   return true;
@@ -118,8 +131,7 @@ function isCvcValid(input) {
 
 
 function showError(input, msg) {
-  let id =  input.id;
-  console.log(input);
+  let id =  input.id; 
 
   switch (id) {
     case "cardholder-name":
@@ -149,6 +161,16 @@ function showError(input, msg) {
       errorMSGs[3].innerHTML = msg;
       break;
 
+  }
+}
+
+
+function hideError(input) {
+  const errorIndex = Array.from(inputs).indexOf(input);
+  if (errorIndex !== undefined && errorIndex < errorMSGs.length) {
+    input.classList.remove("input-error");
+    errorMSGs[errorIndex].classList.add("display-none");
+    errorMSGs[errorIndex].innerHTML = "";
   }
 }
 
