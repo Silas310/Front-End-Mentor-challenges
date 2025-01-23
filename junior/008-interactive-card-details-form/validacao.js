@@ -87,7 +87,7 @@ function isCardNumberValid(input) {
 function isMonthValid(input) {
   let month = input.value;
   if (month.length < 1 || month > 12) {
-    showError(input, "Invalid month. Please enter a value between 01 and 12")
+    showError(input, "Invalid month. Please enter a value between 01 and 12");
     return false;
   }
   return true;
@@ -118,7 +118,7 @@ function isCvcValid(input) {
 
 
 function showError(input, msg) {
-  let id =  input.id
+  let id =  input.id;
   console.log(input);
 
   switch (id) {
