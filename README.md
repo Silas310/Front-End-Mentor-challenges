@@ -58,3 +58,5 @@
 <a href = "https://silas310.github.io/Front-End-Mentor-challenges/junior/006-tip-calculator-app/index.html">Tip calculator app 006</a>
 
 <a href="https://silas310.github.io/Front-End-Mentor-challenges/junior/007-notifications-page/index.html">Notifications page 007</a>
+
+<a href = "https://silas310.github.io/Front-End-Mentor-challenges/junior/008-interactive-card-details-form/index.html">Interactive card details form 008</a>
