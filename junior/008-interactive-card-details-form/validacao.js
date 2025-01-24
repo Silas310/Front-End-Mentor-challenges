@@ -12,13 +12,15 @@ for (let input of inputs) {
 
 inputs[1].addEventListener("input", (event) => {
   const input = event.target;
+  
   let value = input.value.replace(/\D/g, '');
 
   value = value.replace(/(\d{4})(?=\d)/g, '$1 ');
 
-  input.value = value; 
-});
+  input.value = value;
 
+  validateInput(event);
+});
 
 
 function validateInput(event) {
@@ -99,7 +101,7 @@ function isNameLengthValid(input) {
 
 function isMonthValid(input) {
   let month = input.value;
-  if (month.length < 1 || month > 12) {
+  if (month.length < 1 || month > 12 || isNaN(month)) {
     showError(input, "Invalid month. Please enter a value between 01 and 12");
     return false;
   }
@@ -117,6 +119,7 @@ function isYearValid(input) {
     showError(input, "Invalid year");
     return false;
   }
+  hideError(input);
   return true;
 }
 
@@ -166,7 +169,9 @@ function showError(input, msg) {
 
 
 function hideError(input) {
-  const errorIndex = Array.from(inputs).indexOf(input);
+  let errorIndex = Array.from(inputs).indexOf(input);
+  if (errorIndex == 3 || errorIndex == 4) --errorIndex;
+  
   if (errorIndex !== undefined && errorIndex < errorMSGs.length) {
     input.classList.remove("input-error");
     errorMSGs[errorIndex].classList.add("display-none");
