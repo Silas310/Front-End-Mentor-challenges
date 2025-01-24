@@ -237,10 +237,10 @@ p{
 
 .display-none{display: none;}
 .error-msg {
-  position: relative;
   bottom: .7rem;
   color: var(--red);
   font-size: .6rem;
+  position: relative;
 }
 .input-error { border: 1px solid var(--red);}
 
