@@ -78,7 +78,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [How to Write Better Git Commit Messages – A Step-By-Step Guide](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/) - Como escrever corretamente uma mensagem em um commit
 - [Git Commit Best Practices](https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60) - Regras básicas de boas práticas e formatação de commits
-
 - [Quick start to BEM](https://en.bem.info/methodology/quick-start/) - Documentação introdutória ao BEM
 
 ## Author
