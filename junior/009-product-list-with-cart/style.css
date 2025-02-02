@@ -4,6 +4,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
 :root {
   --color-red: hsl(14, 86%, 42%);
   --color-green: hsl(159, 69%, 38%);
