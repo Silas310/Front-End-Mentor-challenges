@@ -39,11 +39,11 @@ img {
 .body {
   align-items: center;
   background-color: var(--color-rose-50);
+  font-family: var(--font-family);
   justify-content: center;
 }
 
 .main {
-  font-weight: bold;
   padding: 1rem;
 }
 
@@ -56,13 +56,10 @@ img {
   background-color: var(--color-white);
   border: 0.1rem solid var(--color-rose-500);
   border-radius: 2rem;
-  font-weight: bold;
-  width: 50%;
 }
 
 .desserts__category {
   color: var(--color-rose-400);
-  font-weight: normal;
 }
 
 .cart {
@@ -73,6 +70,7 @@ img {
   color: var(--color-rose-500);
 }
 
+.desserts__button, .desserts__price {font-weight: 700;}
 .body, .desserts__item {display: flex;}
 .desserts__price, .cart__title {color: var(--color-red);}
 .main__title, .desserts__button, .desserts__title{color: var(--color-rose-900);}
