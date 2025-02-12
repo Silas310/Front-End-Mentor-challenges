@@ -23,7 +23,7 @@ function renderDesserts() {
   storedData.forEach(item => {
     let div = document.createElement("div");
 
-    div.classList.add("dessert__item");
+    div.classList.add("desserts__item");
     
     div.innerHTML = `
       <picture class="desserts__image-container">
