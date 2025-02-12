@@ -23,7 +23,6 @@ img {
 :root {
   --color-red: hsl(14, 86%, 42%);
   --color-green: hsl(159, 69%, 38%);
-  --color-white: hsl(0, 0%, 100%);
 
   --color-rose-50: hsl(20, 50%, 98%);
   --color-rose-100: hsl(13, 31%, 94%);
@@ -43,46 +42,11 @@ body {
 }
 
 .main {
-  background-color: var(--color-rose-50);
   padding: 1rem;
-}
-
-.main__title{
-  color: var(--color-rose-900);
 }
 
 .desserts__item {
   display: flex;
   flex-direction: column;
   row-gap: 0.7rem;
-}
-
-.desserts__button {
-  font-weight: bold;
-  background-color: var(--color-white);
-  color: var(--color-rose-900);
-}
-
-.desserts__category {
-  color: var(--color-rose-400);
-}
-
-.desserts__title {
-  color: var(--color-rose-900);
-}
-
-.desserts__price {
-  color: var(--color-red);
-}
-
-.cart {
-  color: var(--color-white);
-}
-
-.cart__title {
-  color: var(--color-red);
-}
-
-.cart__empty-message {
-  color: var(--color-rose-500);
 }
