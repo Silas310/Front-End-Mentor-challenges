@@ -53,9 +53,22 @@ img {
 }
 
 .desserts__button {
+  align-items: center;
   background-color: var(--color-white);
   border: 0.1rem solid var(--color-rose-500);
   border-radius: 2rem;
+  column-gap: .5em;
+  justify-content: center;
+  max-width: 50%;
+  padding: 0.5rem 1rem;
+}
+.desserts__button::before {
+  content: url(assets/images/icon-add-to-cart.svg);
+}
+.desserts__button:hover {
+  border: .1rem solid var(--color-red);
+  color: var(--color-red);
+  cursor: pointer;
 }
 
 .desserts__category {
@@ -71,6 +84,6 @@ img {
 }
 
 .desserts__button, .desserts__price {font-weight: 700;}
-.body, .desserts__item {display: flex;}
+.body, .desserts__item, .desserts__button {display: flex;}
 .desserts__price, .cart__title {color: var(--color-red);}
 .main__title, .desserts__button, .desserts__title{color: var(--color-rose-900);}
