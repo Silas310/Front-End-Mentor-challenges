@@ -38,7 +38,6 @@ img {
 
 body {
   align-items: center;
-  display: flex;
   justify-content: center;
 }
 
@@ -48,19 +47,13 @@ body {
   padding: 1rem;
 }
 
-.main__title{
-  color: var(--color-rose-900);
-}
-
 .desserts__item {
-  display: flex;
   flex-direction: column;
   row-gap: 0.7rem;
 }
 
 .desserts__button {
   background-color: var(--color-white);
-  color: var(--color-rose-900);
   font-weight: bold;
 }
 
@@ -69,22 +62,14 @@ body {
   font-weight: normal;
 }
 
-.desserts__title {
-  color: var(--color-rose-900);
-}
-
-.desserts__price {
-  color: var(--color-red);
-}
-
 .cart {
   color: var(--color-white);
-}
-
-.cart__title {
-  color: var(--color-red);
 }
 
 .cart__empty-message {
   color: var(--color-rose-500);
 }
+
+body, .desserts__item {display: flex;}
+.desserts__price, .cart__title {color: var(--color-red);}
+.main__title, .desserts__button, .desserts__title{color: var(--color-rose-900);}
