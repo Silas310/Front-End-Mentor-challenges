@@ -38,11 +38,11 @@ img {
 
 body {
   align-items: center;
+  background-color: var(--color-rose-50);
   justify-content: center;
 }
 
 .main {
-  background-color: var(--color-rose-50);
   font-weight: bold;
   padding: 1rem;
 }
@@ -54,7 +54,10 @@ body {
 
 .desserts__button {
   background-color: var(--color-white);
+  border: 0.1rem solid var(--color-rose-500);
+  border-radius: 2rem;
   font-weight: bold;
+  width: 50%;
 }
 
 .desserts__category {
