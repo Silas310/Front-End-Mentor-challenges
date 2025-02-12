@@ -36,7 +36,7 @@ img {
   --font-size: 16px;
 }
 
-body {
+.body {
   align-items: center;
   background-color: var(--color-rose-50);
   justify-content: center;
@@ -73,6 +73,6 @@ body {
   color: var(--color-rose-500);
 }
 
-body, .desserts__item {display: flex;}
+.body, .desserts__item {display: flex;}
 .desserts__price, .cart__title {color: var(--color-red);}
 .main__title, .desserts__button, .desserts__title{color: var(--color-rose-900);}
