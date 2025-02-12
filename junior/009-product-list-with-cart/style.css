@@ -82,14 +82,19 @@ img {
 
 .cart {
   background: var(--color-white) url(assets/images/illustration-empty-cart.svg) no-repeat center / auto;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 20rem;
+  padding: 1.5rem;
 }
 
 .cart__empty-message {
   color: var(--color-rose-500);
+  text-align: center;
 }
 
-.desserts__image-container, .desserts__image {border-radius: .5rem;}
+.desserts__image-container, .desserts__image, .cart {border-radius: .5rem;}
 .desserts__button, .desserts__price {font-weight: 700;}
-.body, .desserts__item, .desserts__button {display: flex;}
+.body, .desserts__item, .desserts__button, .cart {display: flex;}
 .desserts__price, .cart__title {color: var(--color-red);}
 .main__title, .desserts__button, .desserts__title{color: var(--color-rose-900);}
