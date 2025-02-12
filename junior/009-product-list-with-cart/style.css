@@ -74,6 +74,8 @@ img {
   border: .1rem solid var(--color-red);
   color: var(--color-red);
   cursor: pointer;
+  transform: scale(1.2);
+  transition:  transform 0.3s;
 }
 
 .desserts__category {
