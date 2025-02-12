@@ -44,6 +44,7 @@ body {
 
 .main {
   background-color: var(--color-rose-50);
+  font-weight: bold;
   padding: 1rem;
 }
 
@@ -58,13 +59,14 @@ body {
 }
 
 .desserts__button {
-  font-weight: bold;
   background-color: var(--color-white);
   color: var(--color-rose-900);
+  font-weight: bold;
 }
 
 .desserts__category {
   color: var(--color-rose-400);
+  font-weight: normal;
 }
 
 .desserts__title {
