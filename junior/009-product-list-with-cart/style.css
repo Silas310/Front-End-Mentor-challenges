@@ -88,6 +88,7 @@ img {
   color: var(--color-rose-500);
 }
 
+.desserts__image-container, .desserts__image {border-radius: .5rem;}
 .desserts__button, .desserts__price {font-weight: 700;}
 .body, .desserts__item, .desserts__button {display: flex;}
 .desserts__price, .cart__title {color: var(--color-red);}
