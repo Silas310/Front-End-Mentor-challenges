@@ -81,7 +81,7 @@ img {
 }
 
 .cart {
-  color: var(--color-white);
+  background: var(--color-white) url(assets/images/illustration-empty-cart.svg) no-repeat center / auto;
 }
 
 .cart__empty-message {
