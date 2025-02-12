@@ -71,11 +71,13 @@ img {
   content: url(assets/images/icon-add-to-cart.svg);
 }
 .desserts__button:hover {
-  border: .1rem solid var(--color-red);
-  color: var(--color-red);
   cursor: pointer;
   transform: scale(1.2);
   transition:  transform 0.3s;
+}
+.desserts__button:active {
+  border: .1rem solid var(--color-red);
+  color: var(--color-red);
 }
 
 .desserts__category {
