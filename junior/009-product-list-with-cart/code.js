@@ -13,6 +13,7 @@ async function loadData() {
 
 loadData().then( () => {
   renderDesserts();
+  addButtonListeners();
 });
 
 
@@ -44,3 +45,19 @@ function renderDesserts() {
     container.appendChild(div);
   });
 }
+
+
+function addButtonListeners() {
+  let buttons = document.querySelectorAll(".desserts__button");
+  console.log(buttons);
+  buttons.forEach((button) => {
+    button.addEventListener("click", manageButtons);
+  });
+}
+
+// function manageButtons(event) {
+//   let button = event.target;
+//   if (condition) {
+    
+//   }
+// }
