@@ -54,20 +54,23 @@ img {
   row-gap: 0rem;
 }
 
+
 .desserts__button {
   align-items: center;
-  background-color: var(--color-white);
-  border: 0.1rem solid var(--color-rose-500);
   border-radius: 2rem;
-  column-gap: .5em;
+  bottom: 1.2rem;
   justify-content: center;
+  margin: auto;
   max-width: 50%;
   padding: 0.5rem 1.5rem;
   position: relative;
-  bottom: 1.2rem;
-  margin: auto;
 }
-.desserts__button::before {
+.desserts__button--add {
+  background-color: var(--color-white);
+  border: 0.1rem solid var(--color-rose-500);
+  column-gap: .5em;
+}
+.desserts__button--add::before {
   content: url(assets/images/icon-add-to-cart.svg);
 }
 .desserts__button:hover {
@@ -75,10 +78,14 @@ img {
   transform: scale(1.2);
   transition:  transform 0.3s;
 }
-.desserts__button:active {
+.desserts__button--add:active {
   border: .1rem solid var(--color-red);
   color: var(--color-red);
 }
+.desserts__button--counter {
+
+}
+
 
 .desserts__category {
   color: var(--color-rose-400);

@@ -33,7 +33,7 @@ function renderDesserts() {
         <source srcset="${item.image.desktop}" media="(min-width: 90em)">
         <img src="${item.image.thumbnail}" alt="${item.name}" class="desserts__image">
       </picture>
-      <button class="desserts__button">Add to Cart</button>
+      <button class="desserts__button desserts__button--add">Add to Cart</button>
       <div class="desserts__info">
         <p class="desserts__category">${item.category}</p>
         <h3 class="desserts__title">${item.name}</h3>
