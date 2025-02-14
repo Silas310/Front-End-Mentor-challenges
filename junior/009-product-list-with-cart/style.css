@@ -87,6 +87,28 @@ img {
   border: none;
   color: var(--color-white);
 }
+.desserts__button--counter::before {
+  background-image: url(assets/images/icon-decrement-quantity.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: .1rem solid var(--color-white);
+  border-radius: 50%;
+  content: "";
+  height: 0.6rem;
+  padding: .15rem;
+  width: 0.6rem;
+}
+.desserts__button--counter::after {
+  background-image: url(assets/images/icon-increment-quantity.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: .1rem solid var(--color-white);
+  border-radius: 50%;
+  content: "";
+  height: 0.6rem;
+  padding: .15rem;
+  width: 0.6rem;
+}
 
 
 .desserts__category {
