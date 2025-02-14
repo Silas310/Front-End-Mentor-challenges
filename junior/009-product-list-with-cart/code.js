@@ -49,15 +49,26 @@ function renderDesserts() {
 
 function addButtonListeners() {
   let buttons = document.querySelectorAll(".desserts__button");
-  console.log(buttons);
   buttons.forEach((button) => {
     button.addEventListener("click", manageButtons);
   });
 }
 
-// function manageButtons(event) {
-//   let button = event.target;
-//   if (condition) {
-    
-//   }
-// }
+function manageButtons(event) {
+  let button = event.target;
+  if (button.classList[1] == "desserts__button--add") {
+    changeButtonClass(button, "adding");
+  } 
+}
+
+
+function changeButtonClass(button, caso) {
+  switch (caso) {
+    case "adding":
+      button.classList.remove("desserts__button--add");
+      button.classList.add("desserts__button--counter");
+      button.innerHTML = "1";
+      break;
+  }
+  
+}
