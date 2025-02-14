@@ -61,14 +61,14 @@ img {
   bottom: 1.2rem;
   justify-content: center;
   margin: auto;
-  max-width: 50%;
-  padding: 0.5rem 1.5rem;
+  
   position: relative;
 }
-.desserts__button--add {
+.desserts__button--add { /*150.23 x 41*/
   background-color: var(--color-white);
   border: 0.1rem solid var(--color-rose-500);
   column-gap: .5em;
+  padding: 0.5rem 1.5rem; 
 }
 .desserts__button--add::before {
   content: url(assets/images/icon-add-to-cart.svg);
@@ -82,10 +82,14 @@ img {
   border: .1rem solid var(--color-red);
   color: var(--color-red);
 }
-.desserts__button--counter {
+.desserts__button--counter { /*150.23 x 41*/
   background-color: var(--color-red);
   border: none;
   color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2.94rem;
+  padding: 0.77rem .5rem;
 }
 .desserts__button--counter::before {
   background-image: url(assets/images/icon-decrement-quantity.svg);
@@ -127,7 +131,7 @@ img {
   color: var(--color-rose-500);
   text-align: center;
 }
-
+.desserts__image-container, .desserts__image {text-align: center;}
 .desserts__image-container, .desserts__image, .cart {border-radius: .5rem;}
 .desserts__button, .desserts__price {font-weight: 700;}
 .body, .desserts__item, .desserts__button, .cart {display: flex;}
