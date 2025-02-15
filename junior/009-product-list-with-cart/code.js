@@ -40,8 +40,6 @@ function renderDesserts() {
         <p class="desserts__price">$${item.price.toFixed(2)}</p>
       </div>
     `;
-
-
     container.appendChild(div);
   });
 }
@@ -54,11 +52,13 @@ function addButtonListeners() {
   });
 }
 
+
 function manageButtons(event) {
   let button = event.target;
-  if (button.classList[1] == "desserts__button--add") {
+  let classList = button.classList;
+  if (classList[1] == "desserts__button--add") {
     changeButtonClass(button, "adding");
-  } 
+  }
 }
 
 
@@ -70,5 +70,4 @@ function changeButtonClass(button, caso) {
       button.innerHTML = "1";
       break;
   }
-  
 }
