@@ -97,7 +97,7 @@ img {
   display: flex;
   justify-content: space-between;
   column-gap: 2.94rem;
-  padding: 0.77rem .5rem;
+  padding: 0.813rem .899rem
 }
 
 .desserts__button--hidden {display: none;}
