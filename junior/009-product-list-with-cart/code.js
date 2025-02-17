@@ -34,6 +34,13 @@ function renderDesserts() {
         <img src="${item.image.thumbnail}" alt="${item.name}" class="desserts__image">
       </picture>
       <button class="desserts__button desserts__button--add">Add to Cart</button>
+
+      <button class="desserts__button desserts__button--hidden desserts__button--counter">
+      <img src="assets/images/icon-decrement-quantity.svg" alt="Decrement icon">
+      <div>1</div>
+      <img src="assets/images/icon-increment-quantity.svg" alt="Increment icon">
+      </button>
+
       <div class="desserts__info">
         <p class="desserts__category">${item.category}</p>
         <h3 class="desserts__title">${item.name}</h3>
@@ -63,11 +70,11 @@ function manageButtons(event) {
 
 
 function changeButtonClass(button, caso) {
+  let nextElement = button.nextElementSibling;
   switch (caso) {
     case "adding":
-      button.classList.remove("desserts__button--add");
-      button.classList.add("desserts__button--counter");
-      button.innerHTML = "1";
+      button.classList.add("desserts__button--hidden");
+      nextElement.classList.remove("desserts__button--hidden");
       break;
   }
 }

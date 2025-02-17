@@ -43,6 +43,14 @@ img {
   justify-content: center;
 }
 
+
+.desserts__image-container, .desserts__image {text-align: center;}
+.desserts__image-container, .desserts__image, .cart {border-radius: .5rem;}
+.desserts__button, .desserts__price {font-weight: 700;}
+.body, .desserts__item, .desserts__button, .cart {display: flex;}
+.desserts__price, .cart__title {color: var(--color-red);}
+
+
 .main {
   padding: 1rem;
 }
@@ -91,29 +99,8 @@ img {
   column-gap: 2.94rem;
   padding: 0.77rem .5rem;
 }
-.desserts__button--counter::before {
-  background-image: url(assets/images/icon-decrement-quantity.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  border: .1rem solid var(--color-white);
-  border-radius: 50%;
-  content: "";
-  height: 0.6rem;
-  padding: .15rem;
-  width: 0.6rem;
-}
-.desserts__button--counter::after {
-  background-image: url(assets/images/icon-increment-quantity.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  border: .1rem solid var(--color-white);
-  border-radius: 50%;
-  content: "";
-  height: 0.6rem;
-  padding: .15rem;
-  width: 0.6rem;
-}
 
+.desserts__button--hidden {display: none;}
 
 .desserts__category {
   color: var(--color-rose-400);
@@ -131,8 +118,3 @@ img {
   color: var(--color-rose-500);
   text-align: center;
 }
-.desserts__image-container, .desserts__image {text-align: center;}
-.desserts__image-container, .desserts__image, .cart {border-radius: .5rem;}
-.desserts__button, .desserts__price {font-weight: 700;}
-.body, .desserts__item, .desserts__button, .cart {display: flex;}
-.desserts__price, .cart__title {color: var(--color-red);}
