@@ -81,8 +81,10 @@ img {
 .desserts__button--add::before {
   content: url(assets/images/icon-add-to-cart.svg);
 }
-.desserts__button:hover {
+.desserts__button--add:hover, .desserts__button--decrement:hover, .desserts__button--increment:hover {
   cursor: pointer;
+}
+.desserts__button:hover {
   transform: scale(1.2);
   transition:  transform 0.3s;
 }
