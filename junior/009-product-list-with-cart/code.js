@@ -63,7 +63,7 @@ function addButtonListeners() {
 function manageButtons(event) {
   let button = event.target;
   let classList = button.classList;
-  let counter = document.querySelector(".desserts__counter");
+  let counter = button.parentElement.querySelector(".desserts__counter");
   switch (classList[0]) {
     case "desserts__button--add":
       changeButtonClass(button, "adding");
