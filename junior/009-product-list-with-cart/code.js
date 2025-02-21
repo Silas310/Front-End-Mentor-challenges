@@ -66,7 +66,9 @@ function manageButtons(event) {
   let counter = button.parentElement.querySelector(".desserts__counter");
   switch (classList[0]) {
     case "desserts__button--add":
+      let image = button.parentElement.querySelector(".desserts__image");
       changeButtonClass(button, "adding");
+      selectImage(image);
       break;
 
     case "desserts__button--increment":
@@ -77,7 +79,9 @@ function manageButtons(event) {
       if (Number(counter.innerHTML) > 1) {
         counter.innerHTML = Number(counter.innerHTML) - 1;
       } else {
+        let image = button.parentElement.parentElement.querySelector(".desserts__image");
         changeButtonClass(button, "removing");
+        deselectImage(image);
       }
       break;
   }
@@ -99,4 +103,14 @@ function changeButtonClass(button, caso) {
       counterBtn.classList.add("desserts__button--hidden")
       break;
   } 
+}
+
+
+function selectImage(img) {
+  img.classList.add("desserts__image--selected");
+}
+
+function deselectImage(img) {
+  console.log(img);
+  img.classList.remove("desserts__image--selected");
 }

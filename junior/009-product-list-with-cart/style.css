@@ -61,7 +61,9 @@ img {
   flex-direction: column;
   row-gap: 0rem;
 }
-
+.desserts__image--selected {
+  border: .2rem solid var(--color-red);
+}
 .main__title, .desserts__button, .desserts__title{color: var(--color-rose-900);}
 .desserts__button {
   align-items: center;
