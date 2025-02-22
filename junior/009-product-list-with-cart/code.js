@@ -80,12 +80,12 @@ function manageButtons(event) {
       let image = button.parentElement.querySelector(".desserts__image");
       changeButtonClass(button, "adding");
       selectImage(image);
-      increaseCounter();
+      increaseCartCounter();
       break;
 
     case "desserts__button--increment":
       counter.innerHTML = Number(counter.innerHTML) + 1;
-      increaseCounter();
+      increaseCartCounter();
       break;
 
     case "desserts__button--decrement":
@@ -96,7 +96,7 @@ function manageButtons(event) {
         changeButtonClass(button, "removing");
         deselectImage(image);
       }
-      decreaseCounter();
+      decreaseCartCartCounter();
       break;
   }
 }
@@ -130,14 +130,14 @@ function deselectImage(img) {
 }
 
 
-function increaseCounter() {
+function increaseCartCounter() {
   let counter = document.querySelector(".cart__quantity");
 
   counter.innerHTML = Number(counter.innerHTML) + 1;
 }
 
 
-function decreaseCounter() {
+function decreaseCartCounter() {
   let counter = document.querySelector(".cart__quantity");
   
   counter.innerHTML = Number(counter.innerHTML) -1;
