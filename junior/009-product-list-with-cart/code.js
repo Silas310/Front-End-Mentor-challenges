@@ -96,7 +96,7 @@ function manageButtons(event) {
         changeButtonClass(button, "removing");
         deselectImage(image);
       }
-      decreaseCartCartCounter();
+      decreaseCartCounter();
       break;
   }
 }
