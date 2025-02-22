@@ -64,20 +64,29 @@ function renderDesserts() {
 
 
 function addButtonListeners() {
-  let buttons = document.querySelectorAll(".desserts__button");
-  buttons.forEach((button) => {
+  document.querySelectorAll(".desserts__button--add").forEach(button => {
+    button.addEventListener("click", manageButtons);
+  });
+
+  document.querySelectorAll(".desserts__button--increment").forEach(button => {
+    button.addEventListener("click", manageButtons);
+  });
+
+  document.querySelectorAll(".desserts__button--decrement").forEach(button => {
     button.addEventListener("click", manageButtons);
   });
 }
 
 
+
 function manageButtons(event) {
-  let button = event.target;
+  let button = event.currentTarget;
   let classList = button.classList;
-  let counter = button.parentElement.querySelector(".desserts__counter");
+  let counter = button.closest(".desserts__button").children[1];
+  let image = button.closest(".desserts__item").querySelector(".desserts__image");
+
   switch (classList[0]) {
     case "desserts__button--add":
-      let image = button.parentElement.querySelector(".desserts__image");
       changeButtonClass(button, "adding");
       selectImage(image);
       increaseCartCounter();
@@ -89,14 +98,15 @@ function manageButtons(event) {
       break;
 
     case "desserts__button--decrement":
+      console.log(button);
+      decreaseCartCounter();
       if (Number(counter.innerHTML) > 1) {
         counter.innerHTML = Number(counter.innerHTML) - 1;
       } else {
-        let image = button.parentElement.parentElement.querySelector(".desserts__image");
         changeButtonClass(button, "removing");
         deselectImage(image);
       }
-      decreaseCartCounter();
+      
       break;
   }
 }
@@ -110,8 +120,8 @@ function changeButtonClass(button, caso) {
       nextElement.classList.remove("desserts__button--hidden");
       break;
     case "removing":
-      let counterBtn = button.parentElement; // Counter btn
-      let addBtn = button.parentElement.previousElementSibling; // Add to cart btn
+      let counterBtn = button.parentElement.parentElement; // Counter btn
+      let addBtn = counterBtn.previousElementSibling; // Add to cart btn
 
       addBtn.classList.remove("desserts__button--hidden");
       counterBtn.classList.add("desserts__button--hidden")
