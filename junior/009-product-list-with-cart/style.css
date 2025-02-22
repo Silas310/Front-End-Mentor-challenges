@@ -83,7 +83,20 @@ img {
 .desserts__button--add::before {
   content: url(assets/images/icon-add-to-cart.svg);
 }
-.desserts__button--add:hover, .desserts__button--decrement:hover, .desserts__button--increment:hover {
+.desserts__button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: .1rem;
+}
+.desserts__button-container:hover, .desserts__button-container:hover * {
+  background-color: white; 
+  fill: var(--color-red);
+}
+
+.desserts__button--add:hover, .desserts__button-container:hover, .desserts__button--decrement:hover, .desserts__button--increment:hover {
   cursor: pointer;
 }
 .desserts__button:hover {
