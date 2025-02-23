@@ -90,6 +90,7 @@ function manageButtons(event) {
       changeButtonClass(button, "adding");
       selectImage(image);
       increaseCartCounter();
+      manageCartItems(button);
       break;
 
     case "desserts__button--increment":
@@ -98,7 +99,6 @@ function manageButtons(event) {
       break;
 
     case "desserts__button--decrement":
-      console.log(button);
       decreaseCartCounter();
       if (Number(counter.innerHTML) > 1) {
         counter.innerHTML = Number(counter.innerHTML) - 1;
@@ -106,7 +106,6 @@ function manageButtons(event) {
         changeButtonClass(button, "removing");
         deselectImage(image);
       }
-      
       break;
   }
 }
@@ -119,6 +118,7 @@ function changeButtonClass(button, caso) {
       button.classList.add("desserts__button--hidden");
       nextElement.classList.remove("desserts__button--hidden");
       break;
+
     case "removing":
       let counterBtn = button.parentElement.parentElement; // Counter btn
       let addBtn = counterBtn.previousElementSibling; // Add to cart btn
@@ -151,4 +151,37 @@ function decreaseCartCounter() {
   let counter = document.querySelector(".cart__quantity");
   
   counter.innerHTML = Number(counter.innerHTML) -1;
+}
+
+
+function manageCartItems(btn) {
+  let dessertInfo = btn.nextElementSibling.nextElementSibling;
+  let dessertName = dessertInfo.children[1];
+  let dessertPrice = dessertInfo.children[2];
+    
+  addToCart(dessertName, dessertPrice);
+}
+
+
+function addToCart(name, price) {
+  let list = document.querySelector(".cart__list");
+  let item = document.createElement("li");
+
+
+  item.classList.add("cart__item");
+
+  item.innerHTML = `
+    <h3 class="dessert__name">${name.innerText}</h3>
+    <span class="dessert__counter">
+      <span class="">1</span>x
+    </span>
+
+    <span class="dessert__price">@ ${price.innerText}</span>
+
+    <span class="dessert__price--multiplied"></span>
+  `;
+
+  list.appendChild(item);
+
+  console.log(list, name.innerText, price.innerText);
 }
