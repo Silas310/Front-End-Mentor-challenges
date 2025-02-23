@@ -5,16 +5,16 @@ async function loadData() {
   try {
     let response = await fetch("data.json");
     storedData = await response.json(); 
+
+    renderDesserts();
+    addButtonListeners();
   } catch (error) {
     console.error("Erro ao carregar os dados:", error);
   }
 }
 
 
-loadData().then( () => {
-  renderDesserts();
-  addButtonListeners();
-});
+loadData();
 
 
 function renderDesserts() {
