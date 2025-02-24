@@ -87,10 +87,14 @@ function manageButtons(event) {
 
   switch (classList[0]) {
     case "desserts__button--add":
+      let dessertInfo = button.nextElementSibling.nextElementSibling;
+      let dessertName = dessertInfo.children[1];
+      let dessertPrice = dessertInfo.children[2];
+
       changeButtonClass(button, "adding");
       selectImage(image);
       increaseCartCounter();
-      manageCartItems(button);
+      addToCart(dessertName, dessertPrice);
       break;
 
     case "desserts__button--increment":
@@ -154,15 +158,6 @@ function decreaseCartCounter() {
 }
 
 
-function manageCartItems(btn) {
-  let dessertInfo = btn.nextElementSibling.nextElementSibling;
-  let dessertName = dessertInfo.children[1];
-  let dessertPrice = dessertInfo.children[2];
-    
-  addToCart(dessertName, dessertPrice);
-}
-
-
 function addToCart(name, price) {
   let list = document.querySelector(".cart__list");
   let item = document.createElement("li");
@@ -182,6 +177,4 @@ function addToCart(name, price) {
   `;
 
   list.appendChild(item);
-
-  console.log(list, name.innerText, price.innerText);
 }
