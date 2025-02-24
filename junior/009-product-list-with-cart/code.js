@@ -78,7 +78,6 @@ function addButtonListeners() {
 }
 
 
-
 function manageButtons(event) {
   let button = event.currentTarget;
   let classList = button.classList;
@@ -107,8 +106,11 @@ function manageButtons(event) {
       if (Number(counter.innerHTML) > 1) {
         counter.innerHTML = Number(counter.innerHTML) - 1;
       } else {
+        let dessertName = button.closest(".desserts__button").nextElementSibling.children[1];
+
         changeButtonClass(button, "removing");
         deselectImage(image);
+        removeFromCart(dessertName);
       }
       break;
   }
@@ -177,4 +179,19 @@ function addToCart(name, price) {
   `;
 
   list.appendChild(item);
+}
+
+
+function removeFromCart(name) {
+  let list = document.querySelector(".cart__list");
+
+  
+  for (const element of list.children) {
+    if (element.innerText == list.children[0].innerText) {
+      list.removeChild(element)
+
+    } else {
+      console.log("NO")
+    }
+  }
 }
