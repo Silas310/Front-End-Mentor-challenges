@@ -168,14 +168,14 @@ function addToCart(name, price) {
   item.classList.add("cart__item");
 
   item.innerHTML = `
-    <h3 class="dessert__name">${name.innerText}</h3>
-    <span class="dessert__counter">
-      <span class="">1</span>x
+    <h3 class="cart__item-name">${name.innerText}</h3>
+    <span class="cart__item-counter">
+      <span class="cart__item-quantity">1</span>x
     </span>
 
-    <span class="dessert__price">@ ${price.innerText}</span>
+    <span class="cart__item-price">@ ${price.innerText}</span>
 
-    <span class="dessert__price--multiplied"></span>
+    <span class="cart__item-price--multiplied"></span>
   `;
 
   list.appendChild(item);
