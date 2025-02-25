@@ -84,6 +84,7 @@ function manageButtons(event) {
   let counter = button.closest(".desserts__button").children[1];
   let image = button.closest(".desserts__item").querySelector(".desserts__image");
   let dessertName;
+
   switch (classList[0]) {
     case "desserts__button--add":
       let dessertInfo = button.nextElementSibling.nextElementSibling;
@@ -94,6 +95,7 @@ function manageButtons(event) {
       selectImage(image);
       increaseCartCounter();
       addToCart(dessertName, dessertPrice);
+      manageCartBackground();
       break;
 
     case "desserts__button--increment":
@@ -113,6 +115,7 @@ function manageButtons(event) {
         changeButtonClass(button, "removing");
         deselectImage(image);
         removeFromCart(dessertName);
+        manageCartBackground();
       }
       manageItemQuantity(button);
       break;
@@ -204,13 +207,23 @@ function manageItemQuantity(btn) {
   let itemName = btn.closest(".desserts__item").querySelector(".desserts__title").innerText; // item name text
   let list = document.querySelector(".cart__list"); // ul
 
-  console.log(buttonQuantity)
   for (let element of list.children) {
     if (itemName == element.children[0].innerText) {
       let cartItemQuantity = element.querySelector(".cart__item-quantity"); 
 
-      console.log(cartItemQuantity);
       cartItemQuantity.innerText = buttonQuantity.innerText;
     }
+  }
+}
+
+
+function manageCartBackground() {
+  let cart = document.querySelector(".cart");
+  let list = document.querySelector(".cart__list");
+
+  if (list.children.length) {
+    cart.style.background = "var(--color-white)";
+  } else {
+    cart.style.background = "var(--color-white) url(assets/images/illustration-empty-cart.svg) no-repeat center / auto";
   }
 }
