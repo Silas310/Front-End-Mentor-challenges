@@ -96,6 +96,7 @@ function manageButtons(event) {
       increaseCartCounter();
       addToCart(dessertName, dessertPrice);
       manageCartBackground();
+      manageCartMessage();
       break;
 
     case "desserts__button--increment":
@@ -116,6 +117,7 @@ function manageButtons(event) {
         deselectImage(image);
         removeFromCart(dessertName);
         manageCartBackground();
+        manageCartMessage();
       }
       manageItemQuantity(button);
       break;
@@ -225,5 +227,17 @@ function manageCartBackground() {
     cart.style.background = "var(--color-white)";
   } else {
     cart.style.background = "var(--color-white) url(assets/images/illustration-empty-cart.svg) no-repeat center / auto";
+  }
+}
+
+
+function manageCartMessage() {
+  let message = document.querySelector(".cart__empty-message");
+  let list = document.querySelector(".cart__list");
+
+  if (list.children.length) {
+    message.style.display = "none";
+  } else {
+    message.style.display = "block";
   }
 }
