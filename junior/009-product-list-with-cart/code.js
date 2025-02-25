@@ -83,11 +83,11 @@ function manageButtons(event) {
   let classList = button.classList;
   let counter = button.closest(".desserts__button").children[1];
   let image = button.closest(".desserts__item").querySelector(".desserts__image");
-
+  let dessertName;
   switch (classList[0]) {
     case "desserts__button--add":
       let dessertInfo = button.nextElementSibling.nextElementSibling;
-      let dessertName = dessertInfo.children[1];
+      dessertName = dessertInfo.children[1];
       let dessertPrice = dessertInfo.children[2];
 
       changeButtonClass(button, "adding");
@@ -97,8 +97,10 @@ function manageButtons(event) {
       break;
 
     case "desserts__button--increment":
+      // dessertName = button.closest(".desserts__item").querySelector(".desserts__title");
       counter.innerHTML = Number(counter.innerHTML) + 1;
       increaseCartCounter();
+      manageItemQuantity(button);
       break;
 
     case "desserts__button--decrement":
@@ -112,6 +114,7 @@ function manageButtons(event) {
         deselectImage(image);
         removeFromCart(dessertName);
       }
+      manageItemQuantity(button);
       break;
   }
 }
@@ -161,12 +164,12 @@ function decreaseCartCounter() {
 
 
 function addToCart(name, price) {
-  let list = document.querySelector(".cart__list");
-  let item = document.createElement("li");
-
+  let list = document.querySelector(".cart__list"); // ul
+  let item = document.createElement("li"); // li
 
   item.classList.add("cart__item");
 
+  
   item.innerHTML = `
     <h3 class="cart__item-name">${name.innerText}</h3>
     <span class="cart__item-counter">
@@ -191,6 +194,22 @@ function removeFromCart(name) {
     if (itemName === name.innerText) {
       list.removeChild(element);
       break; 
+    }
+  }
+}
+
+function manageItemQuantity(btn) { 
+  let buttonQuantity = btn.closest(".desserts__button").querySelector(".desserts__counter"); // from button
+  let itemName = btn.closest(".desserts__item").querySelector(".desserts__title").innerText; // item name text
+  let list = document.querySelector(".cart__list"); // ul
+
+  console.log(buttonQuantity)
+  for (let element of list.children) {
+    if (itemName == element.children[0].innerText) {
+      let cartItemQuantity = element.querySelector(".cart__item-quantity"); 
+
+      console.log(cartItemQuantity);
+      cartItemQuantity.innerText = buttonQuantity.innerText;
     }
   }
 }
