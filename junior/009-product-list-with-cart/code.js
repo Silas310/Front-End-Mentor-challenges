@@ -198,6 +198,7 @@ function removeFromCart(name) {
   }
 }
 
+
 function manageItemQuantity(btn) { 
   let buttonQuantity = btn.closest(".desserts__button").querySelector(".desserts__counter"); // from button
   let itemName = btn.closest(".desserts__item").querySelector(".desserts__title").innerText; // item name text

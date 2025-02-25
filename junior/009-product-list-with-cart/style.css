@@ -56,6 +56,9 @@ img {
 }
 .desserts {
   margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
 }
 .desserts__item {
   flex-direction: column;
@@ -119,6 +122,11 @@ img {
 
 .desserts__button--hidden {display: none;}
 
+.desserts__info {
+  row-gap: .4rem;
+  display: flex;
+  flex-direction: column;
+}
 .desserts__category {
   color: var(--color-rose-400);
 }
