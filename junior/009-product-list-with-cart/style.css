@@ -134,12 +134,12 @@ img {
 .cart {
   background: var(--color-white) url(assets/images/illustration-empty-cart.svg) no-repeat center / auto;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   min-height: 20rem;
   padding: 1.5rem;
 }
 .cart__title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
 }
 
 .cart__list {
@@ -150,6 +150,7 @@ img {
 }
 .cart__item {
   border-bottom: .1rem solid var(--color-rose-100);
+  font-size: .8rem;
   padding-bottom: 1rem;
 }
 .cart__item-name {color: var(--color-rose-900)}
