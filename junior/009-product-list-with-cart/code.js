@@ -185,13 +185,12 @@ function addToCart(name, price) {
 function removeFromCart(name) {
   let list = document.querySelector(".cart__list");
 
-  
-  for (const element of list.children) {
-    if (element.innerText == list.children[0].innerText) {
-      list.removeChild(element)
+  for (let element of list.children) {
+    let itemName = element.querySelector(".cart__item-name").innerText;
 
-    } else {
-      console.log("NO")
+    if (itemName === name.innerText) {
+      list.removeChild(element);
+      break; 
     }
   }
 }
