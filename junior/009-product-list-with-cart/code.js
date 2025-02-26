@@ -97,6 +97,7 @@ function manageButtons(event) {
       addToCart(dessertName, dessertPrice);
       manageCartBackground();
       manageCartMessage();
+      manageCartTotalRenderer();
       break;
 
     case "desserts__button--increment":
@@ -295,4 +296,23 @@ function removeItem(event) {
   
   manageCartBackground();
   manageCartMessage();
+}
+
+function manageCartTotalRenderer() {
+  let list = document.querySelector(".cart__list");
+
+  if (list.children.length) {
+    let cartTotal = document.createElement("div");
+    cartTotal.classList.add("cart__total");
+
+    cartTotal.innerHTML = `
+      <p class="cart__total-label">Order Total</p>
+      <p class="cart__total-price">$0.00</p>
+    `;
+
+    let cart = document.querySelector(".cart");
+
+    cart.appendChild(cartTotal);
+  } else {
+  }
 }
