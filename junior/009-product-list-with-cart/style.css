@@ -167,6 +167,20 @@ img {
 .cart__item-remove:hover {
   cursor: pointer;
 }
+
+.cart__total {
+  display: flex;
+  justify-content: space-between;
+}
+.cart__total-label {
+  color: var(--color-rose-900);
+  font-weight: 400;
+}
+.cart__total-price {
+  color: var(--color-rose-900);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 .cart__item-name {color: var(--color-rose-900); margin-bottom: .3rem;}
 .cart__item-counter {color: var(--color-red); font-weight: 700;}
 .cart__item-price {color: var(--color-rose-400); font-weight: 500;}
