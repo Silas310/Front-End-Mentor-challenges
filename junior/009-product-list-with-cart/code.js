@@ -123,6 +123,7 @@ function manageButtons(event) {
         removeFromCart(dessertName);
         manageCartBackground();
         manageCartMessage();
+        manageCartTotalRenderer()
       }
       manageItemQuantity(button);
       break;
@@ -298,15 +299,20 @@ function removeItem(event) {
 
   listItem.remove();
   
+  manageCartTotalRenderer();
   manageCartBackground();
   manageCartMessage();
 }
 
+
 function manageCartTotalRenderer() {
   let list = document.querySelector(".cart__list");
+  let cart = document.querySelector(".cart");
 
-  if (list.children.length) {
-    let cartTotal = document.createElement("div");
+  let cartTotal = cart.querySelector(".cart__total");
+
+  if (list.children.length && !cartTotal) {
+    cartTotal = document.createElement("div");
     cartTotal.classList.add("cart__total");
 
     cartTotal.innerHTML = `
@@ -314,9 +320,8 @@ function manageCartTotalRenderer() {
       <p class="cart__total-price">$0.00</p>
     `;
 
-    let cart = document.querySelector(".cart");
-
     cart.appendChild(cartTotal);
-  } else {
+  } else if (!list.children.length && cartTotal) {
+    cartTotal.remove();
   }
 }
