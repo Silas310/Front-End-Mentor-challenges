@@ -101,7 +101,7 @@ function manageButtons(event) {
 
     case "desserts__button--increment":
       // dessertName = button.closest(".desserts__item").querySelector(".desserts__title");
-      counter.innerHTML = Number(counter.innerHTML) + 1;
+      increaseButtonCounter(counter);
       increaseCartCounter();
       manageItemQuantity(button);
       break;
@@ -109,7 +109,7 @@ function manageButtons(event) {
     case "desserts__button--decrement":
       decreaseCartCounter();
       if (Number(counter.innerHTML) > 1) {
-        counter.innerHTML = Number(counter.innerHTML) - 1;
+        decreaseButtonCounter(counter);
       } else {
         let dessertName = button.closest(".desserts__button").nextElementSibling.children[1];
 
@@ -122,6 +122,16 @@ function manageButtons(event) {
       manageItemQuantity(button);
       break;
   }
+}
+
+
+function increaseButtonCounter(counter) {
+  counter.innerHTML = Number(counter.innerHTML) + 1;
+}
+
+
+function decreaseButtonCounter(counter) {
+  counter.innerHTML = Number(counter.innerHTML) - 1;
 }
 
 
