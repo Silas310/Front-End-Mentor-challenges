@@ -101,6 +101,7 @@ function manageButtons(event) {
       let list = document.querySelector(".cart__list")
       if (list.children.length == 1) {
         manageCartTotalRenderer();
+        manageCarbonNeutralMessage();
       }
       break;
 
@@ -123,7 +124,7 @@ function manageButtons(event) {
         removeFromCart(dessertName);
         manageCartBackground();
         manageCartMessage();
-        manageCartTotalRenderer()
+        manageCartTotalRenderer();
       }
       manageItemQuantity(button);
       break;
@@ -324,4 +325,18 @@ function manageCartTotalRenderer() {
   } else if (!list.children.length && cartTotal) {
     cartTotal.remove();
   }
+}
+
+
+function manageCarbonNeutralMessage() {
+  let list = document.querySelector(".cart");
+  let carbonMsg = document.createElement("div");
+
+  carbonMsg.classList.add("cart__carbon-neutral-container")
+  carbonMsg.innerHTML = `
+    <img src="assets/images/icon-carbon-neutral.svg" alt="Tree icon" class="cart__carbon-neutral-image">
+    <p class="cart__carbon-neutral-msg">This is a <strong>carbon-neutral</strong> delivery</p>
+  `;
+
+  list.appendChild(carbonMsg);
 }
