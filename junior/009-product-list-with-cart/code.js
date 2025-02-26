@@ -189,6 +189,8 @@ function addToCart(name, price) {
     </div>
   `;
 
+  item.querySelector(".cart__item-remove").addEventListener("click", removeItem);
+
   list.appendChild(item);
 }
 
@@ -243,4 +245,45 @@ function manageCartMessage() {
   } else {
     message.style.display = "block";
   }
+}
+
+
+function removeItem(event) {
+  let btn = event.currentTarget;
+  let listItem = btn.closest(".cart__item"); // li
+
+
+  let itemName = listItem.querySelector(".cart__item-name"); // no name
+  let desserts = document.querySelector(".desserts");
+  let itemNames = desserts.querySelectorAll(".desserts__title"); // all item names
+
+  
+  
+  for (const element of itemNames) {
+    if (itemName.innerText == element.innerText) {
+      let dessert = element.closest(".desserts__item");
+
+      let img =  dessert.querySelector(".desserts__image");
+      deselectImage(img);
+
+      let buttonCounter = dessert.querySelector(".desserts__counter");
+      buttonCounter.innerText = 1;
+
+      let counterButton = dessert.querySelector(".desserts__button--counter");
+      counterButton.classList.add("desserts__button--hidden");
+
+      let addButton = dessert.querySelector(".desserts__button--add");
+      addButton.classList.remove("desserts__button--hidden");
+
+    }
+  }
+
+  let itemQuantity = listItem.querySelector(".cart__item-quantity").innerText;
+  let cartQuantity = document.querySelector(".cart__quantity");
+  cartQuantity.innerText = Number(cartQuantity.innerText - itemQuantity);
+
+  listItem.remove();
+  
+  manageCartBackground();
+  manageCartMessage();
 }
