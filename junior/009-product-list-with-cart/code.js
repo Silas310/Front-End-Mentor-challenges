@@ -213,7 +213,7 @@ function manageItemQuantity(btn) {
   let list = document.querySelector(".cart__list"); // ul
 
   for (let element of list.children) {
-    if (itemName == element.children[0].innerText) {
+    if (itemName == element.querySelector(".cart__item-name").innerText) {
       let cartItemQuantity = element.querySelector(".cart__item-quantity"); 
 
       cartItemQuantity.innerText = buttonQuantity.innerText;
