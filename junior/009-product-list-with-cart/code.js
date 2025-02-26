@@ -97,7 +97,11 @@ function manageButtons(event) {
       addToCart(dessertName, dessertPrice);
       manageCartBackground();
       manageCartMessage();
-      manageCartTotalRenderer();
+
+      let list = document.querySelector(".cart__list")
+      if (list.children.length == 1) {
+        manageCartTotalRenderer();
+      }
       break;
 
     case "desserts__button--increment":
@@ -306,7 +310,7 @@ function manageCartTotalRenderer() {
     cartTotal.classList.add("cart__total");
 
     cartTotal.innerHTML = `
-      <p class="cart__total-label">Order Total</p>
+      <p class="cart__total-label">Order Total:</p>
       <p class="cart__total-price">$0.00</p>
     `;
 
