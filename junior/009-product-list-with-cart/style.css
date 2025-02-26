@@ -134,7 +134,7 @@ img {
 .cart {
   background: var(--color-white) url(assets/images/illustration-empty-cart.svg) no-repeat center / auto;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   min-height: 20rem;
   padding: 1.5rem;
 }

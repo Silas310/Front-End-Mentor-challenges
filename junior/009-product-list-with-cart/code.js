@@ -176,14 +176,17 @@ function addToCart(name, price) {
 
   
   item.innerHTML = `
-    <h3 class="cart__item-name">${name.innerText}</h3>
-    <span class="cart__item-counter">
-      <span class="cart__item-quantity">1</span>x
-    </span>
-
-    <span class="cart__item-price">@ ${price.innerText}</span>
-
-    <span class="cart__item-price--multiplied"></span>
+    <div class="cart__item-info">
+      <h3 class="cart__item-name">${name.innerText}</h3>
+      <span class="cart__item-counter">
+        <span class="cart__item-quantity">1</span>x
+      </span>
+      <span class="cart__item-price">@ ${price.innerText}</span>
+      <span class="cart__item-price--multiplied"></span>
+    </div>
+    <div>
+      <img src="assets/images/icon-remove-item.svg" alt="Remove icon">
+    </div>
   `;
 
   list.appendChild(item);
