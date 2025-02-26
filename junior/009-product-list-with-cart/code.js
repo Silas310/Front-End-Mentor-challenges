@@ -185,7 +185,7 @@ function addToCart(name, price) {
       <span class="cart__item-price--multiplied"></span>
     </div>
     <div>
-      <img src="assets/images/icon-remove-item.svg" alt="Remove icon">
+      <img  class="cart__item-remove" src="assets/images/icon-remove-item.svg" alt="Remove icon">
     </div>
   `;
 
