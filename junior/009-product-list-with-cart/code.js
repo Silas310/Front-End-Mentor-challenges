@@ -144,7 +144,7 @@ function changeButtonClass(button, caso) {
       break;
 
     case "removing":
-      let counterBtn = button.parentElement.parentElement; // Counter btn
+      let counterBtn = button.closest(".desserts__button"); // Counter btn
       let addBtn = counterBtn.previousElementSibling; // Add to cart btn
 
       addBtn.classList.remove("desserts__button--hidden");
@@ -283,11 +283,7 @@ function removeItem(event) {
       }
 
       let counterButton = dessert.querySelector(".desserts__button--counter");
-      counterButton.classList.add("desserts__button--hidden");
-
-      let addButton = dessert.querySelector(".desserts__button--add");
-      addButton.classList.remove("desserts__button--hidden");
-
+      changeButtonClass(counterButton, "removing")
     }
   }
 
