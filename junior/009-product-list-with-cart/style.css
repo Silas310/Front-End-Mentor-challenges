@@ -164,7 +164,9 @@ img {
   border-radius: 50%;
   padding: .1rem;
 }
-
+.cart__item-remove:hover {
+  cursor: pointer;
+}
 .cart__item-name {color: var(--color-rose-900); margin-bottom: .3rem;}
 .cart__item-counter {color: var(--color-red); font-weight: 700;}
 .cart__item-price {color: var(--color-rose-400); font-weight: 500;}
