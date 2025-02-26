@@ -277,7 +277,10 @@ function removeItem(event) {
       deselectImage(img);
 
       let buttonCounter = dessert.querySelector(".desserts__counter");
-      buttonCounter.innerText = 1;
+      let counterValue = Number(buttonCounter.innerText);
+      for (let i = 0; i < counterValue - 1; i++) {
+        decreaseButtonCounter(buttonCounter);
+      }
 
       let counterButton = dessert.querySelector(".desserts__button--counter");
       counterButton.classList.add("desserts__button--hidden");
