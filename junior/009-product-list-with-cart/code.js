@@ -136,6 +136,7 @@ function manageButtons(event) {
       multiplyItemValue(button);
       break;
   }
+  calculateTotal();
 }
 
 
@@ -393,6 +394,26 @@ function multiplyItemValue(btn) {
 }
 
 
-function addMultipliedValue(value, place) {
-  place.innerHTML = `$${value}`
+function addMultipliedValue(value, place) {place.innerHTML = `$${value}`}
+
+
+function calculateTotal() {
+  let values = document.querySelectorAll(".cart__item-price--multiplied");
+  let total = 0;
+
+  for (const element of values) {
+    total += Number(element.innerText.slice(1));
+  }
+
+  console.log(total.toFixed(2));
+  showTotal(total)
+}
+
+
+function showTotal(total) {
+  let totalElement = document.querySelector(".cart__total-price");
+
+  if (totalElement) {
+    totalElement.innerHTML = `$${total.toFixed(2)}`;
+  }
 }
