@@ -97,12 +97,13 @@ function manageButtons(event) {
       addToCart(dessertName, dessertPrice);
       manageCartBackground();
       manageCartMessage();
+      multiplyItemValue(button);
 
       let list = document.querySelector(".cart__list")
       if (list.children.length == 1) {
         manageCartTotalRenderer();
         manageCarbonNeutralMessage();
-        manageConfirmButton()
+        manageConfirmButton();
       }
       break;
 
@@ -111,11 +112,13 @@ function manageButtons(event) {
       increaseButtonCounter(counter);
       increaseCartCounter();
       manageItemQuantity(button);
+      multiplyItemValue(button);
       break;
 
     case "desserts__button--decrement":
       decreaseCartCounter();
       if (Number(counter.innerHTML) > 1) {
+        
         decreaseButtonCounter(counter);
       } else {
         let dessertName = button.closest(".desserts__button").nextElementSibling.children[1];
@@ -126,10 +129,11 @@ function manageButtons(event) {
         manageCartBackground();
         manageCartMessage();
         manageCartTotalRenderer();
-        manageCarbonNeutralMessage()
-        manageConfirmButton()
+        manageCarbonNeutralMessage();
+        manageConfirmButton();
       }
       manageItemQuantity(button);
+      multiplyItemValue(button);
       break;
   }
 }
@@ -367,4 +371,28 @@ function manageConfirmButton() {
   } else if(!list.children.length && confirmButton) {
     confirmButton.remove();
   }
+}
+
+
+function multiplyItemValue(btn) {
+  let itemName = btn.closest(".desserts__item").querySelector(".desserts__title"); // no
+  let list = document.querySelector(".cart__list");
+
+  
+  for (const element of list.children) {
+    if (itemName.innerText == element.children[0].children[0].innerText) {
+      let unitPrice = Number( element.querySelector(".cart__item-price").innerText.slice(3) );
+      let multiplier = Number( element.querySelector(".cart__item-quantity").innerText );
+      let place = element.querySelector(".cart__item-price--multiplied");
+      let result = unitPrice * multiplier;
+      result = result.toFixed(2);
+
+      addMultipliedValue(result, place);
+    }
+  }
+}
+
+
+function addMultipliedValue(value, place) {
+  place.innerHTML = `$${value}`
 }
