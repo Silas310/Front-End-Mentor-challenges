@@ -308,6 +308,7 @@ function removeItem(event) {
 
   listItem.remove();
   
+  calculateTotal()
   manageConfirmButton()
   manageCartTotalRenderer();
   manageCarbonNeutralMessage()
