@@ -102,6 +102,7 @@ function manageButtons(event) {
       if (list.children.length == 1) {
         manageCartTotalRenderer();
         manageCarbonNeutralMessage();
+        manageConfirmButton()
       }
       break;
 
@@ -126,6 +127,7 @@ function manageButtons(event) {
         manageCartMessage();
         manageCartTotalRenderer();
         manageCarbonNeutralMessage()
+        manageConfirmButton()
       }
       manageItemQuantity(button);
       break;
@@ -301,6 +303,7 @@ function removeItem(event) {
 
   listItem.remove();
   
+  manageConfirmButton()
   manageCartTotalRenderer();
   manageCarbonNeutralMessage()
   manageCartBackground();
@@ -345,5 +348,23 @@ function manageCarbonNeutralMessage() {
     cart.appendChild(carbonMsg);
   } else if (!list.children.length && carbonMsg) {
     carbonMsg.remove();
+  }
+}
+
+
+function manageConfirmButton() {
+  let list = document.querySelector(".cart__list");
+  let cart = document.querySelector(".cart");
+  let confirmButton = cart.querySelector(".cart__button"); 
+
+  if (list.children.length && !confirmButton) {
+    confirmButton = document.createElement("button");
+    confirmButton.classList.add("desserts__button");
+    confirmButton.classList.add("cart__button");
+    confirmButton.innerHTML = "Confirm Order";
+
+    cart.appendChild(confirmButton);
+  } else if(!list.children.length && confirmButton) {
+    confirmButton.remove();
   }
 }
