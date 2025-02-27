@@ -125,6 +125,7 @@ function manageButtons(event) {
         manageCartBackground();
         manageCartMessage();
         manageCartTotalRenderer();
+        manageCarbonNeutralMessage()
       }
       manageItemQuantity(button);
       break;
@@ -301,6 +302,7 @@ function removeItem(event) {
   listItem.remove();
   
   manageCartTotalRenderer();
+  manageCarbonNeutralMessage()
   manageCartBackground();
   manageCartMessage();
 }
@@ -329,14 +331,19 @@ function manageCartTotalRenderer() {
 
 
 function manageCarbonNeutralMessage() {
-  let list = document.querySelector(".cart");
-  let carbonMsg = document.createElement("div");
-
-  carbonMsg.classList.add("cart__carbon-neutral-container")
-  carbonMsg.innerHTML = `
-    <img src="assets/images/icon-carbon-neutral.svg" alt="Tree icon" class="cart__carbon-neutral-image">
-    <p class="cart__carbon-neutral-msg">This is a <strong>carbon-neutral</strong> delivery</p>
-  `;
-
-  list.appendChild(carbonMsg);
+  let list = document.querySelector(".cart__list");
+  let cart = document.querySelector(".cart");
+  let carbonMsg = cart.querySelector(".cart__carbon-neutral-container");
+  
+  if (list.children.length && !carbonMsg) {
+    carbonMsg = document.createElement("div");
+    carbonMsg.classList.add("cart__carbon-neutral-container")
+    carbonMsg.innerHTML = `
+      <img src="assets/images/icon-carbon-neutral.svg" alt="Tree icon" class="cart__carbon-neutral-image">
+      <p class="cart__carbon-neutral-msg">This is a <strong>carbon-neutral</strong> delivery</p>
+    `;
+    cart.appendChild(carbonMsg);
+  } else if (!list.children.length && carbonMsg) {
+    carbonMsg.remove();
+  }
 }
