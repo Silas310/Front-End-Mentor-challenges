@@ -362,6 +362,7 @@ function manageConfirmButton() {
   let list = document.querySelector(".cart__list");
   let cart = document.querySelector(".cart");
   let confirmButton = cart.querySelector(".cart__button"); 
+  let overlay = document.querySelector(".overlay");
 
   if (list.children.length && !confirmButton) {
     confirmButton = document.createElement("button");
@@ -369,6 +370,7 @@ function manageConfirmButton() {
     confirmButton.classList.add("cart__button");
     confirmButton.innerHTML = "Confirm Order";
     confirmButton.addEventListener("click", openModal);
+    overlay.addEventListener("click", closeModal);
 
     cart.appendChild(confirmButton);
   } else if(!list.children.length && confirmButton) {
@@ -425,4 +427,12 @@ function openModal() {
   let overlay = document.querySelector(".overlay");
 
   overlay.style.display = "block"
+}
+
+
+function closeModal(event) {
+  let overlay = event.currentTarget
+  console.log(overlay)
+
+  overlay.style.display = "none";
 }
