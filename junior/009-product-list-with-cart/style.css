@@ -137,6 +137,7 @@ img {
   justify-content: space-between;
   min-height: 20rem;
   padding: 1.5rem;
+  row-gap: 2.2rem;
 }
 .cart__title {
   margin-bottom: 0rem;
