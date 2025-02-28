@@ -210,6 +210,7 @@ img {
   background-color: var(--color-transparent-black);
   bottom: 0;
   display: none;
+  left: 0;
   height: 100%;
   overflow: auto;
   position: fixed;
