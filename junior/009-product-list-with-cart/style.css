@@ -219,7 +219,16 @@ img {
 }
 .modal {
   background-color: var(--color-white);
+  border-radius: .5rem .5rem 0 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
+.modal__icon {width: 2.5rem;}
 
 .cart__item-name {color: var(--color-rose-900); margin-bottom: .3rem;}
 .cart__item-counter {color: var(--color-red); font-weight: 700;}
