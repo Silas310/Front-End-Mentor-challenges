@@ -218,6 +218,7 @@ img {
 }
 .modal {
   background-color: var(--color-white);
+  display: none;
 }
 
 .cart__item-name {color: var(--color-rose-900); margin-bottom: .3rem;}
