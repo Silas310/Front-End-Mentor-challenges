@@ -418,3 +418,8 @@ function showTotal(total) {
     totalElement.innerHTML = `$${total.toFixed(2)}`;
   }
 }
+
+
+function openModal() {
+  
+}
