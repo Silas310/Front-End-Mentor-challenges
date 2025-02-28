@@ -368,6 +368,7 @@ function manageConfirmButton() {
     confirmButton.classList.add("desserts__button");
     confirmButton.classList.add("cart__button");
     confirmButton.innerHTML = "Confirm Order";
+    confirmButton.addEventListener("click", openModal);
 
     cart.appendChild(confirmButton);
   } else if(!list.children.length && confirmButton) {
@@ -421,5 +422,7 @@ function showTotal(total) {
 
 
 function openModal() {
-  
+  let overlay = document.querySelector(".overlay");
+
+  overlay.style.display = "block"
 }
