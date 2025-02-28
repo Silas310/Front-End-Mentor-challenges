@@ -363,6 +363,7 @@ function manageConfirmButton() {
   let cart = document.querySelector(".cart");
   let confirmButton = cart.querySelector(".cart__button"); 
   let overlay = document.querySelector(".overlay");
+  
 
   if (list.children.length && !confirmButton) {
     confirmButton = document.createElement("button");
@@ -409,7 +410,6 @@ function calculateTotal() {
     total += Number(element.innerText.slice(1));
   }
 
-  console.log(total.toFixed(2));
   showTotal(total)
 }
 
@@ -431,8 +431,9 @@ function openModal() {
 
 
 function closeModal(event) {
-  let overlay = event.currentTarget
+  let overlay = event.target
   console.log(overlay)
-
-  overlay.style.display = "none";
+  if (overlay.classList[0] == "overlay") {
+    overlay.style.display = "none";
+  }
 }
