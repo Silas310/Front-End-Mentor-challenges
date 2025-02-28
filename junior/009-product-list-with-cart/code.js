@@ -425,14 +425,48 @@ function showTotal(total) {
 
 function openModal() {
   let overlay = document.querySelector(".overlay");
+  
+  addModalItems();
 
-  overlay.style.display = "block"
+  overlay.style.display = "block";
+}
+
+
+function addModalItems() {
+  let list = document.querySelector(".cart__list");
+  let modalList = document.querySelector(".modal__item-list");;
+
+  modalList.innerHTML = "";
+  for (const element of list.children) {
+    
+    let modalItem = document.createElement("li");
+    let itemName = element.querySelector(".cart__item-name");
+    let price = element.querySelector(".cart__item-price");
+
+    modalItem.classList.add("modal__item");
+
+    modalItem.innerHTML = `
+      <div class="modal__item-info cart__item-info">
+        <h4 class="modal__item-name cart__item-name">${itemName.innerText}</h4>
+        <span class="modal__item-counter cart__item-counter">
+          <span class="modal__item-quantity cart__item-quantity">1</span>x
+        </span>
+        <span class="modal__item-price cart__item-price">${price.innerText}</span>
+        <span class="modal__item-price--multiplied cart__item-price--multiplied"></span>
+      </div>
+    `;
+
+
+    modalList.appendChild(modalItem);
+
+    console.log(element,itemName);
+  }
 }
 
 
 function closeModal(event) {
-  let overlay = event.target
-  console.log(overlay)
+  let overlay = event.target;
+
   if (overlay.classList[0] == "overlay") {
     overlay.style.display = "none";
   }
