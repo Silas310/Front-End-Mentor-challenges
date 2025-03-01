@@ -1,6 +1,7 @@
 let storedData = []; 
 
 document.querySelector(".overlay").addEventListener("click", closeModal);
+document.querySelector(".modal__button").addEventListener("click", resetOrder);
 
 
 async function loadData() {
@@ -477,7 +478,6 @@ function addModalItems() {
       <p class="modal__total-label cart__total-label">Order Total:</p>
       <p class="modal__total-price cart__total-price">${totalPrice}</p>
     `;
-
   modalList.appendChild(modalTotal);
 }
 
@@ -488,4 +488,9 @@ function closeModal(event) {
   if (overlay.classList[0] == "overlay") {
     overlay.style.display = "none";
   }
+}
+
+
+function resetOrder() {
+  window.location.reload()
 }
