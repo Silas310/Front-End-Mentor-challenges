@@ -230,6 +230,8 @@ img {
   z-index: 2;
 }
 .modal__icon {width: 2.5rem;}
+.modal__title {color: var(--color-rose-900);}
+.modal__message {color: var(--color-rose-500);}
 .modal__item-list{
   background-color: var(--color-rose-50); 
   border-radius: .5rem;
