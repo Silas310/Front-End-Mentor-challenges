@@ -225,10 +225,12 @@ img {
   flex-direction: column;
   padding: 1rem;
   position: fixed;
+  row-gap: 1rem;
   width: 100%;
   z-index: 2;
 }
 .modal__icon {width: 2.5rem;}
+.modal__item-info, .modal__total{background-color: var(--color-rose-50); border-radius: .5rem;}
 
 .cart__item-name {color: var(--color-rose-900); margin-bottom: .3rem;}
 .cart__item-counter {color: var(--color-red); font-weight: 700;}

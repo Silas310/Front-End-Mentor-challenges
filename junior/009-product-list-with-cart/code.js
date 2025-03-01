@@ -458,6 +458,7 @@ function addModalItems() {
 
     modalList.appendChild(modalItem);
   }
+
   let totalContainer = document.querySelector(".cart__total");
   let modalTotal = document.querySelector(".modal__total");
   let totalPrice = document.querySelector(".cart__total-price").innerText;
@@ -467,7 +468,9 @@ function addModalItems() {
       <p class="modal__total-label cart__total-label">Order Total:</p>
       <p class="modal__total-price cart__total-price">${totalPrice}</p>
     `;
-  console.log(totalContainer)
+
+  modalList.appendChild(modalTotal);
+  console.log(totalContainer);
 }
 
 
