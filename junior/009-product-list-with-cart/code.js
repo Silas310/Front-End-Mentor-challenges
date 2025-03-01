@@ -456,11 +456,17 @@ function addModalItems() {
       </div>
     `;
 
-
     modalList.appendChild(modalItem);
-
-    console.log(element,itemName);
   }
+  let totalContainer = document.querySelector(".cart__total");
+  let modalTotal = document.querySelector(".modal__total");
+  modalTotal.classList.add("modal__total", "cart__total");
+
+  modalTotal.innerHTML = `
+      <p class="modal__total-label cart__total-label">Order Total:</p>
+      <p class="modal__total-price cart__total-price">$0.00</p>
+    `;
+  console.log(totalContainer)
 }
 
 
