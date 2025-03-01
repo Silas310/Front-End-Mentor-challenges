@@ -285,6 +285,10 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .overlay {
+    align-items: center;
+    justify-content: center;
+   }
   .modal{
     font-size: 1rem;
     border-radius: 1rem;
@@ -295,13 +299,6 @@ img {
     padding: 2rem;
     right: 30vw;
     width: auto;
-  } 
-   .overlay {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-   }
-  .cart__button{
-    width: auto;
   }
+  .cart__button{width: auto;}
 }
