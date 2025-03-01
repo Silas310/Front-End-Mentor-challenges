@@ -266,11 +266,12 @@ img {
 
 @media screen and (min-width: 60rem) {
   .main {
+    font-size: 1.5rem;
     align-items: start;
     display: grid;
     gap: 2rem;
     grid-template-columns: 2.5fr 1fr;
-    max-width: 100rem;
+    max-width: 150rem;
   }
 
   .main__title {
@@ -282,5 +283,25 @@ img {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .modal{
+    font-size: 1rem;
+    border-radius: 1rem;
+    bottom: auto;
+    left: 30vw;
+    margin: auto;
+    max-width: 40rem;
+    padding: 2rem;
+    right: 30vw;
+    width: auto;
+  } 
+   .overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   }
+  .cart__button{
+    width: auto;
   }
 }

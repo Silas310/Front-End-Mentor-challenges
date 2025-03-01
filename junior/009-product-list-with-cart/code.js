@@ -428,7 +428,7 @@ function openModal() {
   
   addModalItems();
 
-  overlay.style.display = "block";
+  overlay.style.display = "flex";
 }
 
 
