@@ -230,7 +230,11 @@ img {
   z-index: 2;
 }
 .modal__icon {width: 2.5rem;}
-.modal__item-info, .modal__total{background-color: var(--color-rose-50); border-radius: .5rem;}
+.modal__item-list{
+  background-color: var(--color-rose-50); 
+  border-radius: .5rem;
+}
+.modal__item-info, .modal__total{padding: 1rem; font-size: .8rem;}
 
 .cart__item-name {color: var(--color-rose-900); margin-bottom: .3rem;}
 .cart__item-counter {color: var(--color-red); font-weight: 700;}
