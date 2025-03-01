@@ -233,6 +233,7 @@ img {
 .modal__item-list{
   background-color: var(--color-rose-50); 
   border-radius: .5rem;
+  list-style-type: none;
 }
 .modal__button {
   border-radius: 20rem;
