@@ -264,9 +264,9 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 75rem) {
   .main {
-    font-size: 1.5rem;
+    font-size: 1rem;
     align-items: start;
     display: grid;
     gap: 2rem;
