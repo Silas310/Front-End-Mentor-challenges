@@ -1,5 +1,7 @@
 let storedData = []; 
 
+document.querySelector(".overlay").addEventListener("click", closeModal);
+
 
 async function loadData() {
   try {
@@ -362,7 +364,6 @@ function manageConfirmButton() {
   let list = document.querySelector(".cart__list");
   let cart = document.querySelector(".cart");
   let confirmButton = cart.querySelector(".cart__button"); 
-  let overlay = document.querySelector(".overlay");
   
 
   if (list.children.length && !confirmButton) {
@@ -371,7 +372,6 @@ function manageConfirmButton() {
     confirmButton.classList.add("cart__button");
     confirmButton.innerHTML = "Confirm Order";
     confirmButton.addEventListener("click", openModal);
-    overlay.addEventListener("click", closeModal);
 
     cart.appendChild(confirmButton);
   } else if(!list.children.length && confirmButton) {
@@ -442,17 +442,24 @@ function addModalItems() {
     let modalItem = document.createElement("li");
     let itemName = element.querySelector(".cart__item-name");
     let price = element.querySelector(".cart__item-price");
+    let itemQuantity = element.querySelector(".cart__item-quantity");
+    let multipliedValue = element.querySelector(".cart__item-price--multiplied");
 
     modalItem.classList.add("modal__item");
 
     modalItem.innerHTML = `
-      <div class="modal__item-info cart__item-info">
-        <h4 class="modal__item-name cart__item-name">${itemName.innerText}</h4>
-        <span class="modal__item-counter cart__item-counter">
-          <span class="modal__item-quantity cart__item-quantity">1</span>x
-        </span>
-        <span class="modal__item-price cart__item-price">${price.innerText}</span>
-        <span class="modal__item-price--multiplied cart__item-price--multiplied"></span>
+      <div>
+        <div class="modal__item-info cart__item-info">
+          <h4 class="modal__item-name cart__item-name">${itemName.innerText}</h4>
+          <span class="modal__item-counter cart__item-counter">
+            <span class="modal__item-quantity cart__item-quantity">${itemQuantity.innerText}</span>x
+          </span>
+          <span class="modal__item-price cart__item-price">${price.innerText}</span>
+        </div>
+      </div>
+
+      <div>
+        <span class="modal__item-price--multiplied cart__item-price--multiplied">${multipliedValue.innerText}</span>
       </div>
     `;
 

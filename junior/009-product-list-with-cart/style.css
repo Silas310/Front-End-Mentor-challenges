@@ -237,6 +237,12 @@ img {
   border-radius: .5rem;
   list-style-type: none;
 }
+.modal__item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
 .modal__button {
   border-radius: 20rem;
 }
