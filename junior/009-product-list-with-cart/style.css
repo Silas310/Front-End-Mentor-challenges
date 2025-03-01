@@ -234,6 +234,10 @@ img {
   background-color: var(--color-rose-50); 
   border-radius: .5rem;
 }
+.modal__button {
+  border-radius: 20rem;
+}
+.modal__button:hover{transform: none;}
 .modal__item-info, .modal__total{padding: 1rem; font-size: .8rem;}
 
 .cart__item-name {color: var(--color-rose-900); margin-bottom: .3rem;}
