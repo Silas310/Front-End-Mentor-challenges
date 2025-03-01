@@ -447,8 +447,11 @@ function addModalItems() {
 
     modalItem.classList.add("modal__item");
 
+    let item = storedData.find(dessert => dessert.name === itemName.innerText);
+
     modalItem.innerHTML = `
-      <div>
+      <div class="modal__item-container">
+        <img src="${item.image.thumbnail}" alt="${item.name} icon" class="modal__icon">
         <div class="modal__item-info cart__item-info">
           <h4 class="modal__item-name cart__item-name">${itemName.innerText}</h4>
           <span class="modal__item-counter cart__item-counter">

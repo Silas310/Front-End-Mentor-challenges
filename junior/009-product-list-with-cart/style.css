@@ -229,7 +229,18 @@ img {
   width: 100%;
   z-index: 2;
 }
-.modal__icon {width: 2.5rem;}
+.modal__item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.modal__item-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.modal__icon {width: 2.7rem; border-radius: .25rem;}
 .modal__title {color: var(--color-rose-900);}
 .modal__message {color: var(--color-rose-500);}
 .modal__item-list{
@@ -237,12 +248,7 @@ img {
   border-radius: .5rem;
   list-style-type: none;
 }
-.modal__item {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-}
+
 .modal__button {
   border-radius: 20rem;
 }
