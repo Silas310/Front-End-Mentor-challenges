@@ -2,8 +2,8 @@
   "name": "010-advice-generator-app",
   "private": true,
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "file:../../node_modules/react",
+    "react-dom": "file:../../node_modules/react-dom"
   },
   "devDependencies": {
     "vite": "^6.2.2"
