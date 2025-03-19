@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Silas310/Front-End-Mentor-challenges#readme",
   "private": true,
   "workspaces": [
-    "02-junior"
+    "02-junior/010-advice-generator-app"
   ],
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",
