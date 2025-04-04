@@ -62,3 +62,5 @@
 <a href = "https://silas310.github.io/Front-End-Mentor-challenges/02-junior/008-interactive-card-details-form/">Interactive card details form 008</a>
 
 <a href = "https://silas310.github.io/Front-End-Mentor-challenges/02-junior/009-product-list-with-cart/">Product list with cart 009</a>
+
+<a href = "https://silas310-advice-generator-app.netlify.app/">Advice generator app 010</a>
